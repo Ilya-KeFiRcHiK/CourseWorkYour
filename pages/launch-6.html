@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+        </nav>
+        <section class="block-info">
+            <div class="block-info-text">
+                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
+            </div>
+        </section>
+        </section>
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+        <a href="start.html" class="menu-left">Введение</a>
+        <a href="launch.html" class="menu-left">Запуск программы</a>
+        <a href="launch-2.html" class="menu-left">Переменные</a>
+        <a href="launch-3.html" class="menu-left">Типы данных</a>
+        <a href="launch-4.html" class="menu-left">Числа</a>
+        <a href="launch-5.html" class="menu-left">Математические операции</a>
+        <a href="launch-6.html" class="menu-left">Строки</a>
+        <a href="launch-7.html" class="menu-left">Условия</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="#" class="menu-left">Массивы</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="#" class="menu-left">Циклы</a>
+        <a href="#" class="menu-left">Объекты</a>
+        <a href="#" class="menu-left">Дата и время</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Строки</h2>
+        <br>
+        <p>
+        Для применения строк применяют кавычки: одинарные ('), двойные (") или <br> обратные  (`)
+        let str = 'abc'; <br>
+        alert(str); // выведет 'abc' <br>
+        let str = "abc"; <br>
+        alert(str); // выведет 'abc' <br>
+        <br>
+        <b>Получение символа в строке.</b> <br>
+        Каждый символ в строке имеет свой порядковый номер: первый символ <br> номер 0, второй символ - номер 1, третий символ номер 2 и так далее. <br>
+            Нумерация символов начинается с нуля. Можно получить доступ к <br> определенному символу строки по его номеру. Для этого пишется имя <br> переменной, после этого имени ставятся квадратные скобки и в этих скобках <br> указывается номер символа. <br>
+            let str = 'abcde'; <br>
+            alert(str[0]); // выведет 'a' <br>
+            alert(str[1]); // выведет 'b' <br>
+            alert(str[2]); // выведет 'c' <br>
+            Номер символа также может хранится и в переменной: <br>
+            let str = 'abcde'; <br>
+            let num = 3; // номер символа в переменной <br>
+            <br>
+            alert(str[num]); // выведет 'd'
+            <br>
+            <b>Получение последнего символа в строке</b> <br>
+            let str = 'abcde'; <br>
+            let last = str.length - 1; // номер последнего символа <br>
+            alert(str[str.length - 1]); // выведет 'e' <br>
+            <br>
+            <b>Длина строки</b>
+            Количество символов в строке содержится в свойстве length: <br>
+            let str = 'abcde'; <br>
+            alert(str.length); // выведет 5 <br>
+            Свойство length можно применять непосредственно к строке: <br>
+            alert('abcde'.length); // выведет 5 <br>
+            <br>
+            <b>Шаблонные строки</b>
+            Существует специальный тип кавычек – обратные (косые): <br>
+            let str = `abc`; <br>
+            alert(str); // выведет 'abc' <br>
+            В косых кавычках можно выполнять вставку переменных. Для этого имя <br> переменной нужно написать в конструкции ${}.
+            <br>
+            let str = 'xxx'; <br>
+            let txt = 'aaa ' + str + ' bbb'; <br>
+            Этот код можно переписать следующим образом: <br>
+            let str = 'xxx'; <br>
+            let txt = `aaa ${str} bbb`; <br>
+            <br>
+            <b>Сложение строк в JavaScript</b>
+            Для сложения строк используется оператор +: <br>
+            let str = 'abc' + 'def'; // складываем две строки <br>
+            alert(str); // выведет 'abcdef' <br>
+            <br>
+            let str1 = 'abc'; <br>
+            let str2 = 'def'; <br>
+            alert(str1 + str2); // выведет 'abcdef' <br>
+            <br>
+            <b>Многострочность</b> <br>
+            В JavaScript строках, созданных через одинарные или двойные кавычки, не <br> допустим перенос строки.  <br>
+            Косые кавычки специально предназначены для создания многострочных <br> строк:
+            let str = `abc <br>
+            def`; // так будет работать <br>
+            <br>
+            <b>Преобразование строки в верхний регистр </b>
+            <b>Метод toUpperCase</b>
+            let str = 'abcde'; <br>
+            console.log(str.toUpperCase()); <br>
+            Результат выполнения кода: <br>
+            'ABCDE' <br>
+            <br>
+            <b>Метод slice</b>
+            let str = 'abcde'; <br>
+            let res = str.slice(0, 1).toUpperCase() + str.slice(1); <br>
+            console.log(res); <br>
+            Результат выполнения кода: <br>
+            'Abcde' <br>
+            <br>
+            <b>Преобразование строки в нижний регистр</b><br>
+            <b>Метод toLowerCase</b><br>
+            let str = 'ABCDE'; <br>
+            console.log(str.toLowerCase()); <br>
+            Результат выполнения кода: <br>
+            'abcde'<br>
+            <br>
+            <b>Возвращение символа в строке</b> <br>
+            <b>Метод charAt </b>
+            let str  = 'abcde';
+            let char = str.charAt(0);
+            <br>
+            console.log(char); <br>
+            Результат выполнения кода: <br>
+            'a'
+            
+        </p>
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="telefon">
+            <p>8-800-700-93-29</p>
+        </div>
+        <div class="zvonok">
+            Звонок по России бесплатный
+        </div>
+        <div class="telegram">
+            <a href="#"><img class="telegram" src="img/icons8-телеграмма-app-48.png" alt=""></a>
+        </div>
+        <div class="img-vk">
+        <a href="#"><img class="img-vk" src="img/icons8-vk-48.png" alt=""></a>
+        </div>
+           
+    </footer>
+</body>
+</html>

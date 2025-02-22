@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+        </nav>
+        <section class="block-info">
+            <div class="block-info-text">
+                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
+            </div>
+        </section>
+        </section>
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+        <a href="start.html" class="menu-left">Введение</a>
+        <a href="launch.html" class="menu-left">Запуск программы</a>
+        <a href="launch-2.html" class="menu-left">Переменные</a>
+        <a href="launch-3.html" class="menu-left">Типы данных</a>
+        <a href="launch-4.html" class="menu-left">Числа</a>
+        <a href="launch-5.html" class="menu-left">Математические операции</a>
+        <a href="launch-6.html" class="menu-left">Строки</a>
+        <a href="launch-7.html" class="menu-left">Условия</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="#" class="menu-left">Массивы</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="#" class="menu-left">Циклы</a>
+        <a href="#" class="menu-left">Объекты</a>
+        <a href="#" class="menu-left">Дата и время</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Условия</h2>
+        <br>
+        <p>
+        <b>Условные операторы</b> <br>
+        <b>Конструкция if-else </b> <br>
+        Конструкция <b>if</b> задает условие. С помощью этой конструкции мы можем <br> задать программе вопрос "больше ли переменная a, чем переменная b", <br> и в зависимости от ответа выполнить или один код, или другой. <br>
+        Как правило данная конструкция используется в комбинации с <br> конструкцией else. <br>
+        <b>Синтаксис</b> <br>
+        if (логическое выражение) { <br>
+        /* <br>
+        расположенный здесь код выполниться, <br>
+        если логическое выражение верное <br>
+        */ <br>
+        }; <br>
+        Если в фигурный скобках только одно выражение, можно эти фигурные <br> скобки не писать. <br>
+        <b>Операторы больше и меньше</b> <br>
+        Для проверки того, которое из значений больше, а которое меньше, <br> используются операторы:
+        > больше <br>
+        >= больше или равно <br>
+        < меньше <br>  
+        <= меньше или равно <br>
+        <b>Проверим, значение переменной больше нуля или нет:</b> <br>
+        let test = 1; <br>
+            
+        if (test > 0) { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        <b>Значение переменной  отрицательное число:</b> <br>
+        let test = -1; <br>
+            
+        if (test > 0) { <br>
+            console.log('+++'); <br>
+        } else { <br>
+            console.log('---'); // сработает это <br>
+        } <br>
+        <b>Значение переменной равно 0. В этом случае мы попадем в блок else, так <br> как в нашем условии написано, что переменная test должна быть строго <br> больше нуля:</b>
+        let test = 0; <br>
+            
+        if (test > 0) { <br>
+            console.log('+++'); <br>
+        } else { <br>
+            console.log('---'); // сработает это <br>
+        } <br>
+        <b>Значение переменной больше или равно:</b> <br>
+        let test = 0; <br>
+            
+        if (test >= 0) { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        Значение переменной меньше 0: <br>
+        let test = 0; <br>
+            
+        if (test < 0) { <br>
+            console.log('+++'); <br>
+        } else { <br>
+            console.log('---'); // сработает это <br>
+        } <br>
+        <b>Значение переменной меньше или равно:</b> <br>
+        let test = 0; <br>
+            
+        if (test <= 0) {  <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        <b>Проверка на равенство</b> <br>
+        Для проверки двух значений на равенство используется оператор ==. <br>
+        let test = 10; <br>
+            
+        if (test == 10) { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        <b>Проверка на неравенство</b> <br>
+        Оператор != проверяет на неравенство. Давайте для примера проверим, что <br> переменная test не равна 0: <br>
+        let test = 1; <br>
+            
+        if (test != 0) { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        Поменяем значение переменной: <br>
+        let test = 0; <br>
+            
+        if (test != 0) { <br>
+            console.log('+++'); <br>
+        } else { <br>
+            console.log('---'); // сработает это <br>
+        } <br>
+        <b>Сравнение переменных</b> <br>
+        let test1 = 1; <br>
+        let test2 = 2; <br>
+            
+        if (test2 > test1) { <br>
+            console.log('+++'); // сработает это <br>
+        } else {<br>
+            console.log('---'); <br>
+        } <br>
+
+        <b>Равенство строк</b> <br>
+        При использовании конструкции if можно сравнивать и строки. Для примера <br> пусть в переменной test хранится какая-то строка, например 'abc': <br>
+        let test = 'abc'; <br>
+        Давайте проверим, равно ли содержимое переменной test строке 'abc': <br>
+        let test = 'abc'; <br>
+            
+        if (test == 'abc') { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        <b>Равенство строк и чисел</b>
+        <b>Сравним строку '3' и число 3:</b>
+        if ('3' == 3) { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        <b>Равенство по значению и типу</b> <br>
+        Вместо оператора == следует использовать оператор ===. <br>
+        При сравнении строки '3' и числа 3 условие будет ложным, так как <br> переменные, хотя и равны по значению, но не равны по типу: <br>
+        if ('3' === 3) { <br>
+            console.log('+++'); <br>
+        } else { <br>
+            console.log('---'); // сработает это <br>
+        } <br>
+        При сравнении двух строк '3' условие будет истинно: <br>
+        if ('3' === '3') { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        Как и при сравнении чисел: <br>
+        if (3 === 3) { <br>
+            console.log('+++'); // сработает это <br>
+        } else { <br>
+            console.log('---'); <br>
+        } <br>
+        Разница между оператором == и оператором === проявляется именно тогда, <br> когда значения одинаковые, но разный тип данных. В остальных случаях эти <br> операторы работают одинаково. К примеру, при сравнении разных чисел, <br> конечно же, выведется '---': <br>
+        if (2 === 3) { <br>
+            console.log('+++');
+        } else { <br>
+            console.log('---'); // сработает это <br>
+        } <br>
+        <b>Неравенство по значению и типу</b>
+        Кроме оператора != существует также оператор !==, учитывающий тип при <br> сравнении. Давайте рассмотрим различия между ними на примерах. <br>
+        Пусть с помощью оператора != сравниваются два числа 3. Данный оператор <br> сравнивает значения на то, что они НЕ равны. Так как наши значения как раз- <br> таки равны, то условие будет ложным: <br>
+        if (3 != 3) { <br>
+            console.log('+++'); <br>
+        } else { <br>
+            console.log('---'); // сработает это <br>
+        } <br>
+        Пусть теперь одно из наших значений будет в кавычках. В этом случае <br> оператор != все равно посчитает их равными (так как совпадает значение, а <br> тип не важен для данного оператора) и опять условие будет ложным: <br>
+            if ('3' != 3) { <br>
+                console.log('+++'); <br>
+            } else { <br>
+                console.log('---'); // сработает это <br>
+            } <br>
+            Давайте теперь сравним два числа 3 с помощью оператора !==. Он также посчитает их равными: <br>
+            if (3 !== 3) { <br>
+                console.log('+++'); <br>
+            } else { <br>
+                console.log('---'); // сработает это <br>
+            } <br>
+            А вот если теперь одну из троек взять в кавычки, то оператор !== посчитает <br> наши тройки неравными, так как, хотя значения их и совпадают, но у них <br> разный тип:
+            if ('3' !== 3) { <br>
+                console.log('+++'); // сработает это <br>
+            } else { <br>
+                console.log('---'); <br>
+            } <br>
+            
+            <b>Логическое И</b> <br>
+            Можно группировать операции сравнения с помощью оператора &&, <br> представляющего собой логическое И. <br> 
+            Если переменная num больше нуля и одновременно меньше 10, только тогда <br> выведется '+++':
+            let num = 3; <br>
+            
+            if (num > 0 && num < 10) { <br>
+                console.log('+++'); <br>
+            } else { <br>
+                console.log('---'); <br>
+            } <br>
+            Условия могут налагаться не на одну переменную, а на разные. <br>
+            Если переменная num1 равна 2 и одновременно переменная num2 равна 3, <br> только тогда условие будет истинно: <br>
+            let num1 = 2; <br>
+            let num2 = 3; <br>
+            
+            if (num1 == 2 && num2 == 3) { <br>
+                console.log('+++'); <br>
+            } else { <br>
+                console.log('---'); <br>
+            } <br>
+            <b>Логическое ИЛИ</b>
+            Оператор || представляет собой логическое ИЛИ и требует выполнения хотя <br> бы одного условия.
+            Если переменная num1 больше 0 или переменная num2 больше 0, то условие <br> будет истинно (достаточно выполнения хотя бы одного из условий): <br>
+            let num1 = 10; <br>
+            let num2 = -5; <br>
+            
+            if (num1 > 0 || num2 > 0) { <br>
+                console.log('+++'); // сработает это <br>
+            } else { <br>
+                console.log('---'); <br>
+            } <br>
+            <b>Условия с булевыми значениями</b>
+            Пусть у нас есть какая-то переменная, которая может принимать <br> значения true или false:
+            let test = true; <br>
+            Давайте напишем if, проверяющий нашу переменную на значение true: <br>
+            let test = true; <br>
+            
+            if (test === true) { <br>
+                console.log('+++'); <br>
+            } else { <br>
+                console.log('---'); <br>
+            } <br>
+            <b>Вложенные конструкции if-else </b>
+            Конструкции <b>if-else</b>  можно вкладывать друг в друга произвольным образом. 
+            let num = 3; <br>
+            
+            if (num >= 0) { <br>
+                if (num <= 5) { <br>
+                    console.log('меньше или равно 5'); <br>
+                } else { <br>
+                    console.log('больше 5'); <br>
+                } <br>
+            } else { <br>
+                console.log('меньше нуля'); <br>
+            } <br>
+            <b>Конструкции switch-case </b> <br>
+            С помощью конструкции switch-case можно выполнять различный код, в <br> зависимости от значения переменной. <br>
+            let num = 1; <br>
+            
+            switch (num) { <br>
+                case 1: <br>
+                    console.log('value1'); <br>
+                break; <br>
+                case 2: <br>
+                    console.log('value2'); <br>
+                break; <br>
+                case 3: <br>
+                    console.log('value3'); <br>
+                break; <br>
+                default: <br>
+                    console.log('incorrect value'); <br>
+                break; <br>
+            } <br>
+              
+        </p>
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="telefon">
+            <p>8-800-700-93-29</p>
+        </div>
+        <div class="zvonok">
+            Звонок по России бесплатный
+        </div>
+        <div class="telegram">
+            <a href="#"><img class="telegram" src="img/icons8-телеграмма-app-48.png" alt=""></a>
+        </div>
+        <div class="img-vk">
+        <a href="#"><img class="img-vk" src="img/icons8-vk-48.png" alt=""></a>
+        </div>
+           
+    </footer>
+</body>
+</html>

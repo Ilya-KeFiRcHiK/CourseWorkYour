@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+        </nav>
+        <section class="block-info">
+            <div class="block-info-text">
+                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
+            </div>
+        </section>
+        </section>
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+        <a href="start.html" class="menu-left">Введение</a>
+        <a href="launch.html" class="menu-left">Запуск программы</a>
+        <a href="launch-2.html" class="menu-left">Переменные</a>
+        <a href="launch-3.html" class="menu-left">Типы данных</a>
+        <a href="launch-4.html" class="menu-left">Числа</a>
+        <a href="launch-5.html" class="menu-left">Математические операции</a>
+        <a href="launch-6.html" class="menu-left">Строки</a>
+        <a href="launch-7.html" class="menu-left">Условия</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="#" class="menu-left">Массивы</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="#" class="menu-left">Циклы</a>
+        <a href="#" class="menu-left">Объекты</a>
+        <a href="#" class="menu-left">Дата и время</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Типы данных</h2>
+        <br>
+        <p><b>пример 1:</b><br>
+            let name = "Иван";<br>
+            let age = 30;<br>
+            <b>пример 2:</b><br>
+            let template String = `Привет, меня зовут ${name}, и мне ${age} лет.`;<br>
+            console.log(templateString); // Выведет: Привет, меня зовут Иван, и мне 30 лет.
+            </p>
+        <br>
+        <br>
+        <p><b>Number:</b>представляет числовое значение<br>
+            let integerNumber = 10;
+             <br>
+            let anotherInteger = -5;
+            <br>
+            let zero = 0;
+            <br>
+            console.log(integerNumber);  // Выведет: 10 <br>
+            console.log(anotherInteger);  // Выведет: -5 <br>
+            console.log(zero);   // Выведет: 0 <br>
+            <br>
+            <b>NaN</b> - обозначает не число. Такое значение получается тогда, когда вы <br> пытаетесь делать математические операции не с числами, а с чем-то другим. <br> К примеру, такое значение даст попытка умножить строку на число: <br>
+            alert('abc' * 3); // выведет NaN
+            <br>
+            Любые операции с NaN приводят к тому, что результатом все равно <br> остается NaN
+            <br>
+            <br>
+            <b>Infinity и -Infinity</b>
+            Значения Infinity и -Infinity обозначают соответственно бесконечность и <br> минус бесконечность. Такие значения получаются, если какое-то число <br> поделить на ноль - в этом случает JavaScript не выдает ошибку, как в других <br> языках программирования, а возвращает эти значения:
+            <br>
+           
+             const sum = bigNum1 + bigNum2; <br>
+             const difference = bigNum2 - bigNum1; <br>
+             const product = bigNum1 * bigNum2; <br>
+             const quotient = bigNum2 / bigNum1; // Результат – BigInt <br>
+             <br>
+             <b>Boolean</b> - логический тип, который может принимать только два значения: <br> <b>true</b> или <b>false</b>, правда или ложь. Если мы присвоим переменной значением <br> <b>true</b>, JS автоматически определит ее тип как boolean.
+             <br>
+             let isRaining = true; <br>
+             let isSunny = false;
+             if (isRaining) {
+             console.log("Не забудьте взять зонт!");
+             } else if (isSunny) {
+             console.log("Отличный день для прогулки!");
+             } else {
+             console.log("Погода не определена.");
+             }
+            <br>
+            <br>
+            <b>Null</b> - этот тип данных имеет всего одно значение: null. Которое выражает <br> нулевое или «пустое» значение <br>
+            let a = null;<br>
+            alert(a); // выведет null
+            <br>
+            <br>
+            <b>undefined</b> - тип данных, который обозначает неопределённость <br>
+            let a; <br>
+            alert(a); // выведет undefined <br>
+            <br>
+            <b>object</b> - это ссылочный тип данных, то есть это значение в памяти, на <br> которое возможно сослаться с помощью идентификатора. <br>
+            let object = new Object({'a': 1, 'b': 2, 'c': 3}); <br>
+            console.log(object); <br>
+            Результат выполнения кода: <br>
+            {'a': 1, 'b': 2, 'c': 3}
+            <br>
+            <br>
+             <b>symbol</b> - это уникальный и неизменяемый тип данных, который может <br> быть использован как идентификатор для свойств объектов <br>
+             let sym1 = Symbol();<br>
+             let sym2 = Symbol();
+             <br>
+             console.log(sym1, sym2);
+             console.log(sym1 === sym2); // false
+
+            </p>
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="telefon">
+            <p>8-800-700-93-29</p>
+        </div>
+        <div class="zvonok">
+            Звонок по России бесплатный
+        </div>
+        <div class="telegram">
+            <a href="#"><img class="telegram" src="img/icons8-телеграмма-app-48.png" alt=""></a>
+        </div>
+        <div class="img-vk">
+        <a href="#"><img class="img-vk" src="img/icons8-vk-48.png" alt=""></a>
+        </div>
+           
+    </footer>
+</body>
+</html>
