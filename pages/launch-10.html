@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+        </nav>
+        <section class="block-info">
+            <div class="block-info-text">
+                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
+            </div>
+        </section>
+        </section>
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+        <a href="start.html" class="menu-left">Введение</a>
+        <a href="launch.html" class="menu-left">Запуск программы</a>
+        <a href="launch-2.html" class="menu-left">Переменные</a>
+        <a href="launch-3.html" class="menu-left">Типы данных</a>
+        <a href="launch-4.html" class="menu-left">Числа</a>
+        <a href="launch-5.html" class="menu-left">Математические операции</a>
+        <a href="launch-6.html" class="menu-left">Строки</a>
+        <a href="launch-7.html" class="menu-left">Условия</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="launch-9.html" class="menu-left">Циклы</a>
+        <a href="launch-10.html" class="menu-left">Массивы</a>
+        <a href="#" class="menu-left">Объекты</a>
+        <a href="#" class="menu-left">Методы</a>
+        <a href="#" class="menu-left">Дата и время</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Массивы</h2>
+        <br>
+        <p>
+        Массив представляет собой переменную, в которой в упорядоченном виде можно хранить целый набор каких-то значений. <br>
+        Значения, которые хранит массив, называются <i>элементами</i>. Элементы разделяются между собой запятой. После этой запятой принято ставить пробелы. <br> <br>
+
+        <b>Получение элементов в массиве</b> <br> <br>
+let arr = ['a', 'b', 'c']; <br>
+console.log(arr[0]); // выведет 'a' <br>
+console.log(arr[1]); // выведет 'b' <br>
+console.log(arr[2]); // выведет 'c' <br> <br>
+Обращение к элементам массива осуществляется подобно обращениям к символам строки. Каждый элемент массива имеет свой номер: первый элемент - номер 0, второй - номер 1 и так далее. Эти номера называются <i>ключами</i> элементов массива. <br> <br>
+<b>Длина массива</b> <br>
+Длина массива находится с помощью свойства length: <br>
+let arr = ['a', 'b', 'c']; <br>
+console.log(arr.length) // выведет 3 <br> <br>
+<b>Последний элемент в массиве</b> <br>
+let arr = ['a', 'b', 'c']; <br>
+console.log(arr[arr.length - 1]) // выведет 'c' <br> <br>
+<b>Изменение элементов массива</b> <br> 
+Элементы массивов можно изменять: <br>
+let arr = ['a', 'b', 'c']; <br>
+
+arr[0] = '!'; <br>
+console.log(arr); // выведет ['!', 'b', 'c'] <br> <br>
+<b>Перезапись элементов массива</b> <br>
+Можно также прочитывать текущее значение элемента, выполнять с ним какие-то операции и записывать измененное значение обратно в этот элемент: <br>
+let arr = ['a', 'b', 'c']; <br>
+
+arr[0] = arr[0] + '!'; <br>
+arr[1] = arr[1] + '!'; <br>
+arr[2] = arr[2] + '!'; <br>
+
+console.log(arr); // выведет ['a!', 'b!', 'c!'] <br> <br>
+Предыдущий код можно переписать через оператор +=: <br>
+let arr = ['a', 'b', 'c']; <br>
+
+arr[0] += '!'; <br>
+arr[1] += '!'; <br>
+arr[2] += '!'; <br>
+
+console.log(arr); // выведет ['a!', 'b!', 'c!'] <br> <br>
+<b>Инкремент и декремент элементов массива</b> <br>
+let arr = [1, 2, 3, 4]; <br>
+
+arr[0]++; <br>
+++arr[1]; <br>
+arr[2]--; <br>
+--arr[3]; <br>
+
+console.log(arr); // выведет [2, 3, 2, 3] <br> <br>
+<b>Добавление элементов по ключам</b> <br>
+let arr = []; <br>
+
+arr[0] = 'a'; <br>
+arr[1] = 'b'; <br>
+arr[2] = 'c'; <br>
+
+console.log(arr); // выведет ['a', 'b', 'c'] <br> <br>
+<b>Можно также добавлять элементы в массив, уже заполненный данными:</b> <br>
+let arr = ['a', 'b', 'c']; <br>
+
+arr[3] = 'd'; <br>
+console.log(arr); // выведет ['a', 'b', 'c', 'd'] <br> <br>
+<b>Разреженные массивы</b> <br> 
+Если в массиве будут ключи с пропусками, то можно получить разреженный массив. <br>
+let arr = ['a', 'b', 'c']; <br>
+Добавим к этому массиву еще один элемент так, чтобы ключи имели пропуски: <br>
+arr[4] = '!'; <br>
+В результате в массиве образуется дыра, имеющая значение undefined: <br>
+console.log(arr); // выведет ['a', 'b', 'c', undefined, '!'] <br>
+console.log(arr.length); // выведет 5 <br> <br>
+<b>Ключи массивов из переменных</b> <br>
+let arr = ['a', 'b', 'c']; <br>
+let arr = ['a', 'b', 'c']; <br>
+console.log(arr[0]); // выведет 'a' <br>
+Давайте теперь ключ выводимого элемента не будем писать непосредственно в квадратных скобках, а запишем его в переменную: <br>
+let arr = ['a', 'b', 'c']; <br>
+let key = 0; // запишем ключ в переменную <br>
+Используем теперь нашу переменную для вывода соответствующего элемента: <br>
+let arr = ['a', 'b', 'c']; <br>
+let key = 0; // запишем ключ в переменную <br>
+
+console.log(arr[key]); // выведет 'a' <br>
+
+        </p>
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="block">
+            <p>8-800-700-93-29</p>
+            <p class="zvonok">Звонок по России бесплатный</p>
+            <a href="#"><img class="telegram" src="../img/icons8-телеграмма-app-48.png" alt=""></a>
+            <a href="#"><img class="img-vk" src="../img/icons8-vk-48.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+        </nav>
+        <section class="block-info">
+            <div class="block-info-text">
+                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
+            </div>
+        </section>
+        </section>
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+        <a href="start.html" class="menu-left">Введение</a>
+        <a href="launch.html" class="menu-left">Запуск программы</a>
+        <a href="launch-2.html" class="menu-left">Переменные</a>
+        <a href="launch-3.html" class="menu-left">Типы данных</a>
+        <a href="launch-4.html" class="menu-left">Числа</a>
+        <a href="launch-5.html" class="menu-left">Математические операции</a>
+        <a href="launch-6.html" class="menu-left">Строки</a>
+        <a href="launch-7.html" class="menu-left">Условия</a>
+        <a href="#" class="menu-left">Функции</a>
+        <a href="launch-9.html" class="menu-left">Циклы</a>
+        <a href="launch-10.html" class="menu-left">Массивы</a>
+        <a href="#" class="menu-left">Объекты</a>
+        <a href="#" class="menu-left">Методы</a>
+        <a href="#" class="menu-left">Дата и время</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Циклы</h2>
+        <br>
+        <p>
+            Циклы используются для того, чтобы некоторый участок кода выполнился несколько раз подряд. <br>
+            Циклы могут повторять некоторый код заданное количество раз. Каждый такой проход цикла называется <i>итерацией</i> цикла. <br>
+            В циклах часто используются специальные переменные, которые каждую итерацию увеличивают свое значение на единицу. Такие переменные называются счетчиками циклов. Счетчики используются для того, чтобы подсчитывать, сколько раз выполнился цикл. Для счетчиков принято использовать буквы i, j и k. <br> <br>
+            <b>Перебор массива циклом for-of</b> <br> <br>
+            Цикл for-of позволяет последовательно перебирать элементы массивов. <br> Синтаксис <br>
+            for (let переменная для элемента of массив) { <br>
+                /* <br>
+                    в переменную  для элемента по очереди 
+                    будут попадать элементы перебираемого массива. <br>
+                */ <br>
+            } <br>
+            let arr = [1, 2, 3, 4, 5]; <br>
+            for (let elem of arr) { <br>
+                console.log(elem); <br>
+            } <br><br>
+            <b>Перебор объекта циклом for-in</b> <br>
+            Для перебора объектов предназначен цикл for-in. <br>
+            Синтаксис <br>
+            for (let переменная для ключа in объект) { <br>
+                
+            } <br>
+            let obj = {a: 1, b: 2, c: 3}; <br>
+            for (let key in obj) { <br>
+                console.log(key); // выведет 'a', 'b', 'c' <br>
+            } <br>
+            Выведем элементы: <br>
+            for (let key in obj) { <br>
+                console.log(obj[key]); // выведет 1, 2, 3 <br>
+            } <br> <br>
+            <b>Цикл while </b> <br> <br>
+            Цикл while будет выполняться до тех пор, пока истинно выражение, переданное ему параметром. Он позволяет выполнять произвольное количество итераций. <br>
+            Синтаксис <br>
+            while ( пока выражение истинно ) { <br>
+                выполняем этот код циклически; <br>
+                в начале каждого цикла проверяем выражение 
+                    в круглых скобках <br>
+            } <br> <br>
+            Цикл закончится, когда выражение перестанет быть истинным. 
+            Выведем с помощью цикла while числа от одного до пяти: <br>
+            let i = 1; <br>
+            
+            while (i <= 5) { <br>
+                console.log(i); <br>
+                i++; <br>
+            } <br> <br>
+            Поделим заданное число на 2 столько раз, пока результат не станет меньше 10: <br>
+            let num = 500; <br>
+            
+            while (num > 10) { <br>
+                num = num / 2; <br>
+            } <br>
+            
+            console.log(num); // результат <br> <br>
+            <b>Цикл do..while</b> <br>
+            В цикле do сначала выполняется код цикла, а потом происходит проверка условия в инструкции while. И пока это условие истинно, цикл повторяется. <br>
+            let i = 1; <br>
+            
+            do{ <br>
+                console.log(i); <br>
+                i++; <br>
+            }while(i <= 5) <br> <br>
+            
+            
+            <b>Цикл for</b> <br> <br>
+            Цикл for позволяет повторить некоторый код заданное количество раз. <br>
+            Синтаксис <br>
+            for (начальные команды; условие окончания; команды после <br>
+                прохода) { <br>
+                тело цикла <br>
+            
+            } <br> <br>
+            Выведем с помощью цикла for выведем последовательно числа от 1 до 9: <br>
+            for (let i = 1; i <= 9; i++) { <br>
+                console.log(i); // выведет 1, 2... 9 <br>
+            } <br>
+            Увеличим счетчик не на 1, а на 2: <br>
+            for (let i = 1; i <= 9; i += 2) { <br>
+                console.log(i); // выведет 1, 3, 5... <br>
+            } <br>
+            Выполним обратный отсчет: <br>
+            for (let i = 10; i > 0; i--) { <br>
+                console.log(i); // выведет 10, 9, 8... <br>
+            } <br>
+            Переберём массив циклом for. <br>
+            let arr = [1, 2, 3, 4, 5]; <br>
+            Выведем элементы массива в цикле: <br>
+            for (let i = 0; i <= arr.length - 1; i++) { <br>
+                console.log(arr[i]); <br>
+            } <br>
+            Выведем элементы в обратном порядке: <br>
+            for (let i = arr.length - 1; i >= 0; i--) { <br>
+                console.log(arr[i]); <br>
+            } <br>
+            
+            <b>Инструкция break и continue</b> <br>
+            Инструкция break позволяет досрочно завершать цикл. <br>
+            for(let i=1; i <= 6; i++){ <br>
+                  
+                 if(i===4) break; <br>
+                 console.log(i); <br>
+            } <br>
+            console.log("Конец работы"); <br> <br>
+            
+            Согласно условию цикла блок цикла должен выполняться 6 раз, произвести 6 итераций. Однако поскольку в блоке цикла происходит поверка if (i===4) break;, то, когда значение переменной i достигнет 4, то данное условие прервет выполнение цикла с помощью оператора break. И цикл заершит работу. <br>
+            Существует также инструкция continue, запускающая новую итерацию цикла. <br>
+                
+                for(let i=1; i <= 6; i++){  <br>
+                  
+                if(i===4) continue; <br>
+                console.log(i); <br> <br>
+            
+            В этом случае, когда значение переменная i станет равной 4 , то выражение i===4 возвратит true, поэтому будет выполняться конструкция if(i===4) continue;. С помощью оператора continue она завершит текущую итерацию, далее идущие инструкции цикла не будут выполняться.  
+        </p>
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="block">
+            <p>8-800-700-93-29</p>
+            <p class="zvonok">Звонок по России бесплатный</p>
+            <a href="#"><img class="telegram" src="../img/icons8-телеграмма-app-48.png" alt=""></a>
+            <a href="#"><img class="img-vk" src="../img/icons8-vk-48.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
