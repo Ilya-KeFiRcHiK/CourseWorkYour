@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+        </nav>
+        <section class="block-info">
+            <div class="block-info-text">
+                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
+            </div>
+        </section>
+        </section>
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+        <a href="start.html" class="menu-left">Введение</a>
+        <a href="launch.html" class="menu-left">Запуск программы</a>
+        <a href="launch-2.html" class="menu-left">Переменные</a>
+        <a href="launch-3.html" class="menu-left">Типы данных</a>
+        <a href="launch-4.html" class="menu-left">Числа</a>
+        <a href="launch-5.html" class="menu-left">Математические операции</a>
+        <a href="launch-6.html" class="menu-left">Строки</a>
+        <a href="launch-7.html" class="menu-left">Условия</a>
+        <a href="launch-8.html" class="menu-left">Функции</a>
+        <a href="launch-9.html" class="menu-left">Циклы</a>
+        <a href="launch-10.html" class="menu-left">Массивы</a>
+        <a href="#" class="menu-left">Объекты</a>
+        <a href="#" class="menu-left">Методы</a>
+        <a href="#" class="menu-left">Дата и время</a>
+        <a href="#" class="menu-left">Введение в DOM</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Функции</h2>
+        <br>
+        <p>
+        Функции в JavaScript - это блоки кода, которые могут быть вызваны для выполнения определенных задач. Они представляют собой участки кода, которые могут принимать параметры (входные данные для описания функции), выполнять определенные операции и возвращать результат (выходные данные). 
+        <br><br>
+        Любая функция в JavaScript является объектом, а следовательно может быть передана в виде аргумента (входные данные для выполнения функции) другой функции, быть возвращена в качестве результата работы другой функции и присвоена в качестве значения переменной или свойства объекта.
+        <br><br>
+        Функция создается с помощью команды function. Далее через пробел следует имя функции, круглые скобки, а затем фигурные скобки, в которых пишется какой-то код:
+        <br>
+        <div class="square-1">
+            function func() { <br> <br>
+                // какой-то код <br> <br>
+            }            
+        </div>
+        <br><br>
+        Сделаем функцию с именем func, которая при своем вызове будет выводить алертом восклицательный знак:
+        <br>
+        <div class="square-1">
+            function func() { <br> <br>
+                console.log('!'); <br> <br>
+            }            
+        </div>
+        <br><br>
+        Вызовем нашу функцию. Для этого необходимо написать ее имя и круглые скобки:
+        <br>
+        <div class="square-1">
+            function func() { <br><br>
+                console.log('!');<br><br>
+            }            
+        </div>
+        <br>
+        <span style="color: #7333bb;">// Вызываем нашу функцию:</span> <br><br>
+        <span style="color: rgb(0, 0, 184)">func();</span> <span style="color: #7333bb">// выведет '!' </span>
+        <br><br><br>
+        Параметры функций <br> <br>
+        <b>Функции могут принимать параметрами данные.</b> <br>
+        <div class="square-1">
+            <span style="color: rgb(0, 0, 184);">
+              function func(num) { <br>
+	        <br>
+            }   
+            </span>
+                   
+        </div>
+        <b>Пусть функция возводила переданное число в квадрат:</b> <br>
+        <div class="square-1">
+            <span style="color: rgb(0, 0, 184);">
+             function func(num) { <br> <br>
+                console.log(num ** 2); <br> <br>
+            }   
+            </span>           
+        </div>
+        <b>Проверим работу функции, вызвав ее с различными числами: </b><br>
+        <div class="square-1">
+            <span style="color: rgb(0, 0, 184);">func(3);</span> <span style="color: #7333bb;">// выведет 9</span> <br> <br>
+            <span style="color: rgb(0, 0, 184);">func(4);</span> <span style="color: #7333bb;">// выведет 16</span> <br> <br>
+        </div>
+        <b>Функция может принимать не один параметр, а несколько.</b> <br>
+        <div class="square-1">
+            <span style="color: rgb(0, 0, 184);">
+             function func(num1, num2) { <br> <br>
+                console.log(num1 + num2); <br> <br>
+            }    
+            </span>            
+        </div>
+        <b>Проверим работу нашей функции:</b> <br>
+        <div class="square-1">
+            <span style="color: rgb(0, 0, 184);">func(3, 4);</span> <span style="color: #7333bb;">// выведет 7  </span>        
+        </div>
+        <b>В параметры функции можно передавать переменные.</b> <br>
+        <div class="square-1">
+            function func(num) { <br> <br>
+                console.log(num ** 2); <br> <br>
+            }            
+        </div>
+        <b>Пусть у нас есть переменная:</b> <br> <br> <br>
+        <span style="color: rgb(0, 0, 184);">let param</span> = <span style="color: black;">2</span>; <br> <br> <br>
+        <b>Вызовем нашу функцию, передав ей параметром число из переменной:</b> <br> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(0, 0, 184);">let param</span> = <span style="color: black;">2</span>; <br> <br>
+        <span style="color: rgb(0, 0, 184);">func(param)</span>; 
+        </div>
+        <b>Возврат значений.</b> <br> <br>
+        <b>У нас есть функция, которая выводит в консоль квадрат переданного числа:</b> <br> <br> <br>
+        <div class="square-1">
+            function func(num) { <br> <br>
+                console.log(num ** 2); <br> <br>
+            }            
+        </div>
+        <b>Пусть мы хотим не выводить значение в консоль, а записать в какую-нибудь переменную, вот так:</b> <br> <br> <br>
+        <div class="square-1">
+            <span style="color: rgb(0, 0, 184);">let res = func(4);</span> <span style="color: #7333bb;">// в переменной res теперь 16</span>
+        </div>
+        <b>Для этого в JavaScript существует специальная инструкция return, которая позволяет указать значение, которое возвращает функция.
+        Перепишем нашу функцию так, чтобы она не выводила результат в консоль, а возвращала его в переменную:</b>
+        <div class="square-1">
+            function func(num) { <br> <br>
+                return num ** 2; <br> <br>
+            }            
+        </div>
+        <b>Вызовем нашу функцию, записав ее ответ в переменную:</b> <br> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(0, 0, 184)">let res = func(4);</span> <span style="color: #7333bb;">// в переменную запишется 16</span> <br> <br>
+        <span style="color:rgb(0, 0, 184)">Выведем данные в консоль</span> <br> <br>
+        <span style="color: rgb(0, 0, 184);">let res = func(4);</span>  
+        <span style="color: rgb(0, 0, 184);">console.log(res);</span> <span style="color: #7333bb;">// выведет 16 </span>
+        </div>
+        <b>Цикл и return</b><br> <br>
+        <b>Пример 1:</b> <br> <br>
+        <b>Пусть у нас есть функция, возвращающая сумму чисел от 1 до 5:</b>
+         <div class="square-1">
+            function func() { <br> <br>
+                let sum = 0; <br> <br>
+                
+                for (let i = 1; i <= 5; i++) { <br> <br>
+                    sum += i; <br> <br>
+                } <br> <br>
+                
+                return sum; <br> <br>
+            }
+            
+            let res = func(); <br> <br>
+            console.log(res); // выведет 15 <br> <br>
+         </div>
+         <b>пример 2:</b> <br> <br>
+         <b>Пусть теперь мы расположим return внутри цикла.</b>
+         <div class="square-1">
+            function func() { <br> <br>
+                let sum = 0; <br> <br>
+                
+                for (let i = 1; i <= 5; i++) { <br> <br>
+                    sum += i; <br> <br>
+                    return sum; <br> <br>
+                } <br> <br>
+            } <br> <br>
+            <span style="color: rgb(0, 0, 184);">let res = func();</span> <br>
+            <span style="color: rgb(0, 0, 184);">console.log(res);</span>
+         </div>
+
+         <b>Цикл прокрутится лишь одну итерацию и произойдет автоматический выход из функции (ну и заодно из цикла). А за одну итерацию цикла в переменной sum окажется лишь число 1, а не вся нужная сумма.</b> <br> <br>
+         <b>Пример 3:</b> <br>
+         <div class="square-1">
+         Пусть функция, которая вычисляет, сколько целых чисел, начиная с 1, нужно сложить, чтобы результат был больше 100: <br> <br>
+         function func() { <br> <br>
+	     let sum = 0; <br> <br>
+	     let i = 1; <br> <br>
+	
+	     while (true) { // бесконечный цикл <br> <br>
+		 sum += i; <br> <br>
+		
+		 if (sum >= 100) { <br> <br>
+			return i; // цикл крутится пока не выйдет тут <br> <br>
+		 } <br> <br>
+		
+		 i++; <br> <br>
+	 } <br>
+} <br>
+console.log( func() );
+</div>
+<b>Выбор имени функции</b> <br>
+Функция – это действие. Поэтому имя функции обычно является глаголом. Оно должно быть кратким, точным и описывать действие функции, чтобы программист, который будет читать код, получил верное представление о том, что делает функция. <br> <br>
+Например, функции, начинающиеся с "show" обычно что-то показывают. <br>
+Функции, начинающиеся с… <br><br>
+•	"get…" – возвращают значение, <br> <br>
+•	"calc…" – что-то вычисляют, <br> <br>
+•	"create…" – что-то создают, <br> <br>
+•	"check…" – что-то проверяют и возвращают логическое значение, и т.д. <br> <br>
+        </p>
+    <b>Стрелочные функции (Аrrow Function)</b> <br> <br>
+    <b>Синтаксис:</b> <br> <br>
+    (параметры) => { <br> <br>
+        // тело функции <br> <br>
+      } <br> <br>
+      Стрелочная функция записывается намного короче, чем обычная. В самой простой записи ключевое слово function и фигурные скобки не требуются. <br> <br>
+
+      Обычная функция <br> <br>
+let func1 = function(num1, num2) { <br> <br>
+	let result = num1 * num2; <br> <br>
+	return result; <br> <br>
+} <br> <br> <br>
+
+let func2 = (num1, num2) => { <br> <br>
+	let result = num1 * num2; <br> <br>
+	return result; <br>
+} <br> <br>
+
+<b>Стрелочная функция</b> <br> <br>
+let func1 = function(num1, num2) { <br> <br>
+	return num1 * num2 <br> <br>
+} <br> <br>
+
+let func2 = (num1, num2) => num1 * num2; <br> <br>
+
+Особое преимущество стрелочные функции имеют в качестве коллбэков. Давайте посмотрим на примере, на сколько упрощается код в таком случае. Пусть для примера у нас есть следущая функция filter: <br>
+<br>
+function filter(arr, callback) { <br> <br>
+	let res = []; <br> <br>
+
+	for (let elem of arr) { <br> <br>
+		if ( callback(elem) === true ) { <br> <br>
+			res.push(elem); <br> <br>
+		} <br> <br>
+	} <br> <br>
+	
+	return res; <br> <br>
+}
+<br> <br>
+Вызовем эту функцию, передав ей коллбэк: <br> <br>
+let result = filter([1, 2, 3, 4, 5], function(elem) { <br> <br>
+	if (elem % 2 === 0) { <br> <br>
+		return true; <br> <br>
+	} else { <br> <br>
+		return false; <br> <br>
+	} <br> <br>
+}); <br>
+Анонимные функции
+Функции также могут быть созданы как выражения. В этом случае функция называется анонимной, потому что она не имеет имени. Синтаксис следующий:
+let имя_переменной = function(параметры) {
+  // тело функции
+}
+let printMessage = function(message) {  console.log(message);
+}
+Вызов этой функции будет выглядеть так:
+printMessage('Hello World') // выведет Hello World
+Рекурсивные функции
+function fac(n) {
+  if (n < 2) {
+    return 1
+  } else {
+    return n * fac(n - 1)
+  }
+}
+console.log(fac(3))
+// 6
+
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="block">
+            <p>8-800-700-93-29</p>
+            <p class="zvonok">Звонок по России бесплатный</p>
+            <a href="#"><img class="telegram" src="../img/icons8-телеграмма-app-48.png" alt=""></a>
+            <a href="#"><img class="img-vk" src="../img/icons8-vk-48.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

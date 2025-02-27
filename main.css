@@ -28,7 +28,6 @@
     width: 350px;
     font-size: 20px;
     display: flex;
-    height: 1875px;
     background: #f1efef
 }
 
@@ -57,7 +56,7 @@ b{
     font-size: 20px;
 }
 .table{
-    border-color: black;
+    border-color: rgb(219, 219, 219);
 }
 
 
@@ -81,8 +80,6 @@ b{
     height: 100px;
 }
 
-
-
 .menu-left{
     margin-left: 30px;
     color: #053cb4;
@@ -102,6 +99,7 @@ b{
 
 .square-1{
     color: #053cb4;
+    border: 2px solid rgb(219, 219, 219);
 }
 
 .img{
@@ -150,6 +148,10 @@ p{
     margin-top: -30px;
 }
 
+tr{
+    border: 2px solid rgb(219, 219, 219);
+}
+
 p{
     
     text-align: justify;
@@ -158,6 +160,10 @@ p{
 .b-bold{
     font-weight: normal;
     color: black;
+}
+
+.img-doctype{
+    border: 2px solid rgb(219, 219, 219);
 }
 
 .block-info-p{
