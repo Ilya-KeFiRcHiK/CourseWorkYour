@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
+        </nav>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Дата и Время</h2>
+        <br>
+        <p>
+            Метод call позволяет вызвать функцию с заданным контекстом. Первым параметром метода следует указывать контекст функции, а остальными параметрами - параметры функции.
+            Синтаксис
+            функция.call(контекст, параметр1, параметр2...);
+            Пусть у нас есть инпут:
+            <input id="elem" value="text">
+            Пусть дана также функция, принимающая три параметра:
+            function func(param1, param2, param3) {
+                console.log(this.value + param1 + param2 + 
+                    param3); 
+            }
+            Давайте вызовем нашу функцию так, чтобы this внутри функции был равен нашему инпуту, и при этом передав ей параметрами числа 1, 2 и 3:
+            let elem = document.querySelector('#elem');
+            func.call(elem, 1, 2, 3);
+            Пусть функция не принимает параметров:
+            function func() {
+                console.log(this.value);
+            }
+            В этом случае при вызове этой функции через call достаточно передать только первый параметр с контекстом:
+            let elem = document.querySelector('#elem');
+            func.call(elem);
+            Метод bind 
+            Метод bind привязать контекст к функции. В качестве первого параметра следует передавать контекст, а последующими параметрами - параметры функции. Метод возвращает новую функцию, внутри которой this будет равным переданному контексту.
+            Синтаксис
+            функция.bind(контекст, параметр1, параметр2...);
+            Пусть у нас есть инпут:
+            <input id="elem" value="text">
+            Пусть ссылка на этот инпут записана в переменную elem:
+            let elem = document.querySelector('#elem');
+            Пусть у нас также есть следующая функция func:
+            function func(param1, param2) {
+                console.log(this.value + param1 + param2);
+            }
+            Давайте с помощью bind сделаем новую функцию, которая будет копией функции func, но this в ней всегда будет равен elem:
+            let newFunc = func.bind(elem);
+            Теперь в переменной newFunc лежит функция. Давайте вызовем ее, передав в первый параметр '1', а во второй '2':
+            newFunc('1', '2');
+            Давайте соберем все вместе:
+            let elem = document.getElementById('elem');
+            
+            function func(param1, param2) {
+                console.log(this.value + param1 + param2);
+            }
+            
+            let newFunc = func.bind(elem);
+            newFunc('1', '2'); // выведет 'text12'
+            Не обязательно записывать результат работы bind в новую функцию newFunc, можно просто перезаписать func:
+            let func = func.bind(elem);
+            
+            Метод apply 
+            Метод apply позволяет вызвать функцию с заданным контекстом. Первым параметром метода следует указывать контекст функции, а вторым - массив параметров функции.
+            Синтаксис
+            функция.apply(контекст, массив параметров);
+            Пусть у нас есть инпут:
+            <input id="elem" value="text">
+            Пусть дана также функция, принимающая три параметра:
+            function func(param1, param2, param3) {
+                console.log(this.value + param1 + param2 + 
+                    param3); 
+            }
+            Давайте вызовем нашу функцию так, чтобы this внутри функции был равен нашему инпуту, и при этом передав ей параметрами числа 1, 2 и 3:
+            let elem = document.querySelector('#elem');
+            func.apply(elem, [1, 2, 3]);
+            Пусть функция не принимает параметров:
+            function func() {
+                console.log(this.value);
+            }
+            В этом случае при вызове этой функции через apply достаточно передать только первый параметр с контекстом:
+            let elem = document.querySelector('#elem');
+            func.apply(elem);
+            
+        </p>
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="block">
+            <p>8-800-700-93-29</p>
+            <p class="zvonok">Звонок по России бесплатный</p>
+            <a href="#"><img class="telegram" src="../img/icons8-телеграмма-app-48.png" alt=""></a>
+            <a href="#"><img class="img-vk" src="../img/icons8-vk-48.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

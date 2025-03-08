@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
+        </nav>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Методы массивов</h2>
+        <br>
+        <p>
+
+<b>Метод рush</b> <br>
+С помощью специального метода push можно добавлять элементы в конец массива. <br>
+<div class="square-1">
+let arr = [];<br>
+Добавим ему в конец три элемента:<br>
+arr.push('a');<br>
+arr.push('b');<br>
+arr.push('c');<br>
+console.log(arr); // выведет ['a', 'b', 'c']<br>
+</div>
+<br>
+<b>Метод slice</b><br><br>
+<div class="b-l4">
+Метод slice вырезает и возвращает указанную часть массива. Сам массив при этом не изменяется. <br> <br>  <br>
+</div>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.slice(откуда отрезать, [докуда 
+	отрезать]);     
+</div> <br>
+<div class="b-l4">
+Вырежем с первого элемента до конца массива. Для этого второй параметр не задаем:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+let sub = arr.slice(1);<br>
+console.log(sub);<br>
+Результат выполнения кода:br
+['b', 'c', 'd', 'e']   <br> 
+</div><br>
+<div class="b-l4">
+Вырежем элементы со второго по предпоследний (-1 указывает на последний элемент и он не включится в извлеченную часть):    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+let sub = arr.slice(1, -1);<br>
+console.log(sub);<br>
+Результат выполнения кода:<br>
+['b', 'c', 'd'] <br>   
+</div><br>
+
+<b>Метод splice</b><br><br>
+<div class="b-l4">
+Метод splice удаляет или добавляет элементы в массив. Можно только удалять элементы, только добавлять или делать и то и другое <br><br> одновременно.     
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.splice(откуда удаляем, сколько удаляем, [вставить], 
+	[вставить]...);     
+</div><br>
+<div class="b-l4">
+Выведем массив удаленных элементов:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+let del = arr.splice(1, 3);<br>
+console.log(del);<br>
+Результат выполнения кода:<br>
+['b', 'c', 'd']<br>
+</div><br>
+<div class="b-l4">
+Сначала удалим элемент с номером 2, а потом вместо него вставим еще три новых элемента:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+arr.splice(2, 1, '1', '2', '3');<br>
+console.log(arr);<br>
+Результат выполнения кода:<br>
+['a', 'b', '1', '2', '3', 'd', 'e']<br>    
+</div><br>
+<div class="b-l4">
+Давайте удалим предпоследний элемент:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+arr.splice(-2, 1);<br>
+console.log(arr);<br>
+Результат выполнения кода:<br>
+['a', 'b', 'c', 'e']<br>    
+</div><br>
+
+<b>Метод shift</b><br><br>
+<div class="b-l4">
+Метод shift удаляет первый элемент из массива. При этом исходный массив изменяется, а результатом метода возвращается удаленный <br><br> элемент.    
+</div><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.shift();    
+</div><br>
+<div class="b-l4">
+Удалим первый элемент из массива:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+arr.shift();<br>
+console.log(arr);<br>
+Результат выполнения кода:<br>
+['b', 'c', 'd', 'e']<br> 
+</div><br>
+
+<div class="b-l4">
+Удалим первый элемент из массива и выведем его на экран:    
+</div><br>
+<div class="square-1">
+let arr  = ['a', 'b', 'c', 'd', 'e'];<br>
+let elem = arr.shift();<br>
+console.log(elem);<br>
+Результат выполнения кода:<br>
+'a'<br>
+</div><br>
+
+<b>Метод pop</b><br><br>
+<div class="b-l4">
+Метод pop удаляет последний элемент из массива. При этом исходный массив изменяется, а результатом метода возвращается удаленный <br><br> элемент.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.pop();    
+</div><br>
+<div class="b-l4">
+ Удалим из массива последний элемент:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+arr.pop();<br>
+console.log(arr);<br>
+Результат выполнения кода:<br>
+['a', 'b', 'c', 'd'] <br>   
+</div><br>
+
+<div class="b-l4">
+Выведем последний элемент, который был удален из исходного массива:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+let del = arr.pop();<br>
+console.log(del);<br>
+Результат выполнения кода:<br>
+'e'<br>
+</div><br>
+
+<b>Метод unshift </b><br><br>
+<div class="b-l4">
+Метод unshift добавляет неограниченное количество новых элементов в начало массива. При этом исходный массив изменяется, а <br><br> результатом возвращается новая длина массива.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.unshift(элемент, элемент, элемент...);    
+</div><br>
+<div class="b-l4">
+В начало массива добавим еще два новых элемента и выведем измененный массив:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+arr.unshift('1', '2');<br>
+console.log(arr);<br>
+Результат выполнения кода:<br>
+['1', '2', 'a', 'b', 'c', 'd', 'e']<br>
+</div><br>
+<div class="b-l4">
+Добавим два новых элемента и выведем новую длину массива:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br>
+let length = arr.unshift('1', '2');<br>
+console.log(length);<br>
+Результат выполнения кода:<br>
+7<br>
+</div><br>
+
+<b>Метод indexOf </b><br><br>
+<div class="b-l4">
+Метод indexOf осуществляет поиск элемента в массиве. В первом параметре указываем элемент для поиска. Метод возвращает номер <br><br> первого найденного элемента, либо -1, если такого элемента нет. Второй необязательный параметр метода задает позицию, с которой <br><br> следует начинать поиск.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.indexOf(элемент, [откуда начинать]);    
+</div><br>
+<div class="b-l4">
+Давайте найдем позицию первой тройки в массиве:    
+</div><br>
+<div class="square-1">
+let arr = [1, 2, 3, 3, 3, 4, 5];<br>
+let res = arr.indexOf(3);<br>
+console.log(res);<br>
+Результат выполнения кода:<br>
+2     
+</div><br>
+<div class="b-l4">
+Пусть теперь проверяемого элемента нет в массиве:    
+</div><br>
+<div class="square-1">
+let arr = [1, 2, 3, 4, 5];<br>
+let res = arr.indexOf(6);<br>
+console.log(res);<br>
+Результат выполнения кода:<br>
+-1    
+</div><br>
+
+<b>Метод concat </b><br><br>
+<div class="b-l4">
+Метод concat соединяет указанные строки. Количество строк для объединения не ограничено. По сути действие этого метода аналогично <br><br> операции '+' для слияния строк.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+строка.concat(еще строка, и еще строка, и еще...);    
+</div><br>
+<div class="b-l4">
+Давайте с помощью метода concat сольем три строки в одну:    
+</div><br>
+<div class="square-1">
+let str1 = 'a';<br>
+let str2 = 'b';<br>
+let str3 = 'c';<br>
+let res = str1.concat(str2, str3);<br>
+console.log(res);<br>
+Результат выполнения кода:<br>
+'abc'    
+</div> <br>
+<div class="b-l4">
+Можно применить метод к пустой строке. В этом случае все сливаемые строки передадутся параметрами метода:    
+</div><br>
+<div class="square-1">
+let str1 = 'a';<br>
+let str2 = 'b';<br>
+let str3 = 'c';<br>
+let res = ''.concat(str1, str2, str3);<br>
+console.log(res);<br>
+Результат выполнения кода:<br>
+'abc'
+</div><br>
+
+<b>Метод forEach </b><br><br>
+<div class="b-l4">
+Метод forEach позволяет последовательно перебрать все элементы массива. Метод в параметре получает функцию, которая выполнится <br><br> для каждого элемента массива.
+В эту функцию можно передавать три параметра. Если эти параметры есть (они не обязательны), то в <br><br> первый автоматически попадет элемент массива, во второй попадет его номер в массиве (индекс), а в третий - сам массив.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.forEach(function(элемент, индекс, массив) {<br>
+	код, который выполнится для всех элементов<br>
+});    
+</div><br>
+<div class="b-l4">
+Давайте выведем элементы и их номера в консоль:    
+</div><br>
+<div class="square-1">
+let arr = ['a', 'b', 'c', 'd', 'e'];<br><br>
+
+arr.forEach(function(elem, ind) {<br>
+	console.log(elem, ind);<br>
+});<br><br>
+
+</div>
+<div class="b-l4">
+Давайте найдем сумму элементов массива:    
+</div><br>
+<div class="square-1">
+let arr = [1, 2, 3, 4, 5];<br>
+let sum = 0;<br><br>
+
+arr.forEach(function(elem) {<br>
+	sum += elem;<br>
+});<br><br>
+
+console.log(sum);<br>
+Результат выполнения кода:<br>
+15    
+</div><br>
+
+<b>Метод map</b> <br><br>
+<div class="b-l4">
+Метод map позволяет применить заданную функцию для каждого элемента массива. При этом метод не изменяет исходный массив, а <br><br> возвращает измененный. <br><br><br>
+Метод в параметре получает функцию, которая выполнится для каждого элемента массива. То, что вернет эта функция через return для <br><br> элемента массива, станет новым значением этого элемента. <br><br><br> 
+В функцию можно передавать 3 параметра. Если эти параметры есть (они не обязательны), то в первый автоматически попадет <br><br> элемент массива, во второй попадет его номер в массиве (индекс), а в третий - сам массив.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+let новый массив = массив.map(function(элемент, индекс, массив) {<br>
+	код<br>
+	return измененный элемент;<br>
+});     
+</div><br>
+<div class="b-l4">
+Создадим массив, каждый элемент которого вдвое больше соответствующего элемента начального массива:    
+</div><br>
+<div class="square-1">
+let arr = [1, 2, 3, 4, 5]; <br>
+let res = arr.map(function(elem) {<br>
+return elem * 2;<br>
+});<br>
+console.log(res);<br>
+Результат выполнения кода:<br>
+[2, 4, 6, 8, 10]
+</div><br>
+<div class="b-l4">
+Создадим массив, каждый элемент которого получается так - значение элемента умножается на его порядковый номер в массиве:    
+</div><br>
+<div class="square-1">
+let arr = [1, 2, 3, 4, 5];<br>
+let res = arr.map(function(elem, index) {<br>
+	return elem * index;<br>
+});<br>
+console.log(res);<br>
+Результат выполнения кода:<br>
+[0, 2, 6, 12, 20]    
+</div><br>
+<div class="b-l4">
+При необходимости в третий параметр можно передать сам массив:    
+</div><br>
+<div class="square-1">
+let arr = [1, 2, 3, 4, 5];<br>
+let res = arr.map(function(elem, index, arr) {<br>
+	тут будет доступен массив arr<br>
+});<br>    
+</div><br>
+<div class="b-l4">
+Метод map можно использовать и для перебора многомерных массивов. <br><br> Пусть, к примеру, дан вот такой массив:    
+</div><br>
+<div class="square-1">
+let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];    
+</div><br>
+<div class="b-l4">
+Давайте переберем этот массив через map и выведем его элементы в консоль:    
+</div><br>
+<div class="square-1">
+let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];<br>
+
+let result = arr.map(function(elem) {<br>
+	console.log(elem);<br>
+});<br>
+В результате console.log выведет [1, 2, 3], потом [4, 5, 6], потом [7, 8, 9].    
+</div> <br>
+<div class="b-l4">
+Как вы видите, в переменную elem попадают подмассивы. Давайте теперь применим метод map к каждому подмассиву и возведем <br><br> каждый его элемент в квадрат:    
+</div><br>
+<div class="square-1">
+let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];<br>
+
+let result = arr.map(function(elem) {<br>
+	return elem.map(function(num) {<br>
+		return num * num;<br>
+	});<br>
+});<br>
+console.log(result);  
+</div><br>
+
+<b>Метод filter </b><br><br>
+<div class="b-l4">
+Метод filter позволяется отфильтровать элементы массива, оставив только подходящие под определенное условие элементы. Метод в <br><br> параметре получает функцию, которая выполнится для каждого элемента массива. Своим результатом метод возвращает новый массив, в <br><br> который войдут только те элементы, для которых переданная функции вернет true.<br><br><br>
+В функцию можно передавать три параметра. Если эти параметры есть (они не обязательны), то в первый автоматически попадет элемент <br><br> массива, во второй попадет его номер в массиве (индекс), а в третий - сам массив.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+let новый массив = массив.filter(function(элемент, индекс, массив) {<br>
+	код<br>
+	return true или false<br>
+});    
+</div><br>
+<div class="b-l4">
+Давайте отфильтруем массив, оставив в нем только положительные числа:    
+</div><br>
+<div class="square-1">
+let arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];<br>
+
+let res = arr.filter(function(elem) {<br>
+	if (elem >= 0) {<br>
+		return true;<br>
+	} else {<br>
+		return false;<br>
+	}<br>
+});<br>
+
+console.log(res);<br>
+Результат выполнения кода:<br>
+[5, 1, 1, 3, 4]    
+</div><br>
+<div class="b-l4">
+Сократим код, воспользовавшись стрелочной функцией:    
+</div><br>
+<div class="square-1">
+let arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];<br>
+
+let res = arr.filter(elem => {<br>
+	if (elem >= 0) {<br>
+		return true;<br>
+	} else {<br>
+		return false;<br>
+	}<br>
+});<br>
+
+console.log(res);<br>
+Результат выполнения кода:<br>
+[5, 1, 1, 3, 4]    
+</div><br>
+<div class="b-l4">
+Сократим код, воспользовавшись сокращением логических операций:    
+</div><br>
+<div class="square-1">
+let arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];<br>
+
+let res = arr.filter(elem => {<br>
+	return elem >= 0;<br>
+});<br>
+
+console.log(res);<br>
+Результат выполнения кода:<br>
+[5, 1, 1, 3, 4]     
+</div><br>
+<div class="b-l4">
+Сократим код, воспользовавшись особенностями стрелочных функций:    
+</div><br>
+
+<div class="square-1">
+let arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];<br>
+let res = arr.filter(elem => elem > 0);<br>
+
+console.log(res);<br>
+Результат выполнения кода:<br>
+[5, 1, 1, 3, 4]    
+</div><br>
+<div class="b-l4">
+При необходимости в третий параметр можно передать сам массив:    
+</div><br>
+<div class="square-1">
+let res = arr.filter(function(elem, index, arr) {<br>
+	тут будет доступен массив arr<br>
+});    
+</div><br>
+
+<b>Метод sort</b> <br><br>
+<div class="b-l4">
+Метод sort производит сортировку массива в лексикографическом порядке и возвращает уже измененный массив. Необязательным <br><br> параметром можно указать собственную функцию для сортировки.    
+</div><br><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.sort([функция]);    
+</div><br>
+<div class="b-l4">
+Давайте посортируем массив:    
+</div><br>
+<div class="square-1">
+let arr = ['d', 'b', 'a', 'c'];<br>
+console.log(arr.sort());<br>
+Результат выполнения кода:<br>
+['a', 'b', 'c', 'd']    
+</div><br>
+<div class="b-l4">
+Давайте отсортируем массив с числами:    
+</div><br>
+<div class="square-1">
+let arr = [4, 1, 7, 2];<br>
+console.log(arr.sort());<br>
+Результат выполнения кода:<br>
+[1, 2, 4, 7]    
+</div><br>
+<div class="b-l4">
+Теперь давайте отсортируем массив с помощью функции, в которой пропишем условие - если первый параметр больше второго, то его <br><br> переставляем (для этого в return любое положительное число). В обратном случае перестановка не требуется и мы указываем 0 или любое <br><br> отрицательное число:    
+</div><br>
+<div class="square-1">
+let arr = [1, 123, 2, 4, 111, 7];<br>
+
+arr.sort(function(a, b) {<br>
+	if (a > b) {<br>
+		return 1;<br>
+	} else {<br>
+		return -1;<br>
+	}<br>
+});<br>
+
+console.log(arr);<br>
+Результате выполнения кода:<br>
+[1, 2, 4, 7, 111, 123]    
+</div><br>
+<div class="b-l4">
+Давайте для удобства сократим код в нашей функции из предыдущего примера:    
+</div><br>
+<div class="square-1">
+let arr = [1, 123, 2, 4, 111, 7];<br>
+
+arr.sort(function(a, b) {<br>
+	return a - b;<br>
+});<br>
+
+console.log(arr);<br>
+Результате выполнения кода:<br>
+[1, 2, 4, 7, 111, 123]    
+</div><br>
+<div class="b-l4">
+А теперь с помощью функции отсортируем массив в порядке убывания:    
+</div><br>
+<div class="square-1">
+let arr = [1, 123, 2, 4, 111, 7];<br>
+
+arr.sort(function(a, b) {<br>
+	return b - a;<br>
+});<br>
+
+console.log(arr);<br>
+Результате выполнения кода:<br>
+[123, 111, 7, 4, 2, 1]    
+</div><br>
+<div class="b-l4">
+Давайте отсортируем массив объектов по ключу 'one' в порядке возрастания:    
+</div><br>
+<div class="square-1">
+    let arr = [<br>
+	{one: 1, two: 2},<br>
+	{one: 7, two: 1},<br>
+	{one: 3, two: 3}<br>
+];<br>
+arr.sort(function(a, b) {<br>
+	return a.one - b.one;<br>
+});<br>
+
+console.log(arr);<br>
+Результате выполнения кода:<br>
+[<br>
+	{one: 1, two: 2},<br>
+	{one: 3, two: 3},<br>
+	{one: 7, two: 1}<br>
+]
+</div><br>
+<div class="b-l4">
+Давайте проверим изменился ли массив после применения метода sort:    
+</div><br>
+<div class="square-1">
+let arr = ['b', 'a', 'd', 'c'];<br>
+let res = arr.sort();<br>
+
+console.log(arr);<br>
+Результат выполнения кода:<br>
+['a', 'b', 'c', 'd']    
+</div><br>
+
+<b>Метод reduce</b><br><br>
+<div class="b-l4">
+Метод reduce сворачивает массив к одному значению (редуцирует). К примеру, с помощью этого метода можно легко найти сумму <br><br> элементов массива (то есть массив сведется к одному значению - к сумме элементов). <br><br><br>
+Первым параметром метод reduce получает функцию, которая последовательно выполнится для каждого элемента массива, начиная с <br><br> первого. В эту функцию можно передавать 4 параметра. Если эти параметры есть (они не обязательны), то в первый автоматически <br><br> попадет промежуточный результат, во второй попадет элемент массива, в третий - его номер в массиве (индекс), а в четвертый - сам <br><br> массив. <br><br><br>
+Промежуточный результат - это переменная, в которой будет накапливаться то значение, которое вернет метод reduce, когда переберет <br><br> все элементы массива. К примеру, туда последовательно можно накапливать сумму элементов массива: сначала положить первый <br><br> элемент, при следующем проходе цикла уже сумму первого элемента и второго, при следующем проходе - сумму первого, второго <br><br> и третьего. И так, пока массив не закончится. Функция, которую принимает reduce, должна возвращать новое значение промежуточного <br><br> результата. <br><br><br>
+Вторым параметром метода reduce указывается начальное значение промежуточного результата. Если его не указать, то оно будет равно <br><br> первому элементу массива, а обработка элементов начнется со второго элемента. <br><br>
+</div><br>
+
+<b>Синтаксис</b><br><br>
+<div class="square-1">
+массив.reduce(function(промежуточный результат, элемент, индекс, массив) {<br>
+	return новый промежуточный результат;<br>
+}, начальное значение);    
+</div><br>
+<div class="b-l4">
+Найдем сумму элементов массива:    
+</div><br>
+<div class="square-1">
+let arr = [1, 2, 3, 4, 5, 6];<br>
+
+let res = arr.reduce(function(sum, elem) {<br>
+	return sum + elem;<br>
+}, 0);<br>
+
+console.log(res);<br>
+Результат выполнения кода:<br>
+21    
+</div><br>
+<div class="b-l4">
+Давайте найдем сумму всех положительных чисел массива:    
+</div><br>
+<div class="square-1">
+let arr = [1, -2, -3, 4, 5, -6];<br>
+
+let res = arr.reduce(function(sum, elem) {<br>
+	if (elem >= 0) {<br>
+		return sum + elem;<br>
+	} else {<br>
+		return sum;<br>
+	}<br>
+}, 0);<br>
+
+console.log(res);<br>
+Результат выполнения кода:<br>
+10    
+</div>
+            </p>    
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="block">
+            <p class="telefon">8-800-700-93-29</p>
+            <p class="zvonok">Звонок по России бесплатный</p>
+            <a href="#"><img class="telegram" src="../img/icons8-телеграмма-app-48.png" alt=""></a>
+            <a href="#"><img class="img-vk" src="../img/icons8-vk-48.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

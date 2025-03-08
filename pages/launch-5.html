@@ -1,6 +1,4 @@
- 
- 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,119 +13,197 @@
             <a href="#" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
         </nav>
-        <section class="block-info">
-            <div class="block-info-text">
-                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
-            </div>
-        </section>
-        </section>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
     </header>
     <main class="main">
     <div class="block-left">
         <ul>
-        <a href="start.html" class="menu-left">Введение</a>
-        <a href="launch.html" class="menu-left">Запуск программы</a>
-        <a href="launch-2.html" class="menu-left">Переменные</a>
-        <a href="launch-3.html" class="menu-left">Типы данных</a>
-        <a href="launch-4.html" class="menu-left">Числа</a>
-        <a href="launch-5.html" class="menu-left">Математические операции</a>
-        <a href="launch-6.html" class="menu-left">Строки</a>
-        <a href="launch-7.html" class="menu-left">Условия</a>
-        <a href="launch-8.html" class="menu-left">Функции</a>
-        <a href="launch-9.html" class="menu-left">Циклы</a>
-        <a href="launch-10.html" class="menu-left">Массивы</a>
-        <a href="#" class="menu-left">Объекты</a>
-        <a href="#" class="menu-left">Методы</a>
-        <a href="#" class="menu-left">Дата и время</a>
-        <a href="#" class="menu-left">Введение в DOM</a>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
         </ul>
         
     </div>
     <div class="block-right">
-        <h2 class="menu-title">Математические операции</h2>
+        <h2 class="menu-title">Строки</h2>
         <br>
         <p>
-        <b>Сложение:</b> <br>
-        let А= 1 + 2;<br>
-        alert(А); // выведет 3 <br>
-        <b>Вычитание:</b> <br>
-        let В = 3 - 2;<br>
-        alert(В); // выведет 1 <br>
-        <b>Умножение:</b> <br>
-        let С = 3 * 2; <br>
-        alert(c); // выведет 6 <br>
-        <b>Деление:</b> <br>
-        let D= 4 / 2; <br>
-        alert(d); // выведет 2 <br>
-        <b>Возведение в степень:</b> <br>
-        2 ** 2 // 4 <br>
-        let А = 2 <br>
-        А** = 4 // 16 <br>
-        <b>Остаток от деления </b> <br>
-        Оператор взятия остатка %. <br>
-        аlert ( 5 % 2 ); // 1, остаток от деления 5 на 2 <br>
-        аlert( 8 % 3); // 2, остаток от деления 8 на 3 <br>
-        аlert( 8 % 4); // 0, остаток от деления 8 на 4 <br>
+        Для применения строк применяют кавычки: одинарные  ('), двойные (") или  обратные  (`). <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">str</span> = '<span style="color: black;">abc</span>'; <br>
+        alert(<span style="color: green;">str</span>); <span style="color: #7802ff;">// выведет 'abc'</span> <br>
+        let <span style="color: green;">str</span> = "<span style="color: black;">abc</span>"; <br>
+        alert(<span style="color: green;">str</span>); <span style="color: #7802ff;">// выведет 'abc'</span> <br>
+        </span>
+        </div>
         <br>
-        <b>Дробные  числа</b> <br>
-        Целая и дробная части отделяются друг от друга точкой. <br>
-        let a = 0.5; <br>
-        alert(a); // выведет 0.5 <br>
-        let a = 0.5 + 0.5; <br>
-        alert(a); // выведет 1 <br>
-        <br>
-        <b>Инкремент и декремент</b> <br>
-        Инкремент увеличивает значение переменной на 1. Декремент уменьшает значение переменной на 1. <br>
-        Инкремент: ++ <br>
-        Декремент: -- <br>
-        let num = 0; <br>
-        num++;// прибавляем к переменной a число 1 <br>
-        alert(num);// выведет 1 <br>
-        let num = 0; <br>
-        num--;// отнимаем от переменной num число 1 <br>
-        alert(num);// выведет -1 <br>
-        <br>
-        <b>Отрицательные и положительные  числа</b> <br>
-        Перед отрицательным числом ставится знак минус <br>
-        let a = -1; <br>
-        alert(a); // выведет -1 <br>
-        Знак минус можно писать как к числам, так и к переменным: <br>
-        let a = 1; <br>
-        let b = -a; // записали в b содержимое a с обратным знаком <br>
-        alert(b);// выведет -1 <br>
-        Перед положительным числом ставится знак плюс <br>
-        let a = +1; <br>
-        alert(a); // выведет 1 <br>
-        <br>
-        <b>Математические операции с переменными.</b> <br>
-        <b class="b-bold">Математические операции можно производить не только над числами, но  и над переменными. </br>
-        let А= 2; <br>
-        let В = 3; <br>
-        alert(А + В); // выведет 5 <br>
-        <br>
-        <b>Приоритет математических операций </b>
-        <b>В JavaScript в начале выполняется умножение и деление, а потом уже  сложение и вычитание.</b> <br>
-        Пример: в начале 5 умножится на 2 и затем к результату прибавится 1 <br>
-        let А = 5 * 2 + 1; <br>
-        alert(А); // выведет 11 (результат 10 + 1) <br>
-        <br>
-        <b>Умножение и деление имеют равный приоритет и выполняются по  очереди слева направо.</b> <br>
-        Пример: вначале выполнится деление, а потом умножение <br>
-        let А = 6 / 2 * 4; <br>
-        alert(a); // выведет 12 (результат 3* 4) <br>
-        <br>
-        <b>В следующем примере каждая новая операция деления будет  применяться к предыдущей:</b> <br>
-        let А = 16 / 2 / 2 / 2; <br>
-        alert(А); // выведет 2 <br>
-        <br>
-        <b>Можно указывать приоритет операций с помощью круглых скобок.</b> <br>
-        let А = 2 * (2 + 3); <br>
-        alert(А); // выведет 10 (результат 2 * 5) <br>
-        <br>
-        <b>Примечание: скобок может быть любое количество, в том числе и  вложенных друг в друга:</b> <br>
-        let А = 2 * (2 + 4 * (3 + 1)); <br>
-        alert(А);by 
+        <b>Получение символа в строке.</b> <br> <br>
+        <div class="b-l4">Каждый символ в строке имеет свой порядковый номер: первый символ  номер 0, второй символ - номер 1, третий символ номер 2 и так далее. <br> <br>
+            Нумерация символов начинается с нуля. Можно получить доступ к  определенному символу строки по его номеру. Для этого пишется имя  переменной, после этого имени ставятся квадратные скобки и в этих скобках  указывается номер символа.</div> <br> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
+            alert(<span style="color: green;">str</span>[<span style="color: black;">0</span>]); <span style="color: #7802ff;">// выведет 'a'</span> <br>
+            alert(<span style="color: green;">str</span>[<span style="color: black;">1</span>]); <span style="color: #7802ff;">// выведет 'b'</span> <br>
+            alert(<span style="color: green;">str</span>[<span style="color: black;">2</span>]); <span style="color: #7802ff;">// выведет 'c'</span> <br>
+            <span style="color: black;">Номер символа также может хранится и в переменной:</span> <br>
+            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
+            let <span style="color: green;">num</span> = <span style="color: black;">3</span>; <span style="color: #7802ff;">// номер символа в переменной</span> <br>
+            alert(str[num]); // выведет 'd'
+            </span>   
+            </div>
+            
+            <br>
+            <b>Получение последнего символа в строке</b> <br> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
+            let <span style="color: green;">last</span> = <span style="color: green;">str</span>.length - <span style="color: black;">1</span>; <span style="color: #7802ff;">// номер последнего символа</span> <br>
+            alert(<span style="color: green;">str</span>[<span style="color: green;">str</span>.length - <span style="color: black;">1</span>]); <span style="color: #7802ff;">// выведет 'e'</span> <br>
+            </span>
+            </div>
+            
+            <br>
+            <b>Длина строки</b> <br> <br>
+            <div class="square-1">
+            <span style="color: black;">Количество символов в строке содержится в свойстве length:</span> <br>
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
+            alert(<span style="color: green;">str</span>.length); <span style="color: #7802ff;">// выведет 5</span> <br>
+            <span style="color: black;">Свойство length можно применять непосредственно к строке: <br></span>
+            
+            alert('<span style="color: black;">abcde</span>'.length); <span style="color: #7802ff;">// выведет 5</span> <br>
+            </span>   
+            </div>
+            
+            <br>
+            <b>Шаблонные строки</b> <br> <br>
+            
+            <div class="b-l4">Существует специальный тип кавычек – обратные (косые):</div> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = `<span style="color: black;">abc</span>`; <br>
+            alert(<span style="color: green;">str</span>); <span style="color: #7802ff;">// выведет 'abc'</span> <br>
+            </span>
+            </div> <br>
+            <div class="b-l4">В косых кавычках можно выполнять вставку переменных. Для этого имя  переменной нужно написать в конструкции ${}.</div>    
+            <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = '<span style="color: black;">xxx</span>'; <br>
+            let <span style="color: green;">txt</span> = '<span style="color: black;">aaa</span> ' + <span style="color: black;">str</span> + ' <span style="color: black;">bbb</span>'; <br>
+            <span style="color: black;">Этот код можно переписать следующим образом:</span> <br>
+            let <span style="color: green;">str</span> = '<span style="color: black;">xxx</span>'; <br>
+            let <span style="color: green;">txt</span> = `<span style="color: black;">aaa</span> ${<span style="color: black;">str</span>} <span style="color: black;">bbb</span>`; <br>
+            </span>  
+            </div>
+            
+            <br>
+            <div class="b-l4"><b>Сложение строк в JavaScript</b> <br> <br>
+            <span style="color: black;">Для сложения строк используется оператор +: </span><br> <br>    
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">    
+            let <span style="color: green;">str</span> = '<span style="color: black;">abc</span>' + '<span style="color: black;">def</span>'; <span style="color: #7802ff;">// складываем две строки</span> <br>
+            alert(<span style="color: green;">str</span>); <span style="color: #7802ff;">// выведет 'abcdef'</span> <br>
+            let <span style="color: green;">str1</span> = '<span style="color: green;">abc</span>'; <br>
+            let <span style="color: green;">str2</span> = '<span style="color: green;">def</span>'; <br>
+            alert(<spanc style="color: green;">str1</span> + <span style="color: green;">str2</span>); <span style="color: #7802ff;">// выведет 'abcdef'</span> <br>    
+            </div>    
+            </span>
+            
+            </div>
+            
+            
+            <br>
+            <div class="b-l4"><b>Многострочность</b><br> <br>
+            
+            В JavaScript строках, созданных через одинарные или двойные кавычки, не  допустим перенос строки.  <br> <br>
+            Косые кавычки специально предназначены для создания многострочных  строк: <br> <br>
+            </div>
+            <div class="square-1">
+            let <span style="color: green;">str</span> = `<span style="color: green;">abc def`</span>; <span style="color: #7802ff;">// так будет работать</span> <br>    
+            </div>
+            
+            <br>
+            <div class="b-l4">
+            <b>Преобразование строки в верхний регистр </b> <br> <br>
+            <b>Метод toUpperCase</b> <br> <br>
+            </div>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
+            console.log(<span style="color: green;">str</span>.toUpperCase()); <br>
+            <span style="color: black;">Результат выполнения кода:</span> <br>
+            '<span style="color: black;">ABCDE</span>' <br>
+            </span> 
+            </div>
+            
+            <br>
+            <b>Метод slice</b> <br> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
+            let <span style="color: green;">res </span> = <span style="color: green;">str</span>.slice(<span style="color: black;">0</span>, <span style="color: black;">1</span>).toUpperCase() + <span style="color: green;">str</span>.slice(<span style="color: black;">1</span>); <br>
+            console.log(<span style="color: green;">res</span>); <br>
+            <span style="color: black;">Результат выполнения кода:</span> <br>
+            '<span style="color: black;">Abcde</span>' <br>
+            </span>   
+            </div>
+            
+            <br>
+            <b>Преобразование строки в нижний регистр</b><br> <br>
+            <b>Метод toLowerCase</b><br> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span> = '<span style="color: black;">ABCDE</span>'; <br>
+            console.log(<span style="color: green;">str</span>.toLowerCase()); <br>
+            <span style="color: black;">Результат выполнения кода:</span> <br>
+            '<span style="color: green;">abcde</span>'<br>    
+            </span>
+                
+            </div>
+            
+            <br>
+            <b>Возвращение символа в строке</b> <br> <br>
+            <b>Метод charAt </b> <br> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">str</span>  = '<span style="color: black;">abcde</span>';<br>
+            let <span style="color: green;">char</span> = <span style="color: green;">str</span>.charAt(<span style="color: black;">0</span>);
+            <br>
+            console.log(<span style="color: green;">char</span>); <br>
+            <span style="color: black;">
+            Результат выполнения кода: <br>    
+            </span>
+            '<span style="color: black;">a</span>'
+            </span>    
+            </div>
+            
+            
         </p>
     </div>
     </main>

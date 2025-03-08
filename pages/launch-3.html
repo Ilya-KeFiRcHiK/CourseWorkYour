@@ -13,32 +13,37 @@
             <a href="#" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
         </nav>
-        <section class="block-info">
-            <div class="block-info-text">
-                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
-            </div>
-        </section>
-        </section>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
     </header>
     <main class="main">
     <div class="block-left">
         <ul>
-        <a href="start.html" class="menu-left">Введение</a>
-        <a href="launch.html" class="menu-left">Запуск программы</a>
-        <a href="launch-2.html" class="menu-left">Переменные</a>
-        <a href="launch-3.html" class="menu-left">Типы данных</a>
-        <a href="launch-4.html" class="menu-left">Числа</a>
-        <a href="launch-5.html" class="menu-left">Математические операции</a>
-        <a href="launch-6.html" class="menu-left">Строки</a>
-        <a href="launch-7.html" class="menu-left">Условия</a>
-        <a href="launch-8.html" class="menu-left">Функции</a>
-        <a href="launch-9.html" class="menu-left">Циклы</a>
-        <a href="launch-10.html" class="menu-left">Массивы</a>
-        <a href="#" class="menu-left">Объекты</a>
-        <a href="#" class="menu-left">Методы</a>
-        <a href="#" class="menu-left">Дата и время</a>
-        <a href="#" class="menu-left">Введение в DOM</a>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
         </ul>
         
     </div>
@@ -47,109 +52,101 @@
         <br>
         
         <p>
-            <b class="b-bold">Все используемые данные в javascript имеют определенный тип. В JavaScript имеется несколько типов данных.</b> <br>
+            <b class="b-bold">В JavaScript имеется несколько типов данных.</b> <br>
             <div class="square-1">
-             <span style="color: rgb(0, 0, 184);">let name</span> = <span style="color: rgb(0, 0, 184);">"Иван"</span>;<br>
-             <span style="color: rgb(0, 0, 184);">let age</span> = <span style="color: black">30</span>;<br>   
-            </div>
+             <span style="color: rgb;">let <span style="color: green;">name</span></span> = <span style="color: black;">"Иван"</span>;<br>
+             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">age</span></span> = <span style="color: black">30</span>;<br>   
+            </div><br>
             <div class="square-1">
-             <br>
-            <span style="color: rgb(0, 0, 184);">let template String = `Привет, меня зовут ${name}, и мне ${age} лет.`;</span><br>
-            <br>
-            <span style="color: rgb(0, 0, 184);">console.log(templateString);</span> <span style="color: #7333bb;">// Выведет: Привет, меня зовут Иван, и мне 30 лет.  </span> 
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">templateString</span> = `Привет, меня зовут ${<span style="color: green;">name</span>}, и мне ${<span style="color: green;">age</span>} лет.`;</span><br>
+            <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">templateString</span>);</span> <span style="color: #7802ff;">// Выведет: Привет, меня зовут Иван, и мне 30 лет.  </span> 
             </div>
             
             </p>
         <br>
-        <br>
-        <p><b>Number:</b> представляет числовое значение<br>
+        <p><b>Number</b>- представляет числовое значение<br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">let integerNumber</span> = <span style="color: black;">10</span>;<br>
-             <br>
-            <span style="color: rgb(0, 0, 184);">let anotherInteger</span> = <span style="color: black;">-5</span>;<br>
-            <br>
-            <span style="color: rgb(0, 0, 184);">let zero</span> = <span style="color: black;">0</span>;<br>
-            <br>
-            <span style="color: rgb(0, 0, 184);">console.log(integerNumber);</span>  <span style="color: #7333bb;">// Выведет: 10</span><br> <br>
-            <span style="color: rgb(0, 0, 184);">console.log(anotherInteger);</span>  <span style="color: #7333bb;">// Выведет: -5</span> <br> <br>
-            <span style="color: rgb(0, 0, 184);">console.log(zero);</span>   <span style="color: #7333bb;">// Выведет: 0</span> <br> <br>
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">integerNumber</span></span> = <span style="color: black;">10</span>;<br>
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">anotherInteger</span></span> = <span style="color: black;">-5</span>;<br>
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">zero</span></span> = <span style="color: black;">0</span>;<br>
+            <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">integerNumber</span>);</span>  <span style="color: #7802ff;">// Выведет: 10</span><br> 
+            <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">anotherInteger</span>);</span>  <span style="color: #7802ff;">// Выведет: -5</span> <br> 
+            <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">zero</span>);</span>   <span style="color: #7802ff;">// Выведет: 0</span> <br> <br>
             </div>
             <br>
             <b>NaN</b> <b class="b-bold">- обозначает не число. Такое значение получается тогда, когда вы  пытаетесь делать математические операции не с числами, а с чем-то <br><br> другим.</b>
              <br>
              <br>
-             <b class="b-bold">К примеру, такое значение даст попытка умножить строку на число:</b> <br> <br>
+             <b class="b-bold">К примеру, такое значение даст попытка умножить строку на число.</b> <br> <br>
              <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">alert('abc' * 3);</span> <span style="color: #7333bb;">// выведет NaN</span> <br>
+            <span style="color: rgb(11, 11, 255);">alert('abc' * <span style="color: black;">3</span>);</span> <span style="color: #7802ff">// выведет NaN</span> <br>
             </div>
             <br>
-            <b class="b-bold">Любые операции с NaN приводят к тому, что результатом все равно  остается NaN</b> <br>
-            <br>
+            <b class="b-bold">Любые операции с NaN приводят к тому, что результатом все равно  остается NaN.</b> <br>
             <br>
             <b>Infinity и -Infinity</b>
-            <b class="b-bold"> - Значения Infinity и -Infinity  обозначают соответственно бесконечность и  минус бесконечность. <br><br> Такие значения получаются, если какое-то число  поделить на ноль - в этом случает JavaScript не выдает ошибку, как в других
-            языках <br><br> программирования, а возвращает эти значения:</b>
-            <br>
+            <b class="b-bold"> - значения Infinity и -Infinity  обозначают соответственно бесконечность и  минус бесконечность. <br><br> Такие значения получаются, если какое-то число  поделить на ноль - в этом случает JavaScript не выдает ошибку, как в других
+            языках <br><br> программирования, а возвращает эти значения.</b> <br>
+            <br><br>
+            <b>BigInt</b><b class="b-bold">- это встроенный тип данных в JavaScript, который позволяет работать с целыми числами произвольной длины без потери точности<div> <br>
+            
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">const sum = bigNum1 + bigNum2;</span> <br> <br>
-            <span style="color: rgb(0, 0, 184);">const difference = bigNum2 - bigNum1;</span> <br> <br>
-            <span style="color: rgb(0, 0, 184);">const product = bigNum1 * bigNum2;</span> <br> <br>
-            <span style="color: rgb(0, 0, 184);">const quotient = bigNum2 / bigNum1;</span> <span style="color: #7333bb;">// Результат – BigInt</span> <br> <br>
+            <span style="color: rgb(11, 11, 255)"> const <span style="color: green;">bigNum1</span> = <span style="color: green;">10000000000000000000</span>n;</span> <br>
+            <span style="color: rgb(11, 11, 255)">const <span style="color: green;">bigNum2 </span> = <span style="color: green;">20000000000000000000</span>n;</span></b> <br>  
+            <span style="color: rgb(11, 11, 255);">const <span style="color: green;">sum</span> = <span style="color: green;">bigNum1</span> + <span style="color: green;">bigNum2</span>;</span> <br> 
+            <span style="color: rgb(11, 11, 255);">const <span style="color: green;">difference</span> = <span style="color: green;">bigNum2</span> - <span style="color: green;">bigNum1</span>;</span> <br> 
+            <span style="color: rgb(11, 11, 255);">const <span style="color: green;">product</span> = <span style="color: green;">bigNum1</span> * <span style="color: green;">bigNum2</span>;</span> <br> 
+            <span style="color: rgb(11, 11, 255);">const <span style="color: green;">quotient</span> = <span style="color: green;">bigNum2</span> / <span style="color: green;">bigNum1</span>;</span> <span style="color: #7802ff">// Результат – BigInt</span> <br> 
              </div>
              <br>
-             <b>Boolean</b> - <b class="b-bold">логический тип, который может принимать только два значения:</b> <br>
-            <br>
-              
-            <b class="b-bold"><b>true</b> или <b>false</b>, правда или ложь. Если мы присвоим переменной значением  <b>true</b>, JS автоматически определит ее тип как boolean.</b>
+             <b>Boolean</b> - <b class="b-bold">логический тип, который может принимать только два значения:</b>
+            
+            <b class="b-bold"><b>true</b> или <b>false</b>, правда или ложь. Если мы присвоим переменной <br><br> значением  <b>true</b>, JS автоматически определит ее тип как boolean.</b> <br> <br>
             <div class="square-1">
              <br>
-             <span style="color: rgb(0, 0, 184);">let isRaining = true;</span> <br> <br>
-             <span style="color: rgb(0, 0, 184);">let isSunny = false;</span> <br> <br>
-             <span style="color: rgb(0, 0, 184);">
-             if (isRaining) { <br> <br>
-             console.log("Не забудьте взять зонт!"); <br> <br>
-             } else if (isSunny) { <br> <br>
-             console.log("Отличный день для прогулки!"); <br> <br>
-             } else { <br> <br>
-             console.log("Погода не определена."); <br> <br>
-             } <br><br>
+             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">isRaining</span> = true;</span> <br> 
+             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">isSunny</span> = false;</span> <br> 
+             <span style="color: rgb(11, 11, 255);">
+             if (<span style=" color: green;">isRaining</span>) { <br> 
+             console.log("<span style="color: black;">Не забудьте взять зонт!</span>"); <br> 
+             } else if (<span style="color: black;">isSunny</span>) { <br> 
+             console.log("<span style="color: black;">Отличный день для прогулки!</span>"); <br> 
+             } else { <br> 
+             console.log("<span style="color: black;">Погода не определена.</span>"); <br> 
+             } <br>
              </span>
              </div>
             <br>
-            <br>
-            <b>Null</b> <b class="b-bold">- этот тип данных имеет всего одно значение: null.  Которое выражает  нулевое или «пустое» значение.</b> <br>
+            <b>Null</b> <b class="b-bold">- этот тип данных имеет всего одно значение: null.  Которое выражает  нулевое или «пустое» значение.</b> <br> <br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">let a = null;</span><br>
-            <span style="color: rgb(0, 0, 184);">alert(a);</span> <span style="color: #7333bb;">// выведет null</span>
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">a</span> = null;</span><br> 
+            <span style="color: rgb(11, 11, 255);">alert(<span style="color: green;">a</span>);</span> <span style="color: #7802ff;">// выведет null</span>
             </div>
-            <br>
             <br>
             
-            <b>Undefined</b><b class="b-bold">- тип данных, который обозначает неопределённость.</b>  <br>
+            <b>Undefined</b><b class="b-bold">- тип данных, который обозначает неопределённость.</b>  <br> <br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">let a;</span> <br>
-            <span style="color: rgb(0, 0, 184);">alert(a);</span> <span style="color: #7333bb;">// выведет undefined</span> <br>
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">a</span>;</span> <br> 
+            <span style="color: rgb(11, 11, 255);">alert(<span style="color: green;">a</span>);</span> <span style="color: #7802ff;">// выведет undefined</span> <br>
             </div>
             <br>
-            <b>Object</b><b class="b-bold">- это ссылочный тип данных, то есть это значение в памяти, на  которое возможно сослаться с помощью идентификатора.</b>  <br>
+            <b>Object</b><b class="b-bold">- это ссылочный тип данных, то есть это значение в памяти, на  которое возможно сослаться с помощью идентификатора.</b>  <br> <br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">
-             let object = new Object({'a': 1, 'b': 2, 'c': 3}); <br>
-            console.log(object); <br>
-            Результат выполнения кода: <br>
-            {'a': 1, 'b': 2, 'c': 3}   
+            <span style="color: rgb(11, 11, 255);">
+             let <span style="color: green;">object</span> = new Object({'<span style="color: green;">a</span>': <span style="color: black;">1</span>, '<span style="color: green;">b</span>': <span3 style="color: black;">2</span>, '<span style="color: green;">c</span>': <span  style="color: black;">3</span>}); <br>
+            console.log(<span style="color: green;">object</span>); <br> 
+            Результат выполнения кода: <br> 
+            {'<span style="color: green;">a</span>': <span style="color: black;">1</span>, '<span style="color:green">b</span>': <span style="color:black">2</span>, '<span style="color: green;">c</span>': <SPAN style="color: black;">3</SPAN>}   <br>
             </span>
             </div>
             <br>
-            <br>
             
-             <b>Symbol</b><b class="b-bold">- это уникальный и неизменяемый тип данных, который может  быть использован как идентификатор для свойств объектов.</b>  <br>
+             <b>Symbol</b><b class="b-bold">- это уникальный и неизменяемый тип данных, который может  быть использован как идентификатор для свойств объектов.</b>  <br> <br>
              <div class="square-1">
-             <span style="color: rgb(0, 0, 184);">let sym1 = Symbol()</span>;<br>
-             <span style="color: rgb(0, 0, 184);">let sym2 = Symbol()</span>;
-             <br>
-             <span style="color: rgb(0, 0, 184);">console.log(sym1, sym2)</span>;
-             <span style="color: rgb(0, 0, 184);">console.log(sym1 === sym2)</span>; <span style="color: #7333bb;">// false</span>
+             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">sym1 </span>= Symbol()</span>;<br>
+             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">sym2</span> = Symbol()</span>;<br>
+             <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">sym1</span>, <span style="color: green;">sym2</span>)</span>;<br>
+             <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">sym1</span> === <span style="color: green;">sym2</span>)</span>; <span style="color: #7333bb;">// false</span><br>
             </div>
 
             </p>

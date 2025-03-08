@@ -13,287 +13,366 @@
             <a href="#" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
         </nav>
-        <section class="block-info">
-            <div class="block-info-text">
-                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
-            </div>
-        </section>
-        </section>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
     </header>
     <main class="main">
     <div class="block-left">
         <ul>
-        <a href="start.html" class="menu-left">Введение</a>
-        <a href="launch.html" class="menu-left">Запуск программы</a>
-        <a href="launch-2.html" class="menu-left">Переменные</a>
-        <a href="launch-3.html" class="menu-left">Типы данных</a>
-        <a href="launch-4.html" class="menu-left">Числа</a>
-        <a href="launch-5.html" class="menu-left">Математические операции</a>
-        <a href="launch-6.html" class="menu-left">Строки</a>
-        <a href="launch-7.html" class="menu-left">Условия</a>
-        <a href="launch-8.html" class="menu-left">Функции</a>
-        <a href="launch-9.html" class="menu-left">Циклы</a>
-        <a href="launch-10.html" class="menu-left">Массивы</a>
-        <a href="#" class="menu-left">Объекты</a>
-        <a href="#" class="menu-left">Методы</a>
-        <a href="#" class="menu-left">Дата и время</a>
-        <a href="#" class="menu-left">Введение в DOM</a>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
         </ul>
         
     </div>
     <div class="block-right">
-        <h2 class="menu-title">Условия</h2>
+        <h2 class="menu-title">Функции</h2>
         <br>
         <p>
-        <b>Условные операторы</b> <br>
-        <b>Конструкция if-else </b> <br>
-        Конструкция <b>if</b> задает условие. С помощью этой конструкции мы можем  задать программе вопрос "больше ли переменная a, чем переменная b",  и в зависимости от ответа выполнить или один код, или другой. <br>
-        Как правило данная конструкция используется в комбинации с  конструкцией else. <br>
-        <b>Синтаксис</b> <br>
-        if (логическое выражение) { <br>
-        /* <br>
-        расположенный здесь код выполниться, 
-        если логическое выражение верное <br>
-        */ <br>
-        }; <br>
-        Если в фигурный скобках только одно выражение, можно эти фигурные  скобки не писать. <br>
-        <b>Операторы больше и меньше</b> <br>
-        Для проверки того, которое из значений больше, а которое меньше,  используются операторы: <br>
-        > больше <br>
-        >= больше или равно <br>
-        < меньше <br>  
-        <= меньше или равно <br>
-        <b>Проверим, значение переменной больше нуля или нет:</b> <br>
-        let test = 1; <br>
-            
-        if (test > 0) { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        <b>Значение переменной  отрицательное число:</b> <br>
-        let test = -1; <br>
-            
-        if (test > 0) { <br>
-            console.log('+++'); <br>
-        } else { <br>
-            console.log('---'); // сработает это <br>
-        } <br>
-        <b>Значение переменной равно 0. В этом случае мы попадем в блок else, так как в нашем условии написано, что переменная test должна быть строго  больше нуля:</b> <br>
-        let test = 0; <br>
-            
-        if (test > 0) { <br>
-            console.log('+++'); <br>
-        } else { <br>
-            console.log('---'); // сработает это <br>
-        } <br>
-        <b>Значение переменной больше или равно:</b> <br>
-        let test = 0; <br>
-            
-        if (test >= 0) { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        Значение переменной меньше 0: <br>
-        let test = 0; <br>
-            
-        if (test < 0) { <br>
-            console.log('+++'); <br>
-        } else { <br>
-            console.log('---'); // сработает это <br>
-        } <br>
-        <b>Значение переменной меньше или равно:</b> <br>
-        let test = 0; <br>
-            
-        if (test <= 0) {  <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        <b>Проверка на равенство</b> <br>
-        Для проверки двух значений на равенство используется оператор ==. <br>
-        let test = 10; <br>
-            
-        if (test == 10) { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        <b>Проверка на неравенство</b> <br>
-        Оператор != проверяет на неравенство. Давайте для примера проверим, что  переменная test не равна 0: <br>
-        let test = 1; <br>
-            
-        if (test != 0) { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        Поменяем значение переменной: <br>
-        let test = 0; <br>
-            
-        if (test != 0) { <br>
-            console.log('+++'); <br>
-        } else { <br>
-            console.log('---'); // сработает это <br>
-        } <br>
-        <b>Сравнение переменных</b> <br>
-        let test1 = 1; <br>
-        let test2 = 2; <br>
-            
-        if (test2 > test1) { <br>
-            console.log('+++'); // сработает это <br>
-        } else {<br>
-            console.log('---'); <br>
-        } <br>
+        Функции в JavaScript - это блоки кода, которые могут быть вызваны для выполнения определенных задач. Они представляют собой участки кода, которые могут принимать параметры (входные данные для описания функции), выполнять определенные операции и возвращать результат (выходные данные). 
+        <br><br>
+        Любая функция в JavaScript является объектом, а следовательно может быть передана в виде аргумента (входные данные для выполнения функции) другой функции, быть возвращена в качестве результата работы другой функции и присвоена в качестве значения переменной или свойства объекта.
+        <br><br>
+        Функция создается с помощью команды function. Далее через пробел следует имя функции, круглые скобки, а затем фигурные скобки, в которых пишется какой-то код:
+        <br>
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func() { <br> 
+                <span style="color: #7333bb;">// какой-то код</span> <br> 
+            }
+            </span>            
+        </div>
+        <br><br>
+        <div class="b-l4">
+        Сделаем функцию с именем func, которая при своем вызове будет выводить алертом восклицательный знак:    
+        </div>
+        
+        <br>
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func() { <br> 
+                console.log('<span style="color: black;">!</span>'); <br> 
+            }
+            </span>           
+        </div>
+        <br><br>
+        <div class="b-l4">
+        Вызовем нашу функцию. Для этого необходимо написать ее имя и круглые скобки:    
+        </div>
+        
+        <br>
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func() { <br>
+                console.log('<span style="color: black;">!</span>');<br>
+            } <br>
+            </span>
+        <span style="color: #7802ff;">// Вызываем нашу функцию:</span> <br>
+        <span style="color: rgb(11, 11, 255)">func();</span> <span style="color: #7802ff">// выведет '!' </span>                
+        </div>
+        <br>
+        
+        <br><br><br>
+        <b>Параметры функций</b> <br> <br>
+        <div class="b-l4">Функции могут принимать параметрами данные.</div> <br>
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255)">
+              function func(<span style="color: green;">num</span>) { <br>
+            }   
+            </span>
+                   
+        </div> <br>
+        <div class="b-l4">Пусть функция возводила переданное число в квадрат:</div> <br> 
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+             function func(<span style="color: green;">num</span>) { <br> 
+                console.log(<span style="color: green;">num</span> ** <span style="color: black;">2</span>); <br> 
+            }   
+            </span>           
+        </div> <br>
+        
+        <div class="b-l4">Проверим работу функции, вызвав ее с различными числами:</div> <br>
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">func(<span style="color: black;">3</span>);</span> <span style="color: #7802ff;">// выведет 9</span> <br> 
+            <span style="color: rgb(11, 11, 255);">func(<span style="color: black;">4</span>);</span> <span style="color: #7802ff;">// выведет 16</span> <br> 
+        </div> <br>
+        <div class="b-l4">Функция может принимать не один параметр, а несколько.</div> <br> 
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+             function func(<span style="color: green;">num1</span>, <span style="color: green;">num2</span>) { <br> 
+                console.log(<span style="color: green;">num1</span> + <span style="color: green;">num2</span>); <br> 
+            }    
+            </span>            
+        </div> <br>
+        <div class="b-l4">Проверим работу нашей функции:</div> <br> 
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">func(<span style="color: black;">3</span>, <span style="color: black;">4</span>);</span> <span style="color: #7802ff;">// выведет 7  </span>        
+        </div><br>
+        <div class="b-l4">В параметры функции можно передавать переменные.</div> <br> 
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func(<span style="color: green;">num</span>) { <br> 
+                console.log(<span style="color: green;">num</span> ** <span style="color: black;">2</span>); <br> 
+            }
+            </span>           
+        </div> <br>
+        <div class="b-l4">Пусть у нас есть переменная:</div> <br> 
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">let <span style="color: green;">param</span></span> = <span style="color: black;">2</span>; <br>    
+        </div> <br>
+        
+        <div class="b-l4">Вызовем нашу функцию, передав ей параметром число из переменной:</div> <br> 
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">let <span style="color: green;">param</span></span> = <span style="color: black;">2</span>; <br> 
+        <span style="color: rgb(11, 11, 255);">func(<span style="color: green;">param</span>)</span>; 
+        </div> <br>
+        <b>Возврат значений</b> <br> <br>
+        <div class="b-l4">У нас есть функция, которая выводит в консоль квадрат переданного числа:</div> <br>
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func(<span style="color: green;">num</span>) { <br> 
+                console.log(<span style="color: green;">num</span> ** <span style="color: black;">2</span>); <br> 
+            }
+            </span>           
+        </div><br>
+        <div class="b-l4">Пусть мы хотим не выводить значение в консоль, а записать в какую-нибудь переменную, вот так:</div> <br> 
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">res</span> = func(<span style="color: black;">4</span>);</span> <span style="color: #7802ff">// в переменной res теперь 16</span>
+        </div><br>
+        <div class="b-l4">Для этого в JavaScript существует специальная инструкция return, которая позволяет указать значение, которое возвращает <br><br> функция.
+        Перепишем нашу функцию так, чтобы она не выводила результат в консоль, а возвращала его в переменную:</div> <br><br>
+        <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func(<span style="color: green;">num</span>) { <br> 
+                return <span style="color: green;">num</span> ** <span style="color: black;">2</span>; <br> 
+            }
+            </span>            
+        </div><br>
+        <div class="b-l4">Вызовем нашу функцию, записав ее ответ в переменную:</div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255)">let <span style="color: green;">res</span> = func(<span style="color: black;">4</span>);</span> <span style="color: #7802ff;">// в переменную запишется 16</span> <br> 
+        <span style="color:black">Выведем данные в консоль:</span> <br> 
+        <span style="color: rgb(11, 11, 255);">let <span style="color: green;">res</span>  = func(<span style="color: black;">4</span>);</span><br>  
+        <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">res</span>);</span> <span style="color: #7802ff;">// выведет 16 </span>
+        </div><br>
 
-        <b>Равенство строк</b> <br>
-        При использовании конструкции if можно сравнивать и строки. Для примера  пусть в переменной test хранится какая-то строка, например 'abc': <br>
-        let test = 'abc'; <br>
-        Давайте проверим, равно ли содержимое переменной test строке 'abc': <br>
-        let test = 'abc'; <br>
+        <b>Цикл и return</b><br> <br><br>
+        <div class="b-l4">Пример 1:</b> <br> <br> <br>
+        <div class="b-l4">Пусть у нас есть функция, возвращающая сумму чисел от 1 до 5:</div>  
+        <br>
+         <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func() { <br> 
+                let <span style="color: green;">sum</span> = <span style="color: black;">0</span>; <br> 
+                
+                for (let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <span style="color: green;">i</span> <= <span style="color: black;">5</span>; <span style="color: green;">i</span>++) { <br> 
+                    <span style="color: green;">sum</span> += <span style="color: green;">i</span>; <br> 
+                } <br> 
+                
+                return <span style="color: green;">sum</span>; <br> 
+            }
             
-        if (test == 'abc') { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        <b>Равенство строк и чисел</b>
-        <b>Сравним строку '3' и число 3:</b>
-        if ('3' == 3) { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        <b>Равенство по значению и типу</b> <br>
-        Вместо оператора == следует использовать оператор ===. <br>
-        При сравнении строки '3' и числа 3 условие будет ложным, так как  переменные, хотя и равны по значению, но не равны по типу: <br>
-        if ('3' === 3) { <br>
-            console.log('+++'); <br>
-        } else { <br>
-            console.log('---'); // сработает это <br>
-        } <br>
-        При сравнении двух строк '3' условие будет истинно: <br>
-        if ('3' === '3') { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        Как и при сравнении чисел: <br>
-        if (3 === 3) { <br>
-            console.log('+++'); // сработает это <br>
-        } else { <br>
-            console.log('---'); <br>
-        } <br>
-        Разница между оператором == и оператором === проявляется именно тогда,  когда значения одинаковые, но разный тип данных. В остальных случаях эти  операторы работают одинаково. К примеру, при сравнении разных чисел,  конечно же, выведется '---': <br>
-        if (2 === 3) { <br>
-            console.log('+++');
-        } else { <br>
-            console.log('---'); // сработает это <br>
-        } <br>
-        <b>Неравенство по значению и типу</b> <br>
-        Кроме оператора != существует также оператор !==, учитывающий тип при  сравнении. Давайте рассмотрим различия между ними на примерах. <br>
-        Пусть с помощью оператора != сравниваются два числа 3. Данный оператор  сравнивает значения на то, что они НЕ равны. Так как наши значения как раз-таки равны, то условие будет ложным: <br>
-        if (3 != 3) { <br>
-            console.log('+++'); <br>
-        } else { <br>
-            console.log('---'); // сработает это <br>
-        } <br>
-        Пусть теперь одно из наших значений будет в кавычках. В этом случае  оператор != все равно посчитает их равными (так как совпадает значение, а  тип не важен для данного оператора) и опять условие будет ложным: <br>
-            if ('3' != 3) { <br>
-                console.log('+++'); <br>
-            } else { <br>
-                console.log('---'); // сработает это <br>
+            let <span style="color: green;">res</span> = func(); <br> 
+            console.log(<span style="color: green;">res</span>); <span style="color: #7802ff;">// выведет 15 </span> <br>
+            </span> 
+         </div> <br>
+         <div class="b-l4">Пример 2:</div> <br> <br>
+         <div class="b-l4">Пусть теперь мы расположим return внутри цикла.</div> <br> 
+         <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            function func() { <br> 
+                let <span style="color: green;">sum</span> = <span style="color: black;">0</span>; <br>
+                
+                for (let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <span style="color: green;">i</span> <= <span style="color: black;">5</span>; i++) { <br> 
+                    <span style="color: green;">sum</span> += <span style="color: green;">i</span>; <br> 
+                    return <span style="color: green;">sum</span>; <br> 
+                } <br> 
             } <br>
-            Давайте теперь сравним два числа 3 с помощью оператора !==. Он также посчитает их равными: <br>
-            if (3 !== 3) { <br>
-                console.log('+++'); <br>
-            } else { <br>
-                console.log('---'); // сработает это <br>
-            } <br>
-            А вот если теперь одну из троек взять в кавычки, то оператор !== посчитает  наши тройки неравными, так как, хотя значения их и совпадают, но у них  разный тип:
-            if ('3' !== 3) { <br>
-                console.log('+++'); // сработает это <br>
-            } else { <br>
-                console.log('---'); <br>
-            } <br>
-            
-            <b>Логическое И</b> <br>
-            Можно группировать операции сравнения с помощью оператора &&,  представляющего собой логическое И. <br> 
-            Если переменная num больше нуля и одновременно меньше 10, только тогда  выведется '+++':
-            let num = 3; <br>
-            
-            if (num > 0 && num < 10) { <br>
-                console.log('+++'); <br>
-            } else { <br>
-                console.log('---'); <br>
-            } <br>
-            Условия могут налагаться не на одну переменную, а на разные. <br>
-            Если переменная num1 равна 2 и одновременно переменная num2 равна 3, только тогда условие будет истинно: <br>
-            let num1 = 2; <br>
-            let num2 = 3; <br>
-            
-            if (num1 == 2 && num2 == 3) { <br>
-                console.log('+++'); <br>
-            } else { <br>
-                console.log('---'); <br>
-            } <br>
-            <b>Логическое ИЛИ</b>
-            Оператор || представляет собой логическое ИЛИ и требует выполнения хотя  бы одного условия.
-            Если переменная num1 больше 0 или переменная num2 больше 0, то условие  будет истинно (достаточно выполнения хотя бы одного из условий): <br>
-            let num1 = 10; <br>
-            let num2 = -5; <br>
-            
-            if (num1 > 0 || num2 > 0) { <br>
-                console.log('+++'); // сработает это <br>
-            } else { <br>
-                console.log('---'); <br>
-            } <br>
-            <b>Условия с булевыми значениями</b>
-            Пусть у нас есть какая-то переменная, которая может принимать  значения true или false: <br>
-            let test = true; <br>
-            Давайте напишем if, проверяющий нашу переменную на значение true: <br>
-            let test = true; <br>
-            
-            if (test === true) { <br>
-                console.log('+++'); <br>
-            } else { <br>
-                console.log('---'); <br>
-            } <br>
-            <b>Вложенные конструкции if-else </b> <br>
-            Конструкции <b>if-else</b>  можно вкладывать друг в друга произвольным образом. <br> 
-            let num = 3; <br>
-            
-            if (num >= 0) { <br>
-                if (num <= 5) { <br>
-                    console.log('меньше или равно 5'); <br>
-                } else { <br>
-                    console.log('больше 5'); <br>
-                } <br>
-            } else { <br>
-                console.log('меньше нуля'); <br>
-            } <br>
-            <b>Конструкции switch-case </b> <br>
-            С помощью конструкции switch-case можно выполнять различный код, в  зависимости от значения переменной. <br>
-            let num = 1; <br>
-            
-            switch (num) { <br>
-                case 1: <br>
-                    console.log('value1'); <br>
-                break; <br>
-                case 2: <br>
-                    console.log('value2'); <br>
-                break; <br>
-                case 3: <br>
-                    console.log('value3'); <br>
-                break; <br>
-                default: <br>
-                    console.log('incorrect value'); <br>
-                break; <br>
-            } <br>
-              
+            <span style="color: rgb(11, 11, 255);">let <span style="color: green;">res</span> = func();</span> <br>
+            <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">sum</span>);</span>
+            </span> 
+         </div><br>
+
+         <div class="b-l4">Цикл прокрутится лишь одну итерацию и произойдет автоматический выход из функции (ну и заодно из цикла). А за одну итерацию <br><br> цикла в переменной sum окажется лишь число 1, а не вся нужная сумма.</div> <br> <br> 
+         <div class="b-l4">Пример 3:</div> <br><br>
+         Пусть функция, которая вычисляет, сколько целых чисел, начиная с 1, нужно сложить, чтобы результат был больше 100: <br> <br>
+         <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">  
+         function func() { <br> 
+	     let <span style="color: green;">sum</span> = <span style="color: black;">0</span>; <br> 
+	     let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <br> 
+	
+	     while (true) { <span style="color: #7802ff;">// бесконечный цикл</span> <br> 
+		 <span style="color: green;">sum</span> += <span style="color: green;">i</span>; <br> 
+		
+		 if (<span style="color: green;">sum</span> >= <span style="color: black;">100</span>) { <br> 
+			return <span style="color: green;">i</span>; <span style=color:#7802ff>// цикл крутится пока не выйдет тут</span> <br> 
+		 } <br> 
+		
+		 <span style="color: green;">i</span>++; <br>
+          
+	 } <br>
+} <br>
+console.log( func() );
+</span>
+</div><br>
+<b>Выбор имени функции</b> <br> <br>
+<div class="b-l4">
+Функция – это действие. Поэтому имя функции обычно является глаголом. Оно должно быть кратким, точным и описывать действие <br><br> функции, чтобы программист, который будет читать код, получил верное представление о том, что делает функция.    
+</div> <br> <br>
+<div class="b-l4">
+Например, функции, начинающиеся с "show" обычно что-то показывают. <br><br>
+Функции, начинающиеся с… <br><br>    
+</div>
+<div class="b-l4">
+•	"get…" – возвращают значение, <br> <br>
+•	"calc…" – что-то вычисляют, <br> <br>
+•	"create…" – что-то создают, <br> <br>
+•	"check…" – что-то проверяют и возвращают логическое значение, и т.д. <br>     
+</div> <br>
+    
+ <br>
+
         </p>
+    <b>Стрелочные функции (Аrrow Function)</b> <br> <br> <br>
+    <div class="b-l4">Синтаксис:</div> <br> 
+    <div class></div>
+    <div class="square-1">
+    <span style="color: rgb(11, 11, 255);"> 
+    (параметры) => { <br> 
+        <span style="color: #7802ff;">// тело функции</span> <br> 
+      } <br>
+    </span>
+    </div> <br>
+    
+      Стрелочная функция записывается намного короче, чем обычная. В самой простой записи ключевое слово function и фигурные скобки не <br><br> требуются. <br> <br> <br>
+
+      <b>Обычная функция</b> <br> <br>
+      <div class="square-1">
+        <span style="color: rgb(11, 11, 255);"> 
+      let <span style="color: green;">func1</span> = function(<span style="color: green;">num1</span>, <span style="color: green;">num2</span>) { <br> 
+	let <span style="color: green;">result</span> = <span style="color: green;">num1</span> * <span style="color: green;">num2</span>; <br> 
+	return <span style="color: green;">result</span>; <br> 
+} <br> <br> 
+
+let <span style="color: green;">func2</span> = (<span style="color: green;">num1</span>, <span style="color: green;">num2</span>) => { <br> 
+	let <span style="color: green;">result</span> = <span style="color: green;">num1</span> * <span style="color: green;">num2</span>; <br> 
+	return <span style="color: green;">result</span>; <br>
+} <br>
+</span>   
+      </div> <br>
+
+
+<b>Стрелочная функция</b> <br> <br>
+<div class="square-1">
+<span style="color: rgb(11, 11, 255);"> 
+let <span style="color: green;">func1</span> = function(<span style="color: green;">num1</span>, <span style="color: green;">num2</span>) { <br> 
+	return <span style="color: green;">num1</span> * <span style="color: green;">num2</span> <br> 
+} <br> 
+
+let <span style="color: green;">func2</span> = (<span style="color: green;">num1</span>, <span style="color: green;">num2</span>) => <span style="color: green;">num1</span> * <span style="color: green;">num2</span>; <br>
+</span>   
+</div> <br>
+
+<div class="b-l4">
+Особое преимущество стрелочные функции имеют в качестве коллбэков. Давайте посмотрим на примере, на сколько упрощается код <br><br> в таком случае. Пусть для примера у нас есть следущая функция filter: <br>    
+</div> 
+
+<br>
+<div class="square-1">
+ <span style="color: rgb(11, 11, 255);"> 
+function filter(<span style="color: green;">arr</span>, <span style="color: green;">callback</span>) { <br> 
+	let <span style="color: green;">res</span> = []; <br> 
+
+	for (let <span style="color: green;">elem</span> of <span style="color: green;">arr</span>) { <br> 
+		if ( <span style="color: green;">callback</span>(<span style="color: green;">elem</span>) === true ) { <br> 
+			<span style="color: green;">rus</span>.push(<span style="color: green;">elem</span>); <br> 
+		} <br> 
+	} <br> 
+	
+	return <span style="color: green;">res</span>; <br> 
+}
+</span>    
+</div>
+
+<br> <br>
+<div class="b-l4">
+Вызовем эту функцию, передав ей коллбэк: <br> <br>    
+</div>
+
+<div class="square-1">
+<span style="color: rgb(11, 11, 255);"> 
+let <span style="color: green;">result</span> = filter([<span style="color: black;">1</span>, <span style="color: black;">2</span>, <span style="color: black;">3</span>, <span style="color: black;">4</span>, <span style="color: black;">5</span> ], function(elem) { <br> 
+	if (elem % 2 === 0) { <br> 
+		return true; <br> 
+	} else { <br> 
+		return false; <br> 
+	} <br> 
+}); <br>
+</span>    
+</div> <br>
+
+<b>Анонимные функции</b> <br> <br>
+Функции также могут быть созданы как выражения. В этом случае функция называется анонимной, потому что она не имеет имени. <br> <br> <br>
+Синтаксис: <br> <br>
+<div class="square-1">
+<span style="color: rgb(11, 11, 255);"> 
+let имя_переменной = function(параметры) { <br> 
+    <span style="color: #7802ff;">// тело функции</span> <br> 
+} <br> 
+let <span style="color: green;">printMessage</span> = function(message) { <br> console.log(message); <br> 
+} <br>
+</span>   
+</div>
+<br>
+<div class="b-l4">
+Вызов этой функции будет выглядеть так: <br> <br>    
+</div>
+<div class="square-1">
+<span style="color: rgb(11, 11, 255);"> 
+<span style="color: green;">printMessage</span>('<span style="color: black;">Hello World</span>') <span style="color: #7802ff;">// выведет Hello World</span> <br> 
+</span>
+</div><br>
+<div class="b-l4">
+<b>Рекурсивные функции</b> <br> <br>    
+</div>
+<div class="square-1">
+<span style="color: rgb(11, 11, 255);"> 
+function fac(n) { <br> 
+  if (n < 2) { <br> 
+    return <span style="color: black;">1</span> <br> 
+  } else { <br> 
+    return n * fac(n - <span style="color: black;">1</span>) <br> 
+  } <br> 
+} <br> 
+console.log(fac(<span style="color: black;">3</span>)) <br> 
+<span style="color: #7802ff;">// 6</span> <br>
+</span>   
+</div>
+
+
     </div>
     </main>
     <footer class="block-info-4">

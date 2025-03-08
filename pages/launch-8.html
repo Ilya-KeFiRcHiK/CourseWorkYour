@@ -13,271 +13,236 @@
             <a href="#" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
         </nav>
-        <section class="block-info">
-            <div class="block-info-text">
-                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
-            </div>
-        </section>
-        </section>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
     </header>
     <main class="main">
     <div class="block-left">
         <ul>
-        <a href="start.html" class="menu-left">Введение</a>
-        <a href="launch.html" class="menu-left">Запуск программы</a>
-        <a href="launch-2.html" class="menu-left">Переменные</a>
-        <a href="launch-3.html" class="menu-left">Типы данных</a>
-        <a href="launch-4.html" class="menu-left">Числа</a>
-        <a href="launch-5.html" class="menu-left">Математические операции</a>
-        <a href="launch-6.html" class="menu-left">Строки</a>
-        <a href="launch-7.html" class="menu-left">Условия</a>
-        <a href="launch-8.html" class="menu-left">Функции</a>
-        <a href="launch-9.html" class="menu-left">Циклы</a>
-        <a href="launch-10.html" class="menu-left">Массивы</a>
-        <a href="#" class="menu-left">Объекты</a>
-        <a href="#" class="menu-left">Методы</a>
-        <a href="#" class="menu-left">Дата и время</a>
-        <a href="#" class="menu-left">Введение в DOM</a>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
         </ul>
         
     </div>
     <div class="block-right">
-        <h2 class="menu-title">Функции</h2>
+        <h2 class="menu-title">Циклы</h2>
         <br>
         <p>
-        Функции в JavaScript - это блоки кода, которые могут быть вызваны для выполнения определенных задач. Они представляют собой участки кода, которые могут принимать параметры (входные данные для описания функции), выполнять определенные операции и возвращать результат (выходные данные). 
-        <br><br>
-        Любая функция в JavaScript является объектом, а следовательно может быть передана в виде аргумента (входные данные для выполнения функции) другой функции, быть возвращена в качестве результата работы другой функции и присвоена в качестве значения переменной или свойства объекта.
-        <br><br>
-        Функция создается с помощью команды function. Далее через пробел следует имя функции, круглые скобки, а затем фигурные скобки, в которых пишется какой-то код:
-        <br>
-        <div class="square-1">
-            function func() { <br> <br>
-                // какой-то код <br> <br>
-            }            
-        </div>
-        <br><br>
-        Сделаем функцию с именем func, которая при своем вызове будет выводить алертом восклицательный знак:
-        <br>
-        <div class="square-1">
-            function func() { <br> <br>
-                console.log('!'); <br> <br>
-            }            
-        </div>
-        <br><br>
-        Вызовем нашу функцию. Для этого необходимо написать ее имя и круглые скобки:
-        <br>
-        <div class="square-1">
-            function func() { <br><br>
-                console.log('!');<br><br>
-            }            
-        </div>
-        <br>
-        <span style="color: #7333bb;">// Вызываем нашу функцию:</span> <br><br>
-        <span style="color: rgb(0, 0, 184)">func();</span> <span style="color: #7333bb">// выведет '!' </span>
-        <br><br><br>
-        Параметры функций <br> <br>
-        <b>Функции могут принимать параметрами данные.</b> <br>
-        <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">
-              function func(num) { <br>
-	        <br>
-            }   
-            </span>
-                   
-        </div>
-        <b>Пусть функция возводила переданное число в квадрат:</b> <br>
-        <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">
-             function func(num) { <br> <br>
-                console.log(num ** 2); <br> <br>
-            }   
-            </span>           
-        </div>
-        <b>Проверим работу функции, вызвав ее с различными числами: </b><br>
-        <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">func(3);</span> <span style="color: #7333bb;">// выведет 9</span> <br> <br>
-            <span style="color: rgb(0, 0, 184);">func(4);</span> <span style="color: #7333bb;">// выведет 16</span> <br> <br>
-        </div>
-        <b>Функция может принимать не один параметр, а несколько.</b> <br>
-        <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">
-             function func(num1, num2) { <br> <br>
-                console.log(num1 + num2); <br> <br>
-            }    
-            </span>            
-        </div>
-        <b>Проверим работу нашей функции:</b> <br>
-        <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">func(3, 4);</span> <span style="color: #7333bb;">// выведет 7  </span>        
-        </div>
-        <b>В параметры функции можно передавать переменные.</b> <br>
-        <div class="square-1">
-            function func(num) { <br> <br>
-                console.log(num ** 2); <br> <br>
-            }            
-        </div>
-        <b>Пусть у нас есть переменная:</b> <br> <br> <br>
-        <span style="color: rgb(0, 0, 184);">let param</span> = <span style="color: black;">2</span>; <br> <br> <br>
-        <b>Вызовем нашу функцию, передав ей параметром число из переменной:</b> <br> <br> <br>
-        <div class="square-1">
-        <span style="color: rgb(0, 0, 184);">let param</span> = <span style="color: black;">2</span>; <br> <br>
-        <span style="color: rgb(0, 0, 184);">func(param)</span>; 
-        </div>
-        <b>Возврат значений.</b> <br> <br>
-        <b>У нас есть функция, которая выводит в консоль квадрат переданного числа:</b> <br> <br> <br>
-        <div class="square-1">
-            function func(num) { <br> <br>
-                console.log(num ** 2); <br> <br>
-            }            
-        </div>
-        <b>Пусть мы хотим не выводить значение в консоль, а записать в какую-нибудь переменную, вот так:</b> <br> <br> <br>
-        <div class="square-1">
-            <span style="color: rgb(0, 0, 184);">let res = func(4);</span> <span style="color: #7333bb;">// в переменной res теперь 16</span>
-        </div>
-        <b>Для этого в JavaScript существует специальная инструкция return, которая позволяет указать значение, которое возвращает функция.
-        Перепишем нашу функцию так, чтобы она не выводила результат в консоль, а возвращала его в переменную:</b>
-        <div class="square-1">
-            function func(num) { <br> <br>
-                return num ** 2; <br> <br>
-            }            
-        </div>
-        <b>Вызовем нашу функцию, записав ее ответ в переменную:</b> <br> <br> <br>
-        <div class="square-1">
-        <span style="color: rgb(0, 0, 184)">let res = func(4);</span> <span style="color: #7333bb;">// в переменную запишется 16</span> <br> <br>
-        <span style="color:rgb(0, 0, 184)">Выведем данные в консоль</span> <br> <br>
-        <span style="color: rgb(0, 0, 184);">let res = func(4);</span>  
-        <span style="color: rgb(0, 0, 184);">console.log(res);</span> <span style="color: #7333bb;">// выведет 16 </span>
-        </div>
-        <b>Цикл и return</b><br> <br>
-        <b>Пример 1:</b> <br> <br>
-        <b>Пусть у нас есть функция, возвращающая сумму чисел от 1 до 5:</b>
-         <div class="square-1">
-            function func() { <br> <br>
-                let sum = 0; <br> <br>
-                
-                for (let i = 1; i <= 5; i++) { <br> <br>
-                    sum += i; <br> <br>
-                } <br> <br>
-                
-                return sum; <br> <br>
-            }
+            Циклы используются для того, чтобы некоторый участок кода выполнился несколько раз подряд. <br>
+            Циклы могут повторять некоторый код заданное количество раз. Каждый такой проход цикла называется <i>итерацией</i> цикла. <br>
+            В циклах часто используются специальные переменные, которые каждую итерацию увеличивают свое значение на единицу. Такие переменные называются счетчиками циклов. Счетчики используются для того, чтобы подсчитывать, сколько раз выполнился цикл. Для счетчиков принято использовать буквы i, j и k. <br> <br>
+            <b>Перебор массива циклом for-of</b> <br> <br>
+            Цикл for-of позволяет последовательно перебирать элементы массивов.
+            <div class="b-l4">
+            <b><br> Синтаксис <br> </b> <br>  
+            </div>
+            <div class="square-1">
+            for (let переменная для элемента of массив) { <br>
+                /* <br>
+                    в переменную  для элемента по очереди 
+                    будут попадать элементы перебираемого массива. <br>
+                */ <br>
+            } <br>    
+            </div><br>
+            <div class="square-1">
+            let arr = [1, 2, 3, 4, 5]; <br>
+            for (let elem of arr) { <br>
+                console.log(elem); <br>
+            } <br>
+            </div> <br>
             
-            let res = func(); <br> <br>
-            console.log(res); // выведет 15 <br> <br>
-         </div>
-         <b>пример 2:</b> <br> <br>
-         <b>Пусть теперь мы расположим return внутри цикла.</b>
-         <div class="square-1">
-            function func() { <br> <br>
-                let sum = 0; <br> <br>
+            <b>Перебор объекта циклом for-in</b> <br> <br>
+            <div class="b-l4">
+            Для перебора объектов предназначен цикл for-in. <br> <br><br>    
+            </div>
+            
+            <b>Синтаксис</b> <br> <br>
+            <div class="b-l4">
+            for (let переменная для ключа in объект) { <br>
                 
-                for (let i = 1; i <= 5; i++) { <br> <br>
-                    sum += i; <br> <br>
-                    return sum; <br> <br>
-                } <br> <br>
-            } <br> <br>
-            <span style="color: rgb(0, 0, 184);">let res = func();</span> <br>
-            <span style="color: rgb(0, 0, 184);">console.log(res);</span>
-         </div>
-
-         <b>Цикл прокрутится лишь одну итерацию и произойдет автоматический выход из функции (ну и заодно из цикла). А за одну итерацию цикла в переменной sum окажется лишь число 1, а не вся нужная сумма.</b> <br> <br>
-         <b>Пример 3:</b> <br>
-         <div class="square-1">
-         Пусть функция, которая вычисляет, сколько целых чисел, начиная с 1, нужно сложить, чтобы результат был больше 100: <br> <br>
-         function func() { <br> <br>
-	     let sum = 0; <br> <br>
-	     let i = 1; <br> <br>
-	
-	     while (true) { // бесконечный цикл <br> <br>
-		 sum += i; <br> <br>
-		
-		 if (sum >= 100) { <br> <br>
-			return i; // цикл крутится пока не выйдет тут <br> <br>
-		 } <br> <br>
-		
-		 i++; <br> <br>
-	 } <br>
-} <br>
-console.log( func() );
-</div>
-<b>Выбор имени функции</b> <br>
-Функция – это действие. Поэтому имя функции обычно является глаголом. Оно должно быть кратким, точным и описывать действие функции, чтобы программист, который будет читать код, получил верное представление о том, что делает функция. <br> <br>
-Например, функции, начинающиеся с "show" обычно что-то показывают. <br>
-Функции, начинающиеся с… <br><br>
-•	"get…" – возвращают значение, <br> <br>
-•	"calc…" – что-то вычисляют, <br> <br>
-•	"create…" – что-то создают, <br> <br>
-•	"check…" – что-то проверяют и возвращают логическое значение, и т.д. <br> <br>
+            } <br>    
+            </div><br>
+            <div class="square-1">
+            let obj = {a: 1, b: 2, c: 3}; <br>
+            for (let key in obj) { <br>
+                console.log(key); // выведет 'a', 'b', 'c' <br>
+            } <br>    
+            
+            
+            Выведем элементы: <br>
+            for (let key in obj) { <br>
+                console.log(obj[key]); // выведет 1, 2, 3 <br>
+            } <br> 
+            </div> <br>
+            <b>Цикл while </b> <br> <br>
+            <div class="b-l4">
+            Цикл while будет выполняться до тех пор, пока истинно выражение, переданное ему параметром. Он позволяет выполнять произвольное количество итераций. <br> <br>    
+            </div>
+            
+            <b>Синтаксис</b> <br> <br>
+            <div class="square-1">
+            while ( пока выражение истинно ) { <br>
+                выполняем этот код циклически; <br>
+                в начале каждого цикла проверяем выражение 
+                    в круглых скобках <br>
+            } <br>     
+            </div> <br>
+            
+            <div class="b-l4">
+            Цикл закончится, когда выражение перестанет быть истинным.     
+            </div>
+            <div class="b-l4">
+            Выведем с помощью цикла while числа от одного до пяти: <br> <br>    
+            </div>
+            
+            <div class="square-1">
+            let i = 1; <br>
+            
+            while (i <= 5) { <br>
+                console.log(i); <br>
+                i++; <br>
+            } <br>    
+            </div><br>
+            <div class="b-l4">
+            Поделим заданное число на 2 столько раз, пока результат не станет меньше 10: <br><br>
+            </div>
+            <div class="square-1">
+            let num = 500; <br>
+            
+            while (num > 10) { <br>
+                num = num / 2; <br>
+            } <br>
+            console.log(num); // результат <br>    
+            </div> <br>
+            
+            
+            
+            <b>Цикл do..while</b> <br> <br>
+            <div class="b-l4">
+            В цикле do сначала выполняется код цикла, а потом происходит проверка условия в инструкции while. И пока это условие истинно, цикл повторяется.    
+            </div>
+             <br>
+             <div class="square-1">
+             let i = 1; <br>
+            
+            do{ <br>
+                console.log(i); <br>
+                i++; <br>
+            }while(i <= 5) <br>   
+             </div><br>
+            
+            
+            
+            <b>Цикл for</b> <br> <br>
+            <div class="b-l4">
+            Цикл for позволяет повторить некоторый код заданное количество раз. <br>    
+            </div> <br>
+            
+            <b>Синтаксис </b><br> <br>
+            <div class="square-1">
+            for (начальные команды; условие окончания; команды после <br>
+                прохода) { <br>
+                тело цикла <br>
+            
+            } <br>    
+            </div> <br>
+            <div class="b-l4">
+            Выведем с помощью цикла for выведем последовательно числа от 1 до 9: <br>    
+            </div> <br>
+            <div class="square-1">
+            for (let i = 1; i <= 9; i++) { <br>
+                console.log(i); // выведет 1, 2... 9 <br>
+            } <br>    
+            </div> <br>
+            <div class="b-l4">
+            Увеличим счетчик не на 1, а на 2: <br> <br>
+            </div>
+            
+            <div class="square-1">
+            for (let i = 1; i <= 9; i += 2) { <br>
+                console.log(i); // выведет 1, 3, 5... <br>
+            } <br>    
+            </div> <br>
+            <div class="b-l4">
+            Выполним обратный отсчет: <br>    
+            </div><br>
+            <div class="square-1">
+            for (let i = 10; i > 0; i--) { <br>
+                console.log(i); // выведет 10, 9, 8... <br>
+            } <br>    
+            </div> <br>
+            <div class="b-l4">
+            Переберём массив циклом for. <br> <br>   
+            </div>
+            <div class="square-1">
+            let arr = [1, 2, 3, 4, 5]; <br>
+            Выведем элементы массива в цикле: <br>
+            for (let i = 0; i <= arr.length - 1; i++) { <br>
+                console.log(arr[i]); <br>
+            } <br>    
+            </div><br>
+            <div class="b-l4">
+            Выведем элементы в обратном порядке: <br>    
+            </div><br>
+            <div class="square-1">
+            for (let i = arr.length - 1; i >= 0; i--) { <br>
+                console.log(arr[i]); <br>
+            } <br>    
+            </div><br>
+            <div class="b-l4">
+            <b>Инструкция break и continue</b> <br>    
+            </div><br>
+            <div class="b-l4">
+            Инструкция break позволяет досрочно завершать цикл. <br>    
+            </div><br>
+            <div class="square-1">
+            for(let i=1; i <= 6; i++){ <br>
+                  
+                 if(i===4) break; <br>
+                 console.log(i); <br>
+            } <br>
+            console.log("Конец работы"); <br>     
+            </div><br>
+            <div class="b-l4">
+            Согласно условию цикла блок цикла должен выполняться 6 раз, произвести 6 итераций. Однако поскольку в блоке цикла происходит поверка if (i===4) break;, то, когда значение переменной i достигнет 4, то данное условие прервет выполнение цикла с помощью оператора break. И цикл заершит работу. <br>
+            Существует также инструкция continue, запускающая новую итерацию цикла. <br>
+            </div><br>
+            
+                <div class="square-1">
+                for(let i=1; i <= 6; i++){  <br>
+                  
+                if(i===4) continue; <br>
+                console.log(i); <br>     
+                </div> <br>
+                
+            <div class="b-l4">
+            В этом случае, когда значение переменная i станет равной 4 , то выражение i===4 возвратит true, поэтому будет выполняться конструкция if(i===4) continue;. С помощью оператора continue она завершит текущую итерацию, далее идущие инструкции цикла не будут выполняться.      
+            </div>
+            
         </p>
-    <b>Стрелочные функции (Аrrow Function)</b> <br> <br>
-    <b>Синтаксис:</b> <br> <br>
-    (параметры) => { <br> <br>
-        // тело функции <br> <br>
-      } <br> <br>
-      Стрелочная функция записывается намного короче, чем обычная. В самой простой записи ключевое слово function и фигурные скобки не требуются. <br> <br>
-
-      Обычная функция <br> <br>
-let func1 = function(num1, num2) { <br> <br>
-	let result = num1 * num2; <br> <br>
-	return result; <br> <br>
-} <br> <br> <br>
-
-let func2 = (num1, num2) => { <br> <br>
-	let result = num1 * num2; <br> <br>
-	return result; <br>
-} <br> <br>
-
-<b>Стрелочная функция</b> <br> <br>
-let func1 = function(num1, num2) { <br> <br>
-	return num1 * num2 <br> <br>
-} <br> <br>
-
-let func2 = (num1, num2) => num1 * num2; <br> <br>
-
-Особое преимущество стрелочные функции имеют в качестве коллбэков. Давайте посмотрим на примере, на сколько упрощается код в таком случае. Пусть для примера у нас есть следущая функция filter: <br>
-<br>
-function filter(arr, callback) { <br> <br>
-	let res = []; <br> <br>
-
-	for (let elem of arr) { <br> <br>
-		if ( callback(elem) === true ) { <br> <br>
-			res.push(elem); <br> <br>
-		} <br> <br>
-	} <br> <br>
-	
-	return res; <br> <br>
-}
-<br> <br>
-Вызовем эту функцию, передав ей коллбэк: <br> <br>
-let result = filter([1, 2, 3, 4, 5], function(elem) { <br> <br>
-	if (elem % 2 === 0) { <br> <br>
-		return true; <br> <br>
-	} else { <br> <br>
-		return false; <br> <br>
-	} <br> <br>
-}); <br>
-Анонимные функции
-Функции также могут быть созданы как выражения. В этом случае функция называется анонимной, потому что она не имеет имени. Синтаксис следующий:
-let имя_переменной = function(параметры) {
-  // тело функции
-}
-let printMessage = function(message) {  console.log(message);
-}
-Вызов этой функции будет выглядеть так:
-printMessage('Hello World') // выведет Hello World
-Рекурсивные функции
-function fac(n) {
-  if (n < 2) {
-    return 1
-  } else {
-    return n * fac(n - 1)
-  }
-}
-console.log(fac(3))
-// 6
-
     </div>
     </main>
     <footer class="block-info-4">

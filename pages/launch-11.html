@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный учебник</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="img/transparter.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="container header-nav">
+            <a href="#" class="header-logo">
+                <img class="img" src="../img/Group 5.svg" alt="logo">
+            </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
+        </nav>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
+    </header>
+    <main class="main">
+    <div class="block-left">
+        <ul>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
+        </ul>
+        
+    </div>
+    <div class="block-right">
+        <h2 class="menu-title">Методы чисел</h2><br>
+        <div class="menu-count">
+        <div class="menu-nav">
+            <a href="#Mathround ">Math.Round</a>
+            <a href="#toFixed">toFixed</a>
+            <a href="#parseInt">parseInt</a>
+        </div>
+        </div>
+        <br>
+        <p>
+            <b id="#Mathround">Метод Math.round (число)</b><br>
+Метод Math. Round позволяет округлять значение до целого числа. <br>
+<div class="square-1">
+let x = 5.83;<br>
+console.log(Math.round(x)); //вернёт: 6<br>    
+</div><br>
+<div class="b-l4">
+Округление числа производится по математическим правилам. Если после запятой идёт цифра от 0 до 4, то дробная часть просто <br><br> отбрасывается. А если после запятой идёт цифра от 5 до 9, то дробная часть отбрасывается, а к целой части прибавляется единица.<br><br>    
+</div> <br>
+
+<b id="toFixed">Метод toFixed</b> <br><br>
+<div class="b-l4">
+Метод toFixed округляет число до заданной точности. <br><br>    
+</div>
+<div class="square-1">
+число.toFixed (точность)<br>    
+</div><br>
+<div class="b-l4">
+Этот метод возвращает не число а строку. Чтобы преобразовать её в число можно добавить + к возвращаемому значению.<br><br>    
+</div>
+<div class="square-1">
+let num = x.toFixed(1);<br>
+console.log(+num); //вернёт: 5.8<br>   
+</div><br>
+
+<b id="parseInt">Метод parseInt </b><br><br><br>
+<div class="b-l4">
+Метод parseInt преобразует строку в целое число. Это нужно для значений типа '12px' - когда вначале стоит число, а потом единицы <br><br> измерения. Если применить parseInt к '12px', то результатом получится число 12 (и это будет действительно число, а не строка). <br><br> Преобразование произойдет, если только целое число стоит в начале строки, иначе будет выведено NaN. Вторым параметром можно <br><br> указать систему счисления числа, и функция вернет число, переведенное из указанной системы счисления в десятичную. <br><br>
+Преобразуем строку в целое число:<br><br>    
+</div>
+<div class="square-1">
+console.log(parseInt('10px'));<br>
+Результат выполнения кода:<br>
+10<br>    
+</div> <br>
+<div class="b-l4">
+Преобразуем  дробь,при этом дробная часть будет отброшена:<br><br>
+</div>
+<div class="square-1">
+console.log(parseInt('10.3px'));<br>
+Результат выполнения кода:<br>
+10<br>
+</div> <br>
+<div class="b-l4">
+<b>Метод Math.floor и Math.ceil</b><br><br>    
+</div>
+<div class="b-l4">
+Метод Math.floor() округляет в меньшую сторону. Он отбрасывает дробную часть числа. А метод Math.ceil() округляет в большую сторону. Он <br><br> отбрасывает дробную часть, а к целой части прибавляет единицу. <br><br>
+</div>
+<div class="square-1">
+console.log(Math.floor(x)); // вернёт 5<br>
+console.log(Math.ceil(x)); // вернёт 6<br>    
+</div><br>
+
+<b>Метод Math.random</b><br><br><br>
+<div class="b-l4">
+Метод Math.random() генерирует случайное число в диапазоне от 0 до 1. При этом ровно 1 не бывает, число вегда будет меньше.<br><br>
+Обычно случайное число нужно получить в каком-то конкретном диапазоне.<br><br>    
+</div>
+<div class="square-1">
+let rand = -2 + Math.random() * (5 - (-2));<br>
+console.log(rand);<br>
+</div><br>
+<div class="b-l4">
+Максимальное будет 4.999999999. Полученные значения можно округлить до нужной точности.<br><br>    
+</div><br>
+
+<b>Метод Math.pow</b><br><br><br>
+<div class="b-l4">
+Метод Math.pow возводит число в заданную степень. Первым параметром передается число, вторым - в какую степень его возвести.<br><br>
+Возведем число 3 в степень 4:<br>    
+</div><br>
+<div class="square-1">
+console.log (Math.pow(3, 4));<br>
+Результат выполнения кода:<br>
+81<br>   
+</div><br>
+
+<div class="b-l4">
+Возведём число 2 в степень -5:<br><br>    
+</div>
+<div class="square-1">
+console.log (Math.pow(2, -5));<br>
+Результат выполнения кода:<br>
+0.03125<br>   
+</div> <br>
+<div class="b-l4">
+Существует оператор **, возводящий числа в степень:<br><br>    
+</div>
+<div class="square-1">
+console.log (3 ** 4);<br>
+Результат выполнения кода:<br>
+81<br>
+</div><br>
+<div class="b-l4">
+<b>Метод Math.max</b><br><br>
+Метод Math.max возвращает максимальное число из группы чисел, переданных в функцию. Если в функцию ничего не передано, то будет <br><br> возращено -Infinity.<br><br>
+Выведем максимальное число из группы чисел:<br><br>    
+</div>
+<div class="square-1">
+console.log(Math.max(1, 5, 10, 34, 100));<br>
+Результат выполнения кода:<br>
+100<br>    
+</div><br>
+<div class="b-l4">
+Выведем максимальное число из группы чисел:<br><br>    
+</div>
+<div class="square-1">
+console.log(Math.max(-1, 0, -20, -56, -100));<br>
+Результат выполнения кода:<br>
+0<br>    
+</div> <br>
+<div class="b-l4">
+В следующем примере выведется -Infinity, так как методу не передали параметров:<br><br>    
+</div>
+<div class="square-1">
+console.log(Math.max());<br>
+Результат выполнения кода:<br>
+-Infinity<br>     
+</div><br>
+<div class="b-l4">
+По умолчанию функция не работает с массивами. Однако ее можно заставить сделать это с помощью оператора spread. Выведем <br><br> максимальное значение массива:<br><br>    
+</div>
+<div class="square-1">
+let arr = [1, 5, 10, 34, 100];<br>
+let max = Math.max(...arr);<br>
+console.log(max);<br>
+Результат выполнения кода:<br>
+100<br>    
+</div><br>
+<div class="b-l4">
+Можно заставить функцию работать с массивами с помощью метода apply:<br><br>    
+</div>
+<div class="square-1">
+let arr = [1, 5, 10, 34, 100];<br>
+let max = Math.max.apply(null, arr);<br>
+console.log(max);<br>
+Результат выполнения кода:<br>
+100<br>  
+</div><br>
+
+<b>Метод Math.sqrt</b><br><br>
+<div class="b-l4">
+Метод Math.sqrt возвращает квадратный корень числа.<br><br>
+Возьмем квадратный корень из 4:<br><br>    
+</div>
+<div class="square-1">
+console.log(Math.sqrt(4));<br>
+Результат выполнения кода:<br>
+2<br>    
+</div> <br>
+<div class="b-l4">
+Получим квадратный корень из 15:<br><br>    
+</div>
+<div class="square-1">
+console.log(Math.sqrt(15));<br>
+Результат выполнения кода:<br> 
+3.872983346207417<br>  
+</div><br>
+<div class="b-l4">
+Получим квадратный корень из -100. Так как передано отрицательное число, то будет выведен NaN:<br> 
+</div><br>
+<div class="square-1">
+console.log(Math.sqrt(-100));<br>
+Результат выполнения кода:<br>
+NaN<br>    
+</div><br>
+
+<b>Метод Math.min</b><br><br>
+<div class="b-l4">
+Метод Math.min возвращает минимальное число из группы чисел, переданных параметрами. Если параметрами ничего не передано, то <br><br> будет возращено Infinity. <br> <br>
+Выведем минимальное число из группы чисел:<br>    
+</div>
+<br>
+<div class="square-1">
+console.log(Math.min(40, 20, 42, 100, 67));<br>
+Результат выполнения кода:<br>
+20<br>    
+</div> <br>
+<div class="b-l4">
+Выведем минимальное число из группы чисел:<br><br>    
+</div>
+<div class="square-1">
+console.log(Math.min(-1, -100, -30, -25, 40));<br>
+Результат выполнения кода:<br>
+-100<br>    
+</div><br>
+<div class="b-l4">
+В следующем примере выведется Infinity, так как методу не передали параметров:<br><br>    
+</div>
+<div class="square-1">
+console.log(Math.min());<br>
+Результат выполнения кода:<br>
+Infinity<br>
+</div><br>
+<div class="b-l4">
+По умолчанию функция не работает с массивами. Однако ее можно заставить сделать это с помощью оператора spread. Выведем <br><br> минимальное значение массива:    
+</div>
+<br>
+<div class="square-1">
+let arr = [1, 5, 10, 34, 100];<br>
+let min = Math.min(...arr);<br>
+console.log(min);<br>
+Результат выполнения кода:<br>
+1<br>
+</div><br>
+<div class="b-l4">
+Можно заставить функцию работать с массивами с помощью метода apply:<br>   
+</div><br>
+<div class="square-1">
+let arr = [1, 5, 10, 34, 100];<br>
+let min = Math.min.apply(null, arr);<br>
+console.log(min);<br>
+Результат выполнения кода:<br>
+1<br>    
+</div><br>
+
+
+
+
+        </p>
+    </div>
+    </main>
+    <footer class="block-info-4">
+        <div class="block">
+            <p>8-800-700-93-29</p>
+            <p class="zvonok">Звонок по России бесплатный</p>
+            <a href="#"><img class="telegram" src="../img/icons8-телеграмма-app-48.png" alt=""></a>
+            <a href="#"><img class="img-vk" src="../img/icons8-vk-48.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

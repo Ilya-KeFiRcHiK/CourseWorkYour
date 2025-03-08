@@ -13,32 +13,37 @@
             <a href="#" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
         </nav>
-        <section class="block-info">
-            <div class="block-info-text">
-                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
-            </div>
-        </section>
-        </section>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
     </header>
     <main class="main">
     <div class="block-left">
         <ul>
-        <a href="start.html" class="menu-left">Введение</a>
-        <a href="launch.html" class="menu-left">Запуск программы</a>
-        <a href="launch-2.html" class="menu-left">Переменные</a>
-        <a href="launch-3.html" class="menu-left">Типы данных</a>
-        <a href="launch-4.html" class="menu-left">Числа</a>
-        <a href="launch-5.html" class="menu-left">Математические операции</a>
-        <a href="launch-6.html" class="menu-left">Строки</a>
-        <a href="launch-7.html" class="menu-left">Условия</a>
-        <a href="launch-8.html" class="menu-left">Функции</a>
-        <a href="launch-9.html" class="menu-left">Циклы</a>
-        <a href="launch-10.html" class="menu-left">Массивы</a>
-        <a href="#" class="menu-left">Методы</a>
-        <a href="#" class="menu-left">Объекты</a>
-        <a href="#" class="menu-left">Дата и время</a>
-        <a href="#" class="menu-left">Введение в DOM</a>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
         </ul>
         
     </div>
@@ -63,40 +68,40 @@
         <p><b>Для того, чтобы использовать переменную необходимо:</b><br>
             <b>- объявить:</b> написать перед ее именем ключевое слово. <br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184)">let А</span> 
+            <span style="color: rgb(11, 11, 255)">let</span>  <span style="color: green">А</span>
              </div>
             <b>- присвоить ей значение:</b><br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184)">А</span> = <span style="color: black">5</span>   
+            <span style="color: green">А</span> = <span style="color: black">5</span>   
             </div>
             <b> - вывести значение переменной на экран:</b><br> <br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184)">alert(А); let А;</span> <span style="color: #7333bb">// объявим переменную</span>
+            <span style="color: rgb(11, 11, 255)">alert(А); let <span style="color: green;">А;</span> <span style="color: #7802ff"> // объявим переменную</span>
             
-            <br> <br>
-            <span style="color: rgb(0, 0, 184)">А</span> = <span style="color: black">3</span>; <span style="color: #7333bb">// присвоим ей значение</span> <br> <br>
+            <br>
+            <span style="color: green">А</span> = <span style="color: black">3</span>; <span style="color: #7802ff"> // присвоим ей значение</span> <br> 
             
-            <span style="color: rgb(0, 0, 184)">аlert (А)</span>; <span style="color: #7333bb">// выведем значение переменной на экран</span> <br>
+            <span style="color: rgb(11, 11, 255)">аlert (А)</span>; <span style="color: #7802ff"> // выведем значение переменной на экран</span> <br>
             <br>
             </div>
             <b>Можно объявить несколько переменных:</b>
             <br>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184)">let А</span> = <span style="color: black">5</span>;<br> <br>
-            <span style="color: rgb(0, 0, 184)">let В</span> = <span style="color: black">10</span>;<br> <br>
-            <span style="color: rgb(0, 0, 184)">let С</span> = <span style="color: black">15</span>;<br> <br>
-            <span style="color: rgb(0, 0, 184)">let А</span>, <span style="color: rgb(0, 0, 184)">В</span>, <span style="color: rgb(0, 0, 184)">С</span>; <span style="color: #7333bb">// объявляем все 3 переменные</span> <br>  
+            <span style="color: rgb(11, 11, 255)"> let<span style="color: green;"> А</span></span> = <span style="color: black">5</span>;<br> 
+            <span style="color: rgb(11, 11, 255)">let <span style="color: green;"> В</span> </span> = <span style="color: black">10</span>;<br> 
+            <span style="color: rgb(11, 11, 255)">let <span style="color: green;"> С</span></span> = <span style="color: black">15</span>;<br> 
+            <span style="color: rgb(11, 11, 255)">let <span style="color: green;"> А</span> </span>, <span style="color: green">В</span>, <span style="color: green;">С</span>; <span style="color: #7333bb">// объявляем все 3 переменные</span> <br>  
             </div>
             
             <br>
             
             <b>Можно изменить значение переменной:</b>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184)">let А</span>;<span style="color: #7333bb">// объявляем переменную</span> <br> <br>
-            <span style="color: rgb(0, 0, 184)">А</span> = <span style="color: black">2</span>;<span style="color: #7333bb">// записываем в нее значение 2</span> <br> <br>
-            <span style="color: rgb(0, 0, 184)">alert(А)</span>;<span style="color: #7333bb">// выведет 2</span> <br> <br>
-            <span style="color: rgb(0, 0, 184)">А</span> = <span style="color: black">5</span>;<span style="color: #7333bb">// записываем теперь значение 5, затирая значение 2</span> <br> <br>
-            <span style="color: rgb(0, 0, 184)">alert(А)</span>; <span style="color: #7333bb">// выведет 5</span> <br>
+            <span style="color: rgb(11, 11, 255)">let <span style="color: green;">А</span> </span>;<span style="color: #7802ff">// объявляем переменную</span> <br> 
+            <span style="color: rgb(11, 11, 255)"> <span style="color: green;">А</span></span> = <span style="color: black">2</span>;<span style="color: #7802ff">// записываем в нее значение 2</span> <br> 
+            <span style="color: rgb(11, 11, 255)">alert(А)</span>;<span style="color: #7802ff">// выведет 2</span> <br> 
+            <span style="color: rgb(11, 11, 255)"><span style="color: green;">А</span></span> = <span style="color: black">5</span>;<span style="color: #7802ff">// записываем теперь значение 5, затирая значение 2</span> <br> 
+            <span style="color: rgb(11, 11, 255)">alert(А)</span>; <span style="color: #7802ff">// выведет 5</span> <br>
             </div>
             <br>
             
@@ -104,11 +109,11 @@
             Можно просто ввести две разных переменных: <br>
             </b>
             <div class="square-1">
-            <span style="color: rgb(0, 0, 184)">let А</span> = <span style="color: black">1</span>;<br> <br>
-            <span style="color: rgb(0, 0, 184)">alert(a);</span> <br>
+            <span style="color: rgb(11, 11, 255)">let</span><span style="color: green;">А</span> = <span style="color: black">1</span>;<br> 
+            <span style="color: rgb(11, 11, 255)">alert(a);</span> 
             <br>
-            <span style="color: rgb(0, 0, 184)">let В</span> = <span style="color: black">2</span>; <br> <br>
-            <span style="color: rgb(0, 0, 184)">alert(b);</span> <br>
+            <span style="color: rgb(11, 11, 255)">let <span style="color: green;">В</span> = <span style="color: black">2</span>; <br> 
+            <span style="color: rgb(11, 11, 255)">alert(b);</span> <br>
             </div>
             </p>    
     </div>

@@ -13,126 +13,485 @@
             <a href="#" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
+            <div class="header-count">
+        <a href="sign-in.html" class="header-link" href="#">Войти</a>
+        <a href="registration.html" class="header-link" href="#">Регистрация</a>    
+        </div>
         </nav>
-        <section class="block-info">
-            <div class="block-info-text">
-                <p class="block-info-p">Добро пожаловать в учебник JavaScript!</p>
-            </div>
-        </section>
-        </section>
+        
+            
+                <h1 class="block-info-p block-info-text-p">Добро пожаловать в учебник JavaScript!</h1>
+            
     </header>
     <main class="main">
     <div class="block-left">
         <ul>
-        <a href="start.html" class="menu-left">Введение</a>
-        <a href="launch.html" class="menu-left">Запуск программы</a>
-        <a href="launch-2.html" class="menu-left">Переменные</a>
-        <a href="launch-3.html" class="menu-left">Типы данных</a>
-        <a href="launch-4.html" class="menu-left">Числа</a>
-        <a href="launch-5.html" class="menu-left">Математические операции</a>
-        <a href="launch-6.html" class="menu-left">Строки</a>
-        <a href="launch-7.html" class="menu-left">Условия</a>
-        <a href="launch-8.html" class="menu-left">Функции</a>
-        <a href="launch-9.html" class="menu-left">Циклы</a>
-        <a href="launch-10.html" class="menu-left">Массивы</a>
-        <a href="#" class="menu-left">Объекты</a>
-        <a href="#" class="menu-left">Методы</a>
-        <a href="#" class="menu-left">Дата и время</a>
-        <a href="#" class="menu-left">Введение в DOM</a>
+            <a href="start.html" class="menu-left">Введение</a>
+            <a href="launch.html" class="menu-left">Запуск программы</a>
+            <a href="launch-2.html" class="menu-left">Переменные</a>
+            <a href="launch-3.html" class="menu-left">Типы данных</a>
+            <a href="launch-4.html" class="menu-left">Математические операции</a>
+            <a href="launch-5.html" class="menu-left">Строки</a>
+            <a href="launch-6.html" class="menu-left">Условия</a>
+            <a href="launch-7.html" class="menu-left">Функции</a>
+            <a href="launch-8.html" class="menu-left">Циклы</a>
+            <a href="launch-9.html" class="menu-left">Массивы</a>
+            <a href="launch-10.html" class="menu-left">Объекты</a>
+            <a href="launch-11.html" class="menu-left">Методы чисел</a>
+            <a href="launch-12.html" class="menu-left">Методы строк</a>
+            <a href="launch-13.html" class="menu-left">Методы функций</a>
+            <a href="launch-14.html" class="menu-left">Методы массивов</a>
+            <a href="launch-15.html" class="menu-left">Методы объектов</a>
+            <a href="launch-16.html" class="menu-left">Дата и время</a>
+            <a href="launch-17.html" class="menu-left">Введение в DOM</a>
         </ul>
         
     </div>
     <div class="block-right">
-        <h2 class="menu-title">Строки</h2>
+        <h2 class="menu-title">Условия</h2>
         <br>
         <p>
-        Для применения строк применяют кавычки: одинарные  ('), двойные (") или  обратные  (`). <br>
-        let str = 'abc'; <br>
-        alert(str); // выведет 'abc' <br>
-        let str = "abc"; <br>
-        alert(str); // выведет 'abc' <br>
-        <br>
-        <b>Получение символа в строке.</b> <br>
-        Каждый символ в строке имеет свой порядковый номер: первый символ  номер 0, второй символ - номер 1, третий символ номер 2 и так далее. <br>
-            Нумерация символов начинается с нуля. Можно получить доступ к  определенному символу строки по его номеру. Для этого пишется имя  переменной, после этого имени ставятся квадратные скобки и в этих скобках  указывается номер символа. <br>
-            let str = 'abcde'; <br>
-            alert(str[0]); // выведет 'a' <br>
-            alert(str[1]); // выведет 'b' <br>
-            alert(str[2]); // выведет 'c' <br>
-            Номер символа также может хранится и в переменной: <br>
-            let str = 'abcde'; <br>
-            let num = 3; // номер символа в переменной <br>
-            alert(str[num]); // выведет 'd'
-            <br>
-            <b>Получение последнего символа в строке</b> <br>
-            let str = 'abcde'; <br>
-            let last = str.length - 1; // номер последнего символа <br>
-            alert(str[str.length - 1]); // выведет 'e' <br>
-            <br>
-            <b>Длина строки</b> <br>
-            Количество символов в строке содержится в свойстве length: <br>
-            let str = 'abcde'; <br>
-            alert(str.length); // выведет 5 <br>
-            Свойство length можно применять непосредственно к строке: <br>
-            alert('abcde'.length); // выведет 5 <br>
-            <br>
-            <b>Шаблонные строки</b> <br>
-            Существует специальный тип кавычек – обратные (косые): <br>
-            let str = `abc`; <br>
-            alert(str); // выведет 'abc' <br>
-            В косых кавычках можно выполнять вставку переменных. Для этого имя  переменной нужно написать в конструкции ${}.
-            <br>
-            let str = 'xxx'; <br>
-            let txt = 'aaa ' + str + ' bbb'; <br>
-            Этот код можно переписать следующим образом: <br>
-            let str = 'xxx'; <br>
-            let txt = `aaa ${str} bbb`; <br>
-            <br>
-            <b>Сложение строк в JavaScript</b> <br>
-            Для сложения строк используется оператор +: <br>
-            let str = 'abc' + 'def'; // складываем две строки <br>
-            alert(str); // выведет 'abcdef' <br>
+        <b>Условные операторы</b> <br>
+        <b>Конструкция if-else </b> <br>
+        Конструкция <b>if</b> задает условие. С помощью этой конструкции мы можем  задать программе вопрос "больше ли переменная a, чем переменная b",  и в зависимости от ответа выполнить или один код, или другой. <br>
+        Как правило данная конструкция используется в комбинации с  конструкцией else. <br>
+        <b>Синтаксис</b> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if (логическое выражение) { <br>
+        <span style="color: #7802ff;">
+        /* <br>
+        расположенный здесь код выполниться, 
+        если логическое выражение верное <br>
+        */ <br>
+        </span>
+        }; <br>
+        </span>    
+        </div> <br>
+        <div class="b-l4">
+        Если в фигурный скобках только одно выражение, можно эти фигурные  скобки не писать. <br> <br>
+        </div>
+        
+        <b>Операторы больше и меньше</b> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">    
+        Для проверки того, которое из значений больше, а которое меньше,  используются операторы: <br>
+        > больше <br>
+        >= больше или равно <br>
+        < меньше <br>  
+        <= меньше или равно <br>
+        </span>  
+        </div> <br>
+        
+        <b>Проверим, значение переменной больше нуля или нет:</b> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = <span style="color: black;">1</span>; <br>
             
-            let str1 = 'abc'; <br>
-            let str2 = 'def'; <br>
-            alert(str1 + str2); // выведет 'abcdef' <br>
-            <br>
-            <b>Многострочность</b> <br>
-            В JavaScript строках, созданных через одинарные или двойные кавычки, не  допустим перенос строки.  <br>
-            Косые кавычки специально предназначены для создания многострочных  строк: <br>
-            let str = `abc <br>
-            def`; // так будет работать <br>
-            <br>
-            <b>Преобразование строки в верхний регистр </b> <br>
-            <b>Метод toUpperCase</b> <br>
-            let str = 'abcde'; <br>
-            console.log(str.toUpperCase()); <br>
-            Результат выполнения кода: <br>
-            'ABCDE' <br>
-            <br>
-            <b>Метод slice</b> <br>
-            let str = 'abcde'; <br>
-            let res = str.slice(0, 1).toUpperCase() + str.slice(1); <br>
-            console.log(res); <br>
-            Результат выполнения кода: <br>
-            'Abcde' <br>
-            <br>
-            <b>Преобразование строки в нижний регистр</b><br>
-            <b>Метод toLowerCase</b><br>
-            let str = 'ABCDE'; <br>
-            console.log(str.toLowerCase()); <br>
-            Результат выполнения кода: <br>
-            'abcde'<br>
-            <br>
-            <b>Возвращение символа в строке</b> <br>
-            <b>Метод charAt </b>
-            let str  = 'abcde';
-            let char = str.charAt(0);
-            <br>
-            console.log(char); <br>
-            Результат выполнения кода: <br>
-            'a'
+        if (test > 0) { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>    
+        </div> <br>
+        
+        <b>Значение переменной  отрицательное число:</b> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = <span style="color: black;">-1</span>; <br>
             
+        if (<span style="color: green;">test</span> > 0) { <br>
+            console.log('<span style="color: black;">+++</span>'); <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } <br>
+        </span>
+        </div> <br>
+        
+        <b>Значение переменной равно 0. В этом случае мы попадем в блок else, так как в нашем условии написано, что переменная test должна быть строго  больше нуля:</b> <br> <br>
+
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = 0; <br>
+            
+        if (<span style="color: green;">test</span> > 0) { <br>
+            console.log('<span style="color: black;">+++</span>'); <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } <br>
+        </span>    
+        </div> <br>
+        
+        <b>Значение переменной больше или равно:</b> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = 0; <br>
+            
+        if (<span style="color: green;">test</span> >= 0) { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>
+        </div> <br>
+
+        <div class="b-l4">Значение переменной меньше 0:</div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = 0; <br>
+            
+        if (<span style="color: green;">test</span> < 0) { <br>
+            console.log('<span style="color: black;">+++</span>'); <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } <br>  
+        </span>   
+        </div> <br>
+           
+        
+        
+        <b>Значение переменной меньше или равно:</b> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = 0; <br>
+            
+        if (<span style="color: green;">test</span> <= 0) {  <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>    
+        </div> <br>
+        
+        <b>Проверка на равенство</b> <br> <br>
+        <div class="b-l4">Для проверки двух значений на равенство используется оператор ==.</div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = 10; <br>
+            
+        if (<span style="color: green;">test</span> == 10) { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>    
+        </div> <br>
+        
+        <b>Проверка на неравенство</b> <br> <br>
+        <div class="b-l4">Оператор != проверяет на неравенство. Давайте для примера проверим, что  переменная test не равна 0:</div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = 1; <br>
+            
+        if (<span style="color: green;">test</span> != 0) { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>    
+        </div> <br>
+        
+        <div class="b-l4">Поменяем значение переменной:</div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = 0; <br>
+            
+        if (<span style="color: green;">test</span> != 0) { <br>
+            console.log('<span style="color: black;">+++</span>'); <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } <br>
+        </span>    
+        </div> <br>
+        
+        <b>Сравнение переменных</b> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test1</span> = <span style="color: black;">1</span>; <br>
+        let <span style="color: green;">test2</span> = <span style="color: black;">2</span>; <br>
+            
+        if (<span style="color: green;">test2</span> > <span style="color: green;">test1</span> ) { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else {<br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br> 
+        </span>   
+        </div> <br>
+        
+
+        <b>Равенство строк</b> <br> <br>
+        <div class="b-l4">При использовании конструкции if можно сравнивать и строки. Для примера  пусть в переменной test хранится какая-то строка, например 'abc':</div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = '<span style="color: black;">abc</span>'; <br>
+        </span>
+        </div> <br>
+        
+        
+        <div class="b-l4">Давайте проверим, равно ли содержимое переменной test строке 'abc':</div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        let <span style="color: green;">test</span> = '<span style="color: black;">abc</span>'; <br>
+            
+        if (<span style="color: green;">test</span> == '<span style="color: black;">abc</span>') { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>    
+        </div> <br>
+        
+        <b>Равенство строк и чисел</b>
+        <b>Сравним строку '3' и число 3:</b> <br> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if ('<span style="color: green;">3</span>' == <span style="color: green;">3</span>) { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span> 
+        </div> <br>
+        
+        <b>Равенство по значению и типу</b> <br> <br><br>
+        <div class="b-l4">
+        Вместо оператора == следует использовать оператор ===. <br><br>
+        При сравнении строки '3' и числа 3 условие будет ложным, так как  переменные, хотя и равны по значению, но не равны по типу: <br>  <br>  
+        </div>
+        
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if ('<span style="color: green;">3</span>' === <span style="color: black;">3</span>) { <br>
+            console.log('<span style="color: black;">+++</span>'); <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } <br>
+        </span>    
+        </div> <br>
+        <div class="b-l4">
+        При сравнении двух строк '3' условие будет истинно: <br>    
+        </div> <br>
+        
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if ('<span style="color: green;">3</span>' === '<span style="color: green;">3</span>') { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>  
+        </div> <br>
+        
+        <div class="b-l4">
+        Как и при сравнении чисел: <br>    
+        </div> <br>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if (<span style="color: black;">3</span> === <span style="color: black;">3</span>) { <br>
+            console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <br>
+        } <br>
+        </span>   
+        </div> <br>
+        <div class="b-l4">
+        Разница между оператором == и оператором === проявляется именно тогда,  когда значения одинаковые, но разный тип данных. В <br><br> остальных случаях эти  операторы работают одинаково. К примеру, при сравнении разных чисел,  конечно же, выведется '---': <br>    
+        </div> <br>
+
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if (<span style="color: black;">2</span> === <span style="color: black;">3</span>) { <br>
+            console.log('<span style="color: black;">+++</span>');<br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } <br>
+        </span>   
+        </div> <br>
+        
+        <b>Неравенство по значению и типу</b> <br> <br><br>
+        <div class="b-l4">
+        Кроме оператора != существует также оператор !==, учитывающий тип при  сравнении. Давайте рассмотрим различия между ними на <br><br> примерах. <br><br>
+        Пусть с помощью оператора != сравниваются два числа 3. Данный оператор  сравнивает значения на то, что они НЕ равны. Так как наши <br><br> значения как раз-таки равны, то условие будет ложным: <br>  <br>  
+        </div>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if (<span style="color: black;">3</span> != <span style="color: black;">3</span>) { <br>
+            console.log('<span style="color: black;">+++</span>'); <br>
+        } else { <br>
+            console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+        } <br>
+        </span>   
+        </div> <br>
+        <div class="b-l4">
+        Пусть теперь одно из наших значений будет в кавычках. В этом случае  оператор != все равно посчитает их равными (так как совпадает <br><br> значение, а  тип не важен для данного оператора) и опять условие будет ложным: <br> <br>   
+        </div>
+        <div class="square-1">
+        <span style="color: rgb(11, 11, 255);">
+        if ('<span style="color: green;">3</span>' != <span style="color: black;">3</span>) { <br>
+                console.log('<span style="color: black;">+++</span>'); <br>
+            } else { <br>
+                console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span><br>
+            } <br>
+        </span>   
+        </div> <br>
+            
+        <div class="b-l4">
+        Давайте теперь сравним два числа 3 с помощью оператора !==. Он также посчитает их равными: <br> <br>  
+        </div>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            if (<span style="color: black;">3</span> !== <span style="color: black;">3</span>) { <br>
+                console.log('<span style="color: black;">+++</span>'); <br>
+            } else { <br>
+                console.log('<span style="color: black;">---</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+            } <br>
+            </span>    
+            </div> <br>
+            
+            <div class="b-l4">
+            А вот если теперь одну из троек взять в кавычки, то оператор !== посчитает  наши тройки неравными, так как, хотя значения их и совпадают, <br><br> но у них  разный тип:    
+            </div> <br>
+
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            if ('<span style="color: green;">3</span>' !== <span style="color: black;">3</span>) { <br>
+                console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+            } else { <br>
+                console.log('<span style="color: black;">---</span>'); <br>
+            } <br>
+            </span>    
+            </div> <br>
+            
+            <div class="b-l4">
+            <b>Логическое И</b> <br>    
+            </div> <br>
+            <div class="b-l4">
+            Можно группировать операции сравнения с помощью оператора &&,  представляющего собой логическое И. <br> <br>
+            Если переменная num больше нуля и одновременно меньше 10, только тогда  выведется '+++':    
+            </div> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">num</span> = <span style="color: black;">3</span>; <br>
+            
+            if (<span style="color: green;">num</span> > <span style="color: black;">0</span> && <span style="color: green;">num</span> < <span style="color: black;">10</span>) { <br>
+                console.log('<span style="color: black;">+++</span>'); <br>
+            } else { <br>
+                console.log('<span style="color: black;">---</span>'); <br>
+            } <br>
+            </span>   
+            </div><br>
+
+            <div class="b-l4">
+            Условия могут налагаться не на одну переменную, а на разные. <br> <br>
+            Если переменная num1 равна 2 и одновременно переменная num2 равна 3, только тогда условие будет истинно: <br><br> 
+            </div>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">num1</span> = <span style="color: black;">2</span>; <br>
+            let <span style="color: green;">num2</span> = <span style="color: black;">3</span>; <br>
+            
+            if (<span style="color: green;">num1</span> == <span style="color: black;">2</span> && <span style="color: green;">num2</span> == <span style="color: black;">3</span>) { <br>
+                console.log('<span style="color: black;">+++</span>'); <br>
+            } else { <br>
+                console.log('<span style="color: black;">---</span>'); <br>
+            } <br>
+            </span>    
+            </div> <br>
+            
+            <div class="b-l4">
+            <b>Логическое ИЛИ</b>    
+            </div> <br>
+            <div class="b-l4">
+            Оператор || представляет собой логическое ИЛИ и требует выполнения хотя  бы одного условия.
+            Если переменная num1 больше 0 или <br><br> переменная num2 больше 0, то условие  будет истинно (достаточно выполнения хотя бы одного из условий): <br>    
+            </div> <br>
+            
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">num1</span> = <span style="color: black;">10</span>; <br>
+            let <span style="color: green;">num2</span> = <span style="color: black;">-5</span>; <br>
+            
+            if (<span style="color: green;">num1</span> > <span style="color: black;">0</span> || <span style="color: green;">num2</span> > <span style="color: black;">0</span>) { <br>
+                console.log('<span style="color: black;">+++</span>'); <span style="color: #7802ff;">// сработает это</span> <br>
+            } else { <br>
+                console.log('<span style="color: black;">---</span>'); <br>
+            } <br>
+            </span> 
+            </div> <br>
+            
+            
+            <b>Условия с булевыми значениями</b> <br> <br>
+            <div class="b-l4">
+            Пусть у нас есть какая-то переменная, которая может принимать  значения true или false: <br> <br>
+            </div>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">test</span> = true; <br>
+            </span>
+            </div> <br>
+            
+            <div class="b-l4">
+            Давайте напишем if, проверяющий нашу переменную на значение true: <br>    
+            </div> <br>
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">test</span> = true; <br>
+            
+            if (<span style="color: green;">test</span> === true) { <br>
+                console.log('<span style="color: black;">+++</span>'); <br>
+            } else { <br>
+                console.log('<span style="color: black;">---</span>'); <br>
+            } <br>
+            </span>   
+            </div> <br>
+            
+            <b>Вложенные конструкции if-else </b> <br> <br> <br>
+            <div class="b-l4">
+            Конструкции <b>if-else</b>  можно вкладывать друг в друга произвольным образом. <br>    
+            </div> <br>
+             
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">num</span> = <span style="color: black;">3</span>; <br>
+            
+            if (<span style="color: green;">num</span> >= <span style="color: black;">0</span>) { <br>
+                if (<span style="color: green;">num</span> <= <span style="color: black;">5</span>) { <br>
+                    console.log('<span style="color: black;">меньше или равно 5</span>'); <br>
+                } else { <br>
+                    console.log('<span style="color: black;">больше 5</span>'); <br>
+                } <br>
+            } else { <br>
+                console.log('<span style="color: black;">меньше нуля</span>'); <br>
+            } <br>
+            </span>    
+            </div> <br>
+            
+            <b>Конструкции switch-case </b> <br> <br> 
+            <div class="b-l4">
+            С помощью конструкции switch-case можно выполнять различный код, в  зависимости от значения переменной. <br>  <br>  
+            </div>
+            
+            <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">num</span> = <span style="color: black;">1</span>; <br>
+            
+            switch (<span style="color: green;">num</span>) { <br>
+                case 1: <br>
+                    console.log('<span style="color: black;">value1</span>'); <br>
+                break; <br>
+                case 2: <br>
+                    console.log('<span style="color: black;">value2</span>'); <br>
+                break; <br>
+                case 3: <br>
+                    console.log('<span style="color: black;">value3</span>'); <br>
+                break; <br>
+                default: <br>
+                    console.log('<span style="color: black;">incorrect value</span>'); <br>
+                break; <br>
+            } <br>
+            </span>    
+            </div>      
         </p>
     </div>
     </main>
