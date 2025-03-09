@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <nav class="container header-nav">
-            <a href="#" class="header-logo">
+            <a href="../index.html" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
             <div class="header-count">
@@ -48,79 +48,152 @@
         
     </div>
     <div class="block-right">
-        <h2 class="menu-title">Дата и Время</h2>
+        <h2 class="menu-title">Методы объектов</h2>
         <br>
         <p>
-            Метод call позволяет вызвать функцию с заданным контекстом. Первым параметром метода следует указывать контекст функции, а остальными параметрами - параметры функции.
-            Синтаксис
-            функция.call(контекст, параметр1, параметр2...);
-            Пусть у нас есть инпут:
-            <input id="elem" value="text">
-            Пусть дана также функция, принимающая три параметра:
-            function func(param1, param2, param3) {
-                console.log(this.value + param1 + param2 + 
-                    param3); 
-            }
-            Давайте вызовем нашу функцию так, чтобы this внутри функции был равен нашему инпуту, и при этом передав ей параметрами числа 1, 2 и 3:
-            let elem = document.querySelector('#elem');
-            func.call(elem, 1, 2, 3);
-            Пусть функция не принимает параметров:
-            function func() {
-                console.log(this.value);
-            }
-            В этом случае при вызове этой функции через call достаточно передать только первый параметр с контекстом:
-            let elem = document.querySelector('#elem');
-            func.call(elem);
-            Метод bind 
-            Метод bind привязать контекст к функции. В качестве первого параметра следует передавать контекст, а последующими параметрами - параметры функции. Метод возвращает новую функцию, внутри которой this будет равным переданному контексту.
-            Синтаксис
-            функция.bind(контекст, параметр1, параметр2...);
-            Пусть у нас есть инпут:
-            <input id="elem" value="text">
-            Пусть ссылка на этот инпут записана в переменную elem:
-            let elem = document.querySelector('#elem');
-            Пусть у нас также есть следующая функция func:
-            function func(param1, param2) {
-                console.log(this.value + param1 + param2);
-            }
-            Давайте с помощью bind сделаем новую функцию, которая будет копией функции func, но this в ней всегда будет равен elem:
-            let newFunc = func.bind(elem);
-            Теперь в переменной newFunc лежит функция. Давайте вызовем ее, передав в первый параметр '1', а во второй '2':
-            newFunc('1', '2');
-            Давайте соберем все вместе:
-            let elem = document.getElementById('elem');
+            <b>Object.assign </b> <br>
+            Метод Object.assign копирует свойства и значения исходного объекта, возвращая при этом новый объект. В первом параметре метода мы задаем целевой объект, в который копируем, а во втором - указываем объекты, которые нужно скопировать. <br> <br>
+            <b>Синтаксис</b> <br>
+            <div class="square-1">
+            Object.assign(куда копировать, объекты);<br>    
+            </div><br>
+            <div class="b-l4">
+            Давайте получим новый объект из исходного:<br><br>   
+            </div>
+            <div class="square-1">
+            let obj = {'a': 1, 'b': 2, 'c': 3};<br>
+            let newObj = Object.assign({}, obj);<br>
+            console.log(newObj);<br>
+            Результат выполнения кода:<br>
+            {a: 1, b: 2, c: 3}<br>
+            </div><br>
+            <div class="b-l4">
+            Получим новый объект из нескольких исходных, перечисляя их в параметре через запятую: <br><br>  
+            </div>
+            <div class="square-1">
+            let obj1 = {'a': 1, 'b': 2};<br>
+            let obj2 = {'c': 3, 'd': 4};<br>
+            let newObj = Object.assign({}, obj1, obj2);<br>
+            console.log(newObj);<br>   
+            </div><br>
+            <div class="b-l4">
+            После выполнения кода мы увидим, что два исходных объекта слились в один новый объект:<br><br> 
+            </div>
+            <div class="square-1">
+            {a: 1, b: 2, c: 3, d: 4}<br>   
+            </div><br>
+            <div class="b-l4">
+            Также метод Object.assign можно применять для получения нового массива, поскольку массив по своему типу также относится к объектам. <br><br> Сделаем новый массив, скопировав элементы из исходного:    
+            </div><br>
+            <div class="square-1">
+            let arr = [1, 2, 3, 4];<br>
+            let newArr = Object.assign([], arr);<br>
+            console.log(newArr);<br>
+            Результат выполнения кода:<br>
+            [1, 2, 3, 4] <br>   
+            </div><br>
+            <div class="b-l4">
+            Если не добавить в первый параметр целевой объект, а оставить только копируемый объект, то он и вернется обратно: <br>
+            </div><br>
+            <div class="square-1">
+            let obj = {1:'a', 2: 'b', 3: 'c'};<br>
+            let newObj = Object.assign(obj);<br>
+            console.log(newObj === obj);<br>
+            Результат выполнения кода:<br>
+            true<br>
+            </div><br><br>
+            <div class="b-l4">
+            <b>Метод Object.keys </b>   
+            </div><br>
+            <div class="b-l4">
+            Метод Object.keys возвращает массив из свойств объекта в том же порядке, как и при перечислении через цикл.    
+            </div><br><br>
             
-            function func(param1, param2) {
-                console.log(this.value + param1 + param2);
-            }
+            <b>Синтаксис</b><br><br>
+            <div class="square-1">
+            let keys = Object.keys(объект);    
+            </div><br>
+            <div class="b-l4">
+            Получим свойства из следующего объекта:    
+            </div><br>
+            <div class="square-1">
+            let obj = {'a': 1, 'b': 2, 'c': 3};<br>
+            console.log(Object.keys(obj));<br>    
+            </div><br>
+            <div class="b-l4">
+            Результат выполнения кода:    
+            </div><br>
+            <div class="square-1">
+            ['a', 'b', 'c']    
+            </div><br>
+            <div class="b-l4">
+            Поставим свойства в объекте в случайном порядке:    
+            </div><br>
+            <div class="square-1">
+            let obj = {2: 'b', 1: 'a', 4: 'd', 3: 'c'};<br>
+            console.log(Object.keys(obj));<br>    
+            </div><br>
+            <div class="b-l4">
+            Свойства отсортировались в порядке возрастания:    
+            </div><br>
+            <div class="square-1">
+            ['1', '2', '3', '4']    
+            </div><br>
+            <div class="b-l4">
+            С помощью метода Object.keys можно получить позиции элементов массива:    
+            </div><br>
+            <div class="square-1">
+            let arr = ['a', 'b', 'c', 'd'];<br>
+            console.log(Object.keys(arr));<br> 
+            </div><br>
+            <div class="b-l4">
+            Результат выполнения кода:    
+            </div><br>
+            <div class="square-1">
+            ['0', '1', '2', '3']    
+            </div><br><br>
+            <b>Метод Object.values</b><br><br>
+            <div class="b-l4">
+            Метод Object.values возвращает массив из значений объекта в том же порядке, как и при перечислении через цикл.    
+            </div><br><br>
             
-            let newFunc = func.bind(elem);
-            newFunc('1', '2'); // выведет 'text12'
-            Не обязательно записывать результат работы bind в новую функцию newFunc, можно просто перезаписать func:
-            let func = func.bind(elem);
+            <b>Синтаксис</b><br><br>
+            <div class="square-1">
+            let values = Object.values(объект);    
+            </div><br>
+            <div class="b-l4">
+            Давайте получим значения из следующего объекта:    
+            </div><br>
+            <div class="square-1">
+            let obj = {'a': 1, 'b': 2, 'c': 3};<br>
+            console.log(Object.values(obj));<br>
+            Результат выполнения кода:<br>
+            [1, 2, 3] <br>
+            </div><br>
+            <div class="b-l4">
+            А теперь поставим значения в объекте в случайном порядке:    
+            </div><br>
+            <div class="square-1">
+            let obj = {2: 'b', 1: 'a', 4: 'd', 3: 'c'};<br>
+            console.log(Object.values(obj)); <br> 
+            </div><br>
+            <div class="b-l4">
+            После выполнения кода мы увидим, что значения отсортировались в порядке возрастания:    
+            </div><br>
+            <div class="square-1">
+            ['a', 'b', 'c', 'd']    
+            </div><br>
+            <div class="b-l4">
+            Также с помощью метода Object.values можно получить значения (или элементы) массивов:    
+            </div><br>
+            <div class="square-1">
+            let arr = ['a', 'b', 'c', 'd'];<br>
+            console.log(Object.values(arr));<br>
+            Результат выполнения кода:<br>
+            ['a', 'b', 'c', 'd'] <br>
+            </div>
             
-            Метод apply 
-            Метод apply позволяет вызвать функцию с заданным контекстом. Первым параметром метода следует указывать контекст функции, а вторым - массив параметров функции.
-            Синтаксис
-            функция.apply(контекст, массив параметров);
-            Пусть у нас есть инпут:
-            <input id="elem" value="text">
-            Пусть дана также функция, принимающая три параметра:
-            function func(param1, param2, param3) {
-                console.log(this.value + param1 + param2 + 
-                    param3); 
-            }
-            Давайте вызовем нашу функцию так, чтобы this внутри функции был равен нашему инпуту, и при этом передав ей параметрами числа 1, 2 и 3:
-            let elem = document.querySelector('#elem');
-            func.apply(elem, [1, 2, 3]);
-            Пусть функция не принимает параметров:
-            function func() {
-                console.log(this.value);
-            }
-            В этом случае при вызове этой функции через apply достаточно передать только первый параметр с контекстом:
-            let elem = document.querySelector('#elem');
-            func.apply(elem);
-            
+              
         </p>
     </div>
     </main>

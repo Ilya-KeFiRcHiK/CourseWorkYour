@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <nav class="container header-nav">
-            <a href="#" class="header-logo">
+            <a href="../index.html" class="header-logo">
                 <img class="img" src="../img/Group 5.svg" alt="logo">
             </a>
             <div class="header-count">
@@ -51,14 +51,20 @@
         <h2 class="menu-title">Методы чисел</h2><br>
         <div class="menu-count">
         <div class="menu-nav">
-            <a href="#Mathround ">Math.Round</a>
-            <a href="#toFixed">toFixed</a>
-            <a href="#parseInt">parseInt</a>
+            <a class="x" href="#Mathround ">Math.Round</a>
+            <a class="x" href="#toFixed">toFixed</a>
+            <a class="x" href="#ParseInt">ParseInt</a>
+            <a class="x" href="#MathfloorandMathceil">Math.floor и Math.ceil</a>
+            <a class="x" href="#Mathrandom">Math.random</a>
+            <a class="x" href="#Mathpow">Math.pow</a>
+            <a class="x" href="#Mathmax">Math.max</a>
+            <a class="x" href="#Mathsqrt">Math.sqrt</a>
+            <a class="x" href="#Mathmin">Math.min</a>
         </div>
         </div>
         <br>
         <p>
-            <b id="#Mathround">Метод Math.round (число)</b><br>
+            <b id="Mathround">Метод Math.round (число)</b><br>
 Метод Math. Round позволяет округлять значение до целого числа. <br>
 <div class="square-1">
 let x = 5.83;<br>
@@ -83,7 +89,7 @@ let num = x.toFixed(1);<br>
 console.log(+num); //вернёт: 5.8<br>   
 </div><br>
 
-<b id="parseInt">Метод parseInt </b><br><br><br>
+<b id="ParseInt">Метод ParseInt </b><br><br><br>
 <div class="b-l4">
 Метод parseInt преобразует строку в целое число. Это нужно для значений типа '12px' - когда вначале стоит число, а потом единицы <br><br> измерения. Если применить parseInt к '12px', то результатом получится число 12 (и это будет действительно число, а не строка). <br><br> Преобразование произойдет, если только целое число стоит в начале строки, иначе будет выведено NaN. Вторым параметром можно <br><br> указать систему счисления числа, и функция вернет число, переведенное из указанной системы счисления в десятичную. <br><br>
 Преобразуем строку в целое число:<br><br>    
@@ -101,9 +107,9 @@ console.log(parseInt('10.3px'));<br>
 Результат выполнения кода:<br>
 10<br>
 </div> <br>
-<div class="b-l4">
-<b>Метод Math.floor и Math.ceil</b><br><br>    
-</div>
+
+
+<b id="MathfloorandMathceil">Метод Math.floor и Math.ceil</b><br><br>    
 <div class="b-l4">
 Метод Math.floor() округляет в меньшую сторону. Он отбрасывает дробную часть числа. А метод Math.ceil() округляет в большую сторону. Он <br><br> отбрасывает дробную часть, а к целой части прибавляет единицу. <br><br>
 </div>
@@ -112,7 +118,7 @@ console.log(Math.floor(x)); // вернёт 5<br>
 console.log(Math.ceil(x)); // вернёт 6<br>    
 </div><br>
 
-<b>Метод Math.random</b><br><br><br>
+<b id="Mathrandom">Метод Math.random</b><br><br><br>
 <div class="b-l4">
 Метод Math.random() генерирует случайное число в диапазоне от 0 до 1. При этом ровно 1 не бывает, число вегда будет меньше.<br><br>
 Обычно случайное число нужно получить в каком-то конкретном диапазоне.<br><br>    
@@ -125,7 +131,7 @@ console.log(rand);<br>
 Максимальное будет 4.999999999. Полученные значения можно округлить до нужной точности.<br><br>    
 </div><br>
 
-<b>Метод Math.pow</b><br><br><br>
+<b id="Mathpow">Метод Math.pow</b><br><br><br>
 <div class="b-l4">
 Метод Math.pow возводит число в заданную степень. Первым параметром передается число, вторым - в какую степень его возвести.<br><br>
 Возведем число 3 в степень 4:<br>    
@@ -153,7 +159,7 @@ console.log (3 ** 4);<br>
 81<br>
 </div><br>
 <div class="b-l4">
-<b>Метод Math.max</b><br><br>
+<b id="Mathmax">Метод Math.max</b><br><br>
 Метод Math.max возвращает максимальное число из группы чисел, переданных в функцию. Если в функцию ничего не передано, то будет <br><br> возращено -Infinity.<br><br>
 Выведем максимальное число из группы чисел:<br><br>    
 </div>
@@ -199,7 +205,7 @@ console.log(max);<br>
 100<br>  
 </div><br>
 
-<b>Метод Math.sqrt</b><br><br>
+<b id="Mathsqrt">Метод Math.sqrt</b><br><br>
 <div class="b-l4">
 Метод Math.sqrt возвращает квадратный корень числа.<br><br>
 Возьмем квадратный корень из 4:<br><br>    
@@ -226,7 +232,7 @@ console.log(Math.sqrt(-100));<br>
 NaN<br>    
 </div><br>
 
-<b>Метод Math.min</b><br><br>
+<b id="Mathmin">Метод Math.min</b><br><br>
 <div class="b-l4">
 Метод Math.min возвращает минимальное число из группы чисел, переданных параметрами. Если параметрами ничего не передано, то <br><br> будет возращено Infinity. <br> <br>
 Выведем минимальное число из группы чисел:<br>    
@@ -274,9 +280,6 @@ console.log(min);<br>
 Результат выполнения кода:<br>
 1<br>    
 </div><br>
-
-
-
 
         </p>
     </div>
