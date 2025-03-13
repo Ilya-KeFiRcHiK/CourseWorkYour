@@ -52,24 +52,27 @@
         <br>
         <p>
 Объекты (object) – это особенный тип в JS. Остальные типы называются примитивными, потому что значения примитивных типов могут быть только простыми значениями, например, строка или число. В объектах хранятся коллекции или более сложные структуры. <br>
-Объект может быть создан с помощью фигурных скобок {…} с необязательным списком свойств. Свойство – это пара «ключ: значение», где ключ – это строка (также называемая «именем свойства»), а значение может быть чем угодно. <br><br>
+Объект может быть создан с помощью фигурных скобок {…} с необязательным списком свойств. Свойство – это пара «ключ: значение», где ключ – это строка (также называемая «именем свойства»), а значение может быть чем угодно. <br>
 <div class="square-1">
-let user = new Object(); // синтаксис "конструктор объекта"<br>
-let user = {};  // синтаксис "литерал объекта"<br>  
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">user</span> = new Object(); <span style="color: #7802ff;;">// синтаксис "конструктор объекта"</span><br>
+let <span style="color: green;">user</span> = {};  <span style="color: #7802ff;;">// синтаксис "литерал объекта"</span><br>
+</span>  
 </div><br>
 <div class="b-l4">
 Обычно используют вариант с фигурными скобками {...}. Такое объявление называют литералом объекта или литеральной нотацией.  
 </div><br><br>
-
 <b>Литералы и свойства</b><br><br><br>
 <div class="b-l4">
 При использовании литерального синтаксиса {...} мы сразу можем поместить в объект несколько свойств в виде пар «ключ: значение»:  
 </div><br>
 <div class="square-1">
-let user = {     // объект<br>
-  name: "John",  // под ключом "name" хранится значение "John"<br>
-  age: 30        // под ключом "age" хранится значение 30 <br>
-};<br>  
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">user</span> = {  <span style="color: #7802ff;;">// объект</span>   <br>
+  name: "<span style="color: black">John</span>", <span style="color: #7802ff;;">// под ключом "name" хранится значение "John"</span> <br>
+  age: <span style="color: black">30 </span>  <span style="color: #7802ff;;">// под ключом "age" хранится значение 30</span>      <br>
+};<br>
+</span> 
 </div><br>
 <div class="b-l4">
 У каждого свойства есть ключ (также называемый «имя»).  
@@ -90,15 +93,17 @@ let user = {     // объект<br>
 Для обращения к свойствам используется запись «через точку»:  
 </div><br>
 <div class="square-1">
-// получаем свойства объекта: <br>
-alert( user.name ); // John <br>
-alert( user.age ); // 30  <br>
+<span style="color: rgb(11, 11, 255);"> 
+  <span style="color: #7802ff;;">// получаем свойства объекта:</span> <br>
+alert( <span style="color: green;">user</span>.name ); <span style="color: #7802ff;;">// John</span> <br>
+alert( <span style="color: green;">user</span>.<span style="color: green;">age</span> ); <span style="color: #7802ff;;">// 30</span>  <br>
+</span>
 </div><br>
 <div class="b-l4">
 Значение может быть любого типа. Добавим свойство с логическим значением:  
 </div><br>
 <div class="b-l4">
-user.isAdmin = true;  
+  user.isAdmin = true;  
 </div><br>
 <div class="b-l4">
 Для удаления свойства мы можем использовать оператор delete:  
@@ -110,11 +115,13 @@ delete user.age;
 Объект, объявленный через const, может быть изменён.  
 </div><br>
 <div class="square-1">
-const user = {<br>
-  name: "John"<br>
+<span style="color: rgb(11, 11, 255);">
+const <span style="color: green;">user</span> = {<br>
+  name: "<span style="color: black;">John</span>"<br>
 };<br>
-user.name = "Pete"; <br>
-alert(user.name); // Pete <br> 
+<span style="color: green;">user</span>.name = "<span style="color: black">Pete</span>"; <br>
+alert(<span style="color: green;">user</span>.name); <span style="color: #7802ff;;">// Pete</span> <br>
+</span> 
 </div><br>
 
 <b>Квадратные скобки</b><br><br><br>
@@ -122,10 +129,12 @@ alert(user.name); // Pete <br>
 Существует альтернативный способ доступа к свойствам через квадратные скобки. Такой способ сработает с любым именем свойства:  
 </div><br>
 <div class="square-1">
-let user = {};<br>
-user["likes birds"] = true;<br>
-alert(user["likes birds"]); // true <br><br>
-delete user["likes birds"]; <br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">user</span> = {};<br>
+<span style="color: green;">user</span>["<span style="color: black;">likes birds</span>"] = true;<br>
+alert(<span style="color: green;">user</span>["<span style="color: black">likes birds</span>"]); <span style="color: #7802ff;">// true</span> <br><br>
+delete <span style="color: green;">user</span>["<span style="color: black">likes birds</span>"]; <br>
+</span>
 </div><br>
 <div class="b-l4">
 Строка в квадратных скобках заключена в кавычки (подойдёт любой тип кавычек).  
@@ -137,32 +146,38 @@ delete user["likes birds"]; <br>
 Имя свойства может храниться в переменной:  
 </div><br>
 <div class="square-1">
-let key = "likes birds";<br>
-// то же самое, что и user["likes birds"] = true; <br>
-user[key] = true;<br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">key</span> = "<span style="color: black">likes birds</span>";<br>
+<span style="color: #7802ff;">// то же самое, что и user["likes birds"] = true;</span> <br>
+<span style="color: green;">user</span>[<span style="color: green;">key</span>] = true;<br>
+</span>
 </div><br>
 <div class="b-l4">
 Здесь переменная key может быть вычислена во время выполнения кода или зависеть от пользовательского ввода. После этого мы <br><br> используем её для доступа к свойству.  
 </div><br>
 <div class="square-1">
-let user = {<br>
-  name: "John",<br>
-  age: 30 <br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">user</span> = {<br>
+  name: "<span style="color: black">John</span>",<br>
+  age: <span style="color: black">30</span> <br>
 };<br>
-let key = prompt("Что вы хотите узнать о пользователе?", "name");<br>
-// доступ к свойству через переменную <br>
-alert( user[key] ); // John (если ввели "name") <br>
+let <span style="color: green;">key</span> = prompt("<span style="color: black">Что вы хотите узнать о пользователе?</span>", "<span style="color: black;">name</span>");<br>
+<span style="color: #7802ff">// доступ к свойству через переменную</span> <br>
+alert( <span style="color: green;">user</span>[<span style="color: green;">key</span>] ); <span style="color: #7802ff">// John (если ввели "name")</span> <br>
+</span>
 </div><br>
 <div class="b-l4">
 Запись «через точку» такого не позволяет:  
 </div><br>
 <div class="square-1">
-let user = {<br>
-  name: "John",<br>
-  age: 30 <br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">user</span> = {<br>
+  name: "<span style="color: black">John</span>",<br>
+  age: <span style="color: black">30</span> <br>
 };  <br>
-let key = "name"; <br>
-alert( user.key ); // undefined
+let <span style="color: green;">key</span> = "<span style="color: black">name</span>"; <br>
+alert( <span style="color: green;">user</span>.<span style="color: green;">key</span> ); <span style="color: #7802ff">// undefined</span>
+</span>
 </div><br>
 <div class="b-l4">
 Мы можем использовать квадратные скобки в литеральной нотации для создания вычисляемого свойства.  
@@ -179,13 +194,15 @@ alert( user.key ); // undefined
 Но для свойств объекта такого ограничения нет:  
 </div><br>
 <div class="square-1">
-// эти имена свойств допустимы <br>
-let obj = { <br>
-  for: 1, <br>
-  let: 2,<br>
-  return: 3<br>
+<span style="color: rgb(11, 11, 255);">
+  <span style="color: #7802ff">// эти имена свойств допустимы</span> <br>
+let <span style="color: green;">obj</span> = { <br>
+  for: <span style="color: black">1</span>, <br>
+  let: <span style="color: black">2</span>,<br>
+  return: <span style="color: black">3</span><br>
 };<br>
-alert( obj.for + obj.let + obj.return );  // 6  <br>
+alert( <span style="color: green;">obj</span>.for + <span style="color: green;">obj</span>.let + <span style="color: green;">obj</span>.return );  <span style="color: #7802ff;">// 6</span>  <br>
+</span>
 </div><br>
 <div class="b-l4">
 Они могут быть в виде строк или символов (специальный тип для идентификаторов, который будет рассмотрен позже).  
@@ -197,12 +214,14 @@ alert( obj.for + obj.let + obj.return );  // 6  <br>
 Если использовать число 0 в качестве ключа, то оно превратится в строку "0":  
 </div><br>
 <div class="square-1">
-let obj = {<br>
-  0: "Тест" // то же самое что и "0": "Тест"<br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">obj</span> = {<br>
+  0: "<span style="color: green;">Тест</span>" <span style="color: #7802ff">// то же самое что и "0": "Тест"</span><br>
 };  <br>
-// обе функции alert выведут одно и то же свойство (число 0 преобразуется в строку "0") <br>
-alert( obj["0"] ); // Тест <br>
-alert( obj[0] ); // Тест (то же свойство) <br>
+<span style="color: #7802ff;">// обе функции alert выведут одно и то же свойство (число 0 преобразуется в строку "0")</span> <br>
+alert( <span style="color: green;">obj</span>["<span style="color: black;">0</span>"] ); <span style="color: #7802ff;">// Тест </span><br>
+alert( <span style="color: green;">obj</span>[<span style="color: black;">0</span>] ); <span style="color: black;"><span style="color: #7802ff;">// Тест (то же свойство)</span></span> <br>
+</span>
 </div><br><br>
 
 
@@ -211,8 +230,10 @@ alert( obj[0] ); // Тест (то же свойство) <br>
 При обращении к свойству, которого нет, возвращается undefined. Это позволяет просто проверить существование свойства:  
 </div> <br>
 <div class="square-1">
-let user = {};<br>
-alert( user.noSuchProperty === undefined ); // true означает "свойства нет"  <br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: black;">user</span> = {};<br>
+alert( <span style="color: green;">user</span>.noSuchProperty === undefined ); <span style="color: #7802ff;">// true означает "свойства нет"</span>  <br>
+</span>
 </div><br>
 <div class="b-l4">
 Существует специальный оператор "in" для проверки существования свойства в объекте.  
@@ -220,13 +241,16 @@ alert( user.noSuchProperty === undefined ); // true означает "свойс
 
 <b>Синтаксис </b> <br> <br>
 <div class="square-1">
-"key" in object  
+<span style="color: rgb(11, 11, 255);">
+"<span style="color: green;">key</span>" in object  
+</span>
 </div><br>
 
 <div class="square-1">
-let user = { name: "John", age: 30 }; <br>
-alert( "age" in user ); // true, user.age существует <br>
-alert( "blabla" in user ); // false, user.blabla не существует <br> 
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">user</span> = { <span style="color: green;">name</span>: "<span style="color: black;">John</span>", <span style="color: green;">age</span>: <span style="color: black;">30</span> }; <br>
+alert( "<span style="color: green;">age</span>" in <span style="color: green;">user</span> );  <span style="color: #7802ff;">// true, user.age существует</span> <br>
+alert( "<span style="color: green;">blabla</span>" in <span style="color: green;">user</span> ); <span style="color: #7802ff;">// false, user.blabla не существует</span>  <br> </span>
 </div><br><br>
 
 
@@ -238,18 +262,22 @@ alert( "blabla" in user ); // false, user.blabla не существует <br>
 Здесь a и b ссылаются на один и тот же объект, поэтому они равны:  
 </div><br>
 <div class="square-1">
-let a = {};<br>
-let b = a; // копирование по ссылке<br>
-alert( a == b ); // true, обе переменные ссылаются на один и тот же объект<br>
-alert( a === b ); // true <br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">a</span> = {};<br>
+let <span style="color: green;">b</span> = <span style="color: green;">a</span>; <span style="color: #7802ff;">// копирование по ссылке</span><br>
+alert( <span style="color: green;">a</span> == <span style="color: green;">b</span> ); <span style="color: #7802ff;">// true, обе переменные ссылаются на один и тот же объект</span><br>
+alert( <span style="color: green;">a</span> === <span style="color: green;">b</span> ); <span style="color: #7802ff;">// true</span> <br>
+</span>
 </div><br>
 <div class="b-l4">
 И здесь два независимых объекта не равны, даже если они выглядят одинаково (оба пусты):  
 </div><br>
 <div class="square-1">
-let a = {};<br>
-let b = {}; // два независимых объекта<br>
-alert( a == b ); // false <br> 
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">a</span> = {};<br>
+let <span style="color: green;">b</span> = {}; <span style="color: #7802ff;">// два независимых объекта</span><br>
+alert( <span style="color: green;">a</span> == <span style="color: green;">b</span> ); <span style="color: #7802ff;">// false</span> <br>
+</span> 
 </div><br><br>
 
 
@@ -260,25 +288,29 @@ alert( a == b ); // false <br>
 
 <b>Синтаксис:</b><br><br>
 <div class="square-1">
-for (key in object) {<br>
-  // тело цикла выполняется для каждого свойства объекта <br>
+<span style="color: rgb(11, 11, 255);">
+<span style="color: green;">a</span> (<span style="color: green;">key</span> in <span style="color: green;">object</span>) {<br>
+  <span style="color: #7802ff;">// тело цикла выполняется для каждого свойства объекта</span> <br>
 }  <br>
+</span>
 </div><br>
 <div class="b-l4">
 Выведем все свойства объекта user:  
 </div><br>
 <div class="square-1">
-let user = {<br>
-  name: "John",<br>
-  age: 30,<br>
-  isAdmin: true <br>
+<span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">user</span> = {<br>
+  <span style="color: green;">name</span>: "<span style="color: black;">John</span>",<br>
+  <span style="color: green;">age</span>: <span style="color: black;">0</span>,<br>
+  <span style="color: green;">isAdmin</span>: true <br>
 }; <br>
-for (let key in user) { <br>
-  // ключи <br>
-  alert( key );  // name, age, isAdmin <br>
-  // значения ключей <br>
-  alert( user[key] ); // John, 30, true <br>
+for (let <span style="color: green;">key</span> in <span style="color: green;">user</span>) { <br>
+  <span style="color: #7802ff;">// ключи</span> <br>
+  alert( <span style="color: green;">key</span> );  <span style="color: #7802ff;">// name, age, isAdmin</span> <br>
+  <span style="color: #7802ff;">// значения ключей</span> <br>
+  alert( <span style="color: green;">user</span>[<span style="color: green;">key</span>] ); <span style="color: #7802ff;">// John, 30, true</span> <br>
 } <br>
+</span>
 </div> <br>
 
 <div class="b-l4">

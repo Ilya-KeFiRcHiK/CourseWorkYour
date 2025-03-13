@@ -55,52 +55,64 @@
             Метод Object.assign копирует свойства и значения исходного объекта, возвращая при этом новый объект. В первом параметре метода мы задаем целевой объект, в который копируем, а во втором - указываем объекты, которые нужно скопировать. <br> <br>
             <b>Синтаксис</b> <br>
             <div class="square-1">
-            Object.assign(куда копировать, объекты);<br>    
+                <span style="color: rgb(11, 11, 255);">
+            Object.assign(куда копировать, объекты);<br>
+            </span>    
             </div><br>
             <div class="b-l4">
             Давайте получим новый объект из исходного:<br><br>   
             </div>
             <div class="square-1">
-            let obj = {'a': 1, 'b': 2, 'c': 3};<br>
-            let newObj = Object.assign({}, obj);<br>
-            console.log(newObj);<br>
-            Результат выполнения кода:<br>
-            {a: 1, b: 2, c: 3}<br>
+                <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">obj</span> = {'<span style="color: black;">a</span>': <span style="color: black">1</span>, '<span style="color: black;">b</span>': <span style="color: black;">2</span>, '<span style="color: black;">c</span>': <span style="color: black;">3</span>};<br>
+            let <span style="color: green;">newObj</span> = Object.assign(<span style="color: black;">{}</span>, <span style="color: black;">obj</span>);<br>
+            console.log(<span style="color: green;">newObj</span>);<br>
+            <span style="color: black;">Результат выполнения кода:</span><br>
+            {<span style="color: black;">a</span>: <span style="color: black;">1</span>, <span style="color: black;">b</span>: <span style="color: black;">2</span>, <span style="color: black;">c</span>: <span style="color: black;">3</span>}<br>
+            </span>
             </div><br>
             <div class="b-l4">
             Получим новый объект из нескольких исходных, перечисляя их в параметре через запятую: <br><br>  
             </div>
             <div class="square-1">
-            let obj1 = {'a': 1, 'b': 2};<br>
-            let obj2 = {'c': 3, 'd': 4};<br>
-            let newObj = Object.assign({}, obj1, obj2);<br>
-            console.log(newObj);<br>   
+                <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">obj1</span> = {'<span style="color: black;">a</span>': <span style="color: black;">1</span>, '<span style="color: black;">b</span>': <span style="color: black;">2</span>};<br>
+            let <span style="color: green;">obj2</span> = {'<span style="color: black;">c</span>': <span style="color: black;">3</span>, '<span style="color: black;">d</span>': <span style="color: black;">4</span>};<br>
+            let <span style="color: green;">newObj</span> = Object.assign(<span style="color: black;">{}</span>, <span style="color: black;">obj1</span>, <span style="color: black;">obj2</span>);<br>
+            console.log(<span style="color: green;">newObj</span>);<br>
+            </span>   
             </div><br>
             <div class="b-l4">
             После выполнения кода мы увидим, что два исходных объекта слились в один новый объект:<br><br> 
             </div>
             <div class="square-1">
-            {a: 1, b: 2, c: 3, d: 4}<br>   
+                <span style="color: rgb(11, 11, 255);">
+                {<span style="color: black;">a</span>: <span style="color: black;">1</span>, <span style="color: black;">b</span>: <span style="color: black;">2</span>, <span style="color: black4;">c</span>: <span style="color: black;">3</span>, <span style="color: black;">d</span>: <span style="color: black;">4</span>}<br> 
+                </span>  
             </div><br>
             <div class="b-l4">
             Также метод Object.assign можно применять для получения нового массива, поскольку массив по своему типу также относится к объектам. <br><br> Сделаем новый массив, скопировав элементы из исходного:    
             </div><br>
             <div class="square-1">
-            let arr = [1, 2, 3, 4];<br>
-            let newArr = Object.assign([], arr);<br>
-            console.log(newArr);<br>
-            Результат выполнения кода:<br>
-            [1, 2, 3, 4] <br>   
+            <span style="color: rgb(11, 11, 255)">
+            let <span style="color: green;">arr</span> = [<span style="color: black;">1</span>, <span style="color: black;">2</span>, <span style="color: black;">3</span>, <span style="color: black;">4</span>];<br>
+            let <span style="color: green;">newArr</span> = Object.assign(<span style="color: black;">[]</span>, <span style="color: green;">arr</span>);<br>
+            console.log(<span style="color: green;">newArr</span>);<br>
+            <span style="color: black;">Результат выполнения кода:</span><br>
+            [<span style="color: black;">1</span>, <span style="color: black;">2</span>, <span style="color: black;">3</span>, <span style="color: black;">4</span>] <br>
+            </span>   
             </div><br>
             <div class="b-l4">
             Если не добавить в первый параметр целевой объект, а оставить только копируемый объект, то он и вернется обратно: <br>
             </div><br>
             <div class="square-1">
-            let obj = {1:'a', 2: 'b', 3: 'c'};<br>
-            let newObj = Object.assign(obj);<br>
-            console.log(newObj === obj);<br>
-            Результат выполнения кода:<br>
-            true<br>
+                <span style="color: rgb(11, 11, 255)">
+            let <span style="color: green;">obj</span> = {<span style="color: black;">1</span>:'<span style="color: black;">a</span>', <span style="color: black;">2</span>: '<span style="color: black;">b</span>', <span style="color: black;">3</span>: '<span style="color: black;">c</span>'};<br>
+            let <span style="color: green;">newObj</span> = Object.assign(<span style="color: green;">obj</span>);<br>
+            console.log(<span style="color: green;">newObj</span> === <span style="color: green;">obj</span>);<br>
+            <span style="color: black;">Результат выполнения кода:</span><br>
+            <span style="color: black;">true</span><br>
+            </span>
             </div><br><br>
             <div class="b-l4">
             <b>Метод Object.keys </b>   
@@ -111,46 +123,61 @@
             
             <b>Синтаксис</b><br><br>
             <div class="square-1">
-            let keys = Object.keys(объект);    
+                <span style="color: rgb(11, 11, 255)">
+            let <span style="color: green;">keys</span> = Object.keys(объект);
+            </span>    
             </div><br>
             <div class="b-l4">
             Получим свойства из следующего объекта:    
             </div><br>
             <div class="square-1">
-            let obj = {'a': 1, 'b': 2, 'c': 3};<br>
-            console.log(Object.keys(obj));<br>    
+                <span style="color: rgb(11, 11, 255)">
+            let <span style="color: green;">obj</span> = {'<span style="color: black;">a</span>': <span style="color: black;">1</span>, '<span style="color: black;">b</span>': <span style="color: black;">2</span>, '<span style="color: black;">c</span>': <span style="color: black;">3</span>};<br>
+            console.log(Object.keys(<span style="color: green;">obj</span>));<br>
+            </span>    
             </div><br>
             <div class="b-l4">
             Результат выполнения кода:    
             </div><br>
             <div class="square-1">
-            ['a', 'b', 'c']    
+                <span style="color: rgb(11, 11, 255)">
+            ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>']
+            </span>    
             </div><br>
             <div class="b-l4">
             Поставим свойства в объекте в случайном порядке:    
             </div><br>
             <div class="square-1">
-            let obj = {2: 'b', 1: 'a', 4: 'd', 3: 'c'};<br>
-            console.log(Object.keys(obj));<br>    
+                <span style="color: rgb(11, 11, 255);">
+                let <span style="color: green;">obj</span> = {<span style="color: black;">2</span>: '<span style="color: black;">b</span>', <span style="color: black;">1</span>: '<span style="color: black;">a</span>', <span style="color: black;">4</span>: '<span style="color: black;">d</span>', <span style="color: black;">3</span>: '<span style="color: black;">c</span>'};<br>
+            console.log(Object.keys(<span style="color: green;">obj</span>));<br>    
+                </span>
+                
             </div><br>
             <div class="b-l4">
             Свойства отсортировались в порядке возрастания:    
             </div><br>
             <div class="square-1">
-            ['1', '2', '3', '4']    
+                <span style="color: rgb(11, 11, 255);">
+            ['<span style="color: black;">1</span>', '<span style="color: black;">2</span>', '<span style="color: black;">3</span>', '<span style="color: black;">4</span>']
+            </span>   
             </div><br>
             <div class="b-l4">
             С помощью метода Object.keys можно получить позиции элементов массива:    
             </div><br>
             <div class="square-1">
-            let arr = ['a', 'b', 'c', 'd'];<br>
-            console.log(Object.keys(arr));<br> 
+                <span style="color: rgb(11, 11, 255)">
+                let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>'];<br>
+            console.log(Object.keys(<span style="color: green;">arr</span>));<br>     
+                </span>
             </div><br>
             <div class="b-l4">
             Результат выполнения кода:    
             </div><br>
             <div class="square-1">
-            ['0', '1', '2', '3']    
+                <span style="color: rgb(11, 11, 255)">
+            ['<span style="color: black">0</span>', '<span style="color: black">1</span>', '<span style="color: black">2</span>', '<span style="color: black">3</span>']
+            </span>    
             </div><br><br>
             <b>Метод Object.values</b><br><br>
             <div class="b-l4">
@@ -159,38 +186,50 @@
             
             <b>Синтаксис</b><br><br>
             <div class="square-1">
-            let values = Object.values(объект);    
+                <span style="color: rgb(11, 11, 255)">
+            let <span style="color: green">values</span> = Object.values(объект);
+            </span>   
             </div><br>
             <div class="b-l4">
             Давайте получим значения из следующего объекта:    
             </div><br>
             <div class="square-1">
-            let obj = {'a': 1, 'b': 2, 'c': 3};<br>
-            console.log(Object.values(obj));<br>
-            Результат выполнения кода:<br>
-            [1, 2, 3] <br>
+            <span style="color: rgb(11, 11, 255)">
+            let <span style="color: green">obj</span> = {'<span style="color: black">a</span>': <span style="color: black">1</span>, '<span style="color: black">b</span>': <span style="color: black">2</span>, '<span style="color: black">c</span>': <span style="color: black">3</span>};<br>
+            console.log(Object.values(<span style="color: green">obj</span>));<br>
+            <span style="color: black">Результат выполнения кода:</span><br>
+            [<span style="color: black">1</span>, <span style="color: black">2</span>, <span style="color: black">3</span>] <br>    
+            </span>
             </div><br>
             <div class="b-l4">
             А теперь поставим значения в объекте в случайном порядке:    
             </div><br>
             <div class="square-1">
-            let obj = {2: 'b', 1: 'a', 4: 'd', 3: 'c'};<br>
-            console.log(Object.values(obj)); <br> 
+                <span style="color: rgb(11, 11, 255)">
+                let <span style="color: green">obj</span> = {<span style="color: black">2</span>: '<span style="color: black">b</span>', <span style="color: black">1</span>: '<span style="color: black">a</span>', <span style="color: black">4</span>: '<span style="color: black">d</span>', <span style="color: black">3</span>: '<span style="color: black">c</span>'};<br>
+            console.log(Object.values(<span style="color: green">obj</span>)); <br>     
+                </span>
+            
             </div><br>
             <div class="b-l4">
             После выполнения кода мы увидим, что значения отсортировались в порядке возрастания:    
             </div><br>
             <div class="square-1">
-            ['a', 'b', 'c', 'd']    
+                <span style="color: rgb(11, 11, 255)">
+                ['<span style="color: black">a</span>', '<span style="color: black">b</span>', '<span style="color: black">c</span>', '<span style="color: black">d</span>']     
+                </span>  
             </div><br>
             <div class="b-l4">
             Также с помощью метода Object.values можно получить значения (или элементы) массивов:    
             </div><br>
             <div class="square-1">
-            let arr = ['a', 'b', 'c', 'd'];<br>
-            console.log(Object.values(arr));<br>
-            Результат выполнения кода:<br>
-            ['a', 'b', 'c', 'd'] <br>
+                <span style="color: rgb(11, 11, 255)">
+                let <span style="color: green">arr</span> = ['<span style="color: black">a</span>', '<span style="color: black">b</span>', '<span style="color: black">c</span>', '<span style="color: black">d</span>'];<br>
+            console.log(Object.values(<span style="color: green">arr</span>));<br>
+            <span style="color: black">Результат выполнения кода:</span><br>
+            ['<span style="color: black">a</span>', '<span style="color: black">b</span>', '<span style="color: black">c</span>', '<span style="color: black">d</span>'] <br>    
+                </span>
+
             </div>
             
               

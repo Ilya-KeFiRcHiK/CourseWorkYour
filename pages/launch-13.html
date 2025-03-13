@@ -60,42 +60,52 @@
             Метод call позволяет вызвать функцию с заданным контекстом. Первым параметром метода следует указывать контекст функции, а остальными параметрами - параметры функции. <br><br>
             <b>Синтаксис</b><br>
             <div class="square-1">
-            функция.call(контекст, параметр1, параметр2...);    
+            <span style="color: rgb(11, 11, 255);">
+            функция.call(контекст, параметр1, параметр2...);
+            </span>   
             </div><br><br>
             <div class="b-l4">
             Пусть у нас есть инпут: <br><br>
-            <input id="elem" value="text"> <br><br>   
-            </div>
+            <img src="../img/input.png" width="450" height="30" alt="">  
+            </div><br>
             <div class="b-l4">
             Пусть дана также функция, принимающая три параметра:    
             </div><br><br>
             <div class="square-1">
-             function func(param1, param2, param3) { <br>
-                console.log(this.value + param1 + param2 + <br>
-                    param3); <br>
-            }    
+                <span style="color: rgb(11, 11, 255);">   
+             function func(<span style="color: green;">param1</span>, <span style="color: green;">param2</span>, <span style="color: green;">param3</span>) { <br>
+                console.log(this.value + <span style="color: green;">param1</span> + <span style="color: green">param2</span> + <br>
+                <span style="color: green;">param3;</span>) <br>
+            }
+            </span>   
             </div><br><br>
            <div class="b-l4">
             Давайте вызовем нашу функцию так, чтобы this внутри функции был равен нашему инпуту, и при этом передав ей параметрами числа 1, 2 и <br><br> 3: <br>
            </div><br>
            <div class="square-1">
-            let elem = document.querySelector('#elem');<br>
-            func.call(elem, 1, 2, 3);<br>
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">elem</span> = document.querySelector('<span style="color: green;">#elem</span>');<br>
+            func.call(<span style="color: green;">elem</span>, <span style="color: black;">1</span>, <span style="color: black;">2</span>, <span style="color: black;">3</span>);<br>
+            </span>
            </div><br>
             <div class="b-l4">
             Пусть функция не принимает параметров:    
             </div><br>
             <div class="square-1">
+                <span style="color: rgb(11, 11, 255);">
             function func() {<br>
                 console.log(this.value);<br>
-            }    
+            } 
+            </span>   
             </div><br>
             <div class="b-l4">
             В этом случае при вызове этой функции через call достаточно передать только первый параметр с контекстом:   
             </div><br>
             <div class="square-1">
-            let elem = document.querySelector('#elem');
-            func.call(elem);    
+                <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">elem</span> = document.querySelector('<span style="color: green;">#elem</span>');
+            func.call(<span style="color: green;">elem</span>);
+            </span>   
             </div><br>
             
             <b id="Bind">Метод bind</b> <br><br>
@@ -105,56 +115,66 @@
 
             <b>Синтаксис</b><br><br>
             <div class="square-1">
+                <span style="color: rgb(11, 11, 255);">
             функция.bind(контекст, параметр1, параметр2...);
+            </span>
             </div><br>
             <div class="b-l4">
-            Пусть у нас есть инпут: <br>   
+            Пусть у нас есть инпут: <br><br>
+            <img src="../img/input.png" width="450" height="30" alt="">    
             </div><br><br>
-            <input id="elem" value="text"> <br><br><br>
             <div class="b-l4">
             Пусть ссылка на этот инпут записана в переменную elem:    
             </div><br>
             <div class="square-1">
-            let elem = document.querySelector('#elem');    
+                <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">elem</span> = document.querySelector('<span style="color: green;">#elem</span>');
+            </span>    
             </div><br>
             <div class="b-l4">
             Пусть у нас также есть следующая функция func:    
             </div><br>
             <div class="square-1">
-            function func(param1, param2) {<br>
-                console.log(this.value + param1 + param2);<br>
-            }    
+                <span style="color: rgb(11, 11, 255);">
+            function func(<span style="color: green;">param1</span>, <span style="color: green;">param2</span>) {<br>
+                console.log(this.value + <span style="color: green;">param1</span> + <span style="color: green;">param2</span>);<br>
+            }
+            </span>    
             </div><br>
             <div class="b-l4">
             Давайте с помощью bind сделаем новую функцию, которая будет копией функции func, но this в ней всегда будет равен elem:    
             </div><br>
             <div class="square-1">
-            let newFunc = func.bind(elem);    
+            let <span style="color: green;">newFunc</span> = func.bind(<span style="color: green;">elem</span>);    
             </div><br>
             <div class="b-l4">
             Теперь в переменной newFunc лежит функция. Давайте вызовем ее, передав в первый параметр '1', а во второй '2':    
             </div><br>
             <div class="square-1">
-            newFunc('1', '2');    
+                <span style="color: green;">newFunc</span>('<span style="color: black;">1</span>', '<span style="color: black;">2</span>');    
             </div><br>
             <div class="b-l4">
             Давайте соберем все вместе:    
             </div><br>
             <div class="square-1">
-            let elem = document.getElementById('elem');<br>
+                <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">elem</span> = document.getElementById('<span style="color: green;">elem</span>');<br>
             
-            function func(param1, param2) {<br>
-                console.log(this.value + param1 + param2);<br>
+            function func(<span style="color: green;">param1</span>, <span style="color: green;">param2</span>) {<br>
+                console.log(this.value + <span style="color: green;">param1</span> + <span style="color: green;">param2</span>);<br>
             }<br>
             
-            let newFunc = func.bind(elem);<br>
-            newFunc('1', '2'); // выведет 'text12'    
+            let <span style="color: green;">newFunc</span> = func.bind(<span style="color: green;">elem</span>);<br>
+            <span style="color: green;">newFunc</span>('<span style="color: black;">1</span>', '<span style="color: black;">2</span>'); <span style="color: #7802ff;">// выведет 'text12'</span>
+            </span>    
             </div><br>
             <div class="b-l4">
             Не обязательно записывать результат работы bind в новую функцию newFunc, можно просто перезаписать func:    
             </div><br>
             <div class="square-1">
-            let func = func.bind(elem);    
+                <span style="color: rgb(11, 11, 255);">
+                let <span style="color: green;">func</span> = func.bind(<span style="color: green;">elem</span>);    
+                </span>   
             </div><br><br>
             
     
@@ -165,44 +185,54 @@
             
             <b>Синтаксис</b><br><br>
             <div class="square-1">
-            функция.apply(контекст, массив параметров);    
+                <span style="color: rgb(11, 11, 255);">
+                функция.apply(контекст, массив параметров);     
+                </span>   
             </div><br><br>
             <div class="b-l4">
             Пусть у нас есть инпут:    
             </div><br><br>
             <div class="b-l4">
-            <input id="elem" value="text">    
+            <img src="../img/input.png" width="450" height="30" alt="">     
             </div><br>
             <div class="b-l4">
             Пусть дана также функция, принимающая три параметра:    
             </div><br>
             <div class="square-1">
-            function func(param1, param2, param3) {<br>
-                console.log(this.value + param1 + param2 + <br>
-                    param3); <br>
-            }    
+                <span style="color: rgb(11, 11, 255);">
+                function func(<span style="color: green;">param1</span>, <span style="color: green;">param2</span>, <span style="color: green;">param3</span>) {<br>
+                console.log(this.value + <span style="color: green;">param1</span> + <span style="color: green;">param2</span> + <br>
+                <span style="color: green;">param3;</span>) <br>
+            }     
+                </span>  
             </div><br>
             <div class="b-l4">
             Давайте вызовем нашу функцию так, чтобы this внутри функции был равен нашему инпуту, и при этом передав ей параметрами числа 1, 2 и <br><br> 3:    
             </div><br>
             <div class="square-1">
-            let elem = document.querySelector('#elem');
-            func.apply(elem, [1, 2, 3]);    
+                <span style="color: rgb(11, 11, 255);">
+                let <span style="color: green;">elem</span> = document.querySelector('<span style="color: green;">#elem</span>');
+            func.apply(<span style="color: green;">elem</span>, [<span style="color: black;">1</span>, <span style="color: black;">2</span>, <span style="color: black;">3</span>]);     
+                </span>
             </div><br><br>
             <div class="b-l4">
             Пусть функция не принимает параметров:    
             </div><br><br>
             <div class="square-1">
-            function func() {<br>
+                <span style="color: rgb(11, 11, 255);">
+                function func() {<br>
                 console.log(this.value);<br>
-            }    
+            }     
+                </span>  
             </div><br>
             <div class="b-l4">
             В этом случае при вызове этой функции через apply достаточно передать только первый параметр с контекстом:    
             </div><br>
             <div class="square-1">
-            let elem = document.querySelector('#elem');
-            func.apply(elem);    
+                <span style="color: rgb(11, 11, 255);">
+                let <span style="color: green;">elem</span> = document.querySelector('<span style="color: green;">#elem</span>');
+            func.apply(<span style="color: green;">elem</span>);      
+                </span>
             </div>
             
             

@@ -62,20 +62,25 @@
         </div>
         <br>
         <b>Получение символа в строке.</b> <br> <br>
-        <div class="b-l4">Каждый символ в строке имеет свой порядковый номер: первый символ  номер 0, второй символ - номер 1, третий символ номер 2 и так далее. <br> <br>
-            Нумерация символов начинается с нуля. Можно получить доступ к  определенному символу строки по его номеру. Для этого пишется имя  переменной, после этого имени ставятся квадратные скобки и в этих скобках  указывается номер символа.</div> <br> <br>
+        <div class="b-l4">Каждый символ в строке имеет свой порядковый номер: первый символ  номер 0, второй символ - номер 1, третий символ номер 2 и так <br><br> далее. <br> <br>
+            Нумерация символов начинается с нуля. Можно получить доступ к  определенному символу строки по его номеру. Для этого пишется имя <br><br>  переменной, после этого имени ставятся квадратные скобки и в этих скобках  указывается номер символа.</div> <br> <br>
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">
             let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
             alert(<span style="color: green;">str</span>[<span style="color: black;">0</span>]); <span style="color: #7802ff;">// выведет 'a'</span> <br>
             alert(<span style="color: green;">str</span>[<span style="color: black;">1</span>]); <span style="color: #7802ff;">// выведет 'b'</span> <br>
             alert(<span style="color: green;">str</span>[<span style="color: black;">2</span>]); <span style="color: #7802ff;">// выведет 'c'</span> <br>
-            <span style="color: black;">Номер символа также может хранится и в переменной:</span> <br>
+            </div><br>
+            <div class="b-l4">
+            <span style="color: black;">Номер символа также может хранится и в переменной:</span> <br>     
+            </div><br>
+            <div class="square-1">
             let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
             let <span style="color: green;">num</span> = <span style="color: black;">3</span>; <span style="color: #7802ff;">// номер символа в переменной</span> <br>
-            alert(str[num]); // выведет 'd'
-            </span>   
+            alert(str[num]); // выведет 'd'    
             </div>
+            </span>   
+            
             
             <br>
             <b>Получение последнего символа в строке</b> <br> <br>
@@ -89,16 +94,22 @@
             
             <br>
             <b>Длина строки</b> <br> <br>
+            <div class="b-l4">
+            <span style="color: black;">Количество символов в строке содержится в свойстве length:</span> <br>    
+            </div><br>
             <div class="square-1">
-            <span style="color: black;">Количество символов в строке содержится в свойстве length:</span> <br>
             <span style="color: rgb(11, 11, 255);">
             let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
             alert(<span style="color: green;">str</span>.length); <span style="color: #7802ff;">// выведет 5</span> <br>
-            <span style="color: black;">Свойство length можно применять непосредственно к строке: <br></span>
-            
-            alert('<span style="color: black;">abcde</span>'.length); <span style="color: #7802ff;">// выведет 5</span> <br>
-            </span>   
+            </div><br>
+            <div class="b-l4">
+            <span style="color: black;">Свойство length можно применять непосредственно к строке: <br></span>    
+            </div><br>
+            <div class="square-1">
+            alert('<span style="color: black;">abcde</span>'.length); <span style="color: #7802ff;">// выведет 5</span> <br>    
             </div>
+            </span>   
+            
             
             <br>
             <b>Шаблонные строки</b> <br> <br>
@@ -116,11 +127,16 @@
             <span style="color: rgb(11, 11, 255);">
             let <span style="color: green;">str</span> = '<span style="color: black;">xxx</span>'; <br>
             let <span style="color: green;">txt</span> = '<span style="color: black;">aaa</span> ' + <span style="color: black;">str</span> + ' <span style="color: black;">bbb</span>'; <br>
-            <span style="color: black;">Этот код можно переписать следующим образом:</span> <br>
+            </div><br>
+            <div class="b-l4">
+            <span style="color: black;">Этот код можно переписать следующим образом:</span> <br>    
+            </div><br>
+            <div class="square-1">
             let <span style="color: green;">str</span> = '<span style="color: black;">xxx</span>'; <br>
-            let <span style="color: green;">txt</span> = `<span style="color: black;">aaa</span> ${<span style="color: black;">str</span>} <span style="color: black;">bbb</span>`; <br>
-            </span>  
+            let <span style="color: green;">txt</span> = `<span style="color: black;">aaa</span> ${<span style="color: black;">str</span>} <span style="color: black;">bbb</span>`; <br>    
             </div>
+            </span>  
+            
             
             <br>
             <div class="b-l4"><b>Сложение строк в JavaScript</b> <br> <br>
@@ -182,7 +198,7 @@
             let <span style="color: green;">str</span> = '<span style="color: black;">ABCDE</span>'; <br>
             console.log(<span style="color: green;">str</span>.toLowerCase()); <br>
             <span style="color: black;">Результат выполнения кода:</span> <br>
-            '<span style="color: green;">abcde</span>'<br>    
+            '<span style="color: black;">abcde</span>'<br>    
             </span>
                 
             </div>

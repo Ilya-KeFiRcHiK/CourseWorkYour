@@ -60,18 +60,23 @@
             <b><br> Синтаксис <br> </b> <br>  
             </div>
             <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
             for (let переменная для элемента of массив) { <br>
-                /* <br>
+                <span style="color: #7802ff;">/* <br>
                     в переменную  для элемента по очереди 
                     будут попадать элементы перебираемого массива. <br>
                 */ <br>
-            } <br>    
+                </span>
+            } <br>
+            </span>   
             </div><br>
             <div class="square-1">
-            let arr = [1, 2, 3, 4, 5]; <br>
-            for (let elem of arr) { <br>
-                console.log(elem); <br>
+            <span style="color: rgb(11, 11, 255);"> 
+            let <span style="color: green;">arr</span> = [<span style="color: black;">1</span>, <span style="color: black;">2</span>, <span style="color: black;">3</span>, <span style="color: black;">4</span>, <span style="color: black;">5</span>]; <br>
+            for (let <span style="color: green;">elem</span> of <span style="color: green;">arr</span>) { <br>
+                console.log(<span style="color: green;">elem</span>); <br>
             } <br>
+        </span>
             </div> <br>
             
             <b>Перебор объекта циклом for-in</b> <br> <br>
@@ -86,16 +91,18 @@
             } <br>    
             </div><br>
             <div class="square-1">
-            let obj = {a: 1, b: 2, c: 3}; <br>
-            for (let key in obj) { <br>
-                console.log(key); // выведет 'a', 'b', 'c' <br>
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">obj</span> = {a: <span style="color: black;">1</span>, b: <span style="color: black;">2</span>, c: <span style="color: black;">3</span>}; <br>
+            for (let <span style="color: green;">key</span> in <span style="color: green;">obj</span>) { <br>
+                console.log(<span style="color: green;">key</span>); <span style="color: #7802ff;">// выведет 'a', 'b', 'c'</span> <br>
             } <br>    
             
             
-            Выведем элементы: <br>
-            for (let key in obj) { <br>
-                console.log(obj[key]); // выведет 1, 2, 3 <br>
-            } <br> 
+            <span style="color: black">Выведем элементы:</span> <br>
+            for (let <span style="color: green">key</span> in <span style="color: green">obj</span>) { <br>
+                console.log(<span style="color: green;">obj</span>[<span style="color: green;">key</span>]); <span style="color: #7802ff;">// выведет 1, 2, 3</span> <br>
+            } <br>
+            </span>
             </div> <br>
             <b>Цикл while </b> <br> <br>
             <div class="b-l4">
@@ -104,11 +111,14 @@
             
             <b>Синтаксис</b> <br> <br>
             <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
             while ( пока выражение истинно ) { <br>
                 выполняем этот код циклически; <br>
                 в начале каждого цикла проверяем выражение 
                     в круглых скобках <br>
             } <br>     
+            </span>
+                
             </div> <br>
             
             <div class="b-l4">
@@ -119,23 +129,28 @@
             </div>
             
             <div class="square-1">
-            let i = 1; <br>
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <br>
             
-            while (i <= 5) { <br>
-                console.log(i); <br>
-                i++; <br>
+            while (<span style="color: green;">i</span> <= <span style="color: black;">5</span>) { <br>
+                console.log(<span style="color: green;">i</span>); <br>
+                <span style="color: green;">i</span>++; <br>
             } <br>    
+            </span>
+                
             </div><br>
             <div class="b-l4">
             Поделим заданное число на 2 столько раз, пока результат не станет меньше 10: <br><br>
             </div>
             <div class="square-1">
-            let num = 500; <br>
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">num</span> = <span style="color: black;">500</span>; <br>
             
-            while (num > 10) { <br>
-                num = num / 2; <br>
+            while (<span style="color: green;">num</span> > <span style="color: black;">10</span>) { <br>
+                <span style="color: green;">num</span> = <span style="color: green;">num</span> / <span style="color: black;">2</span>; <br>
             } <br>
-            console.log(num); // результат <br>    
+            console.log(<span style="color: green;">num</span>); // результат <br>      
+            </span> 
             </div> <br>
             
             
@@ -146,12 +161,14 @@
             </div>
              <br>
              <div class="square-1">
-             let i = 1; <br>
+            <span style="color: rgb(11, 11, 255);">
+             let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <br>
             
             do{ <br>
-                console.log(i); <br>
-                i++; <br>
-            }while(i <= 5) <br>   
+                console.log(<span style="color: green;">i</span>); <br>
+                <span style="color: green;">i</span>++; <br>
+            }while(<span style="color: green;">i</span> <= <span style="color: black;">5</span>) <br>
+            </span>   
              </div><br>
             
             
@@ -163,54 +180,67 @@
             
             <b>Синтаксис </b><br> <br>
             <div class="square-1">
+            <span style="color: rgb(11, 11, 255);">
             for (начальные команды; условие окончания; команды после <br>
                 прохода) { <br>
                 тело цикла <br>
             
             } <br>    
+            </span>
+                
             </div> <br>
             <div class="b-l4">
             Выведем с помощью цикла for выведем последовательно числа от 1 до 9: <br>    
             </div> <br>
             <div class="square-1">
-            for (let i = 1; i <= 9; i++) { <br>
-                console.log(i); // выведет 1, 2... 9 <br>
-            } <br>    
+            <span style="color: rgb(11, 11, 255);">
+            for (let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <span style="color: green;">i</span> <= <span style="color: black;">9</span>; <span style="color: green;">i</span>++) { <br>
+                console.log(<span style="color: green;">i</span>); // выведет <span style="color: black;">1</span>, <span style="color: black;">2</span>... <span style="color: black;">9</span> <br>
+            } <br>
+            </span>   
             </div> <br>
             <div class="b-l4">
             Увеличим счетчик не на 1, а на 2: <br> <br>
             </div>
             
             <div class="square-1">
-            for (let i = 1; i <= 9; i += 2) { <br>
-                console.log(i); // выведет 1, 3, 5... <br>
-            } <br>    
+            <span style="color: rgb(11, 11, 255);">
+            for (let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <span style="color: green;">i</span> <= <span style="color: black;">9</span>; <span style="color: green;">i</span> += <span style="color: black;">2</span>) { <br>
+                console.log(<span style="color: green;">i</span>); <span style="color: #7802ff;">// выведет 1, 3, 5... </span><br>
+            } <br>
+            </span>   
             </div> <br>
             <div class="b-l4">
             Выполним обратный отсчет: <br>    
             </div><br>
             <div class="square-1">
-            for (let i = 10; i > 0; i--) { <br>
-                console.log(i); // выведет 10, 9, 8... <br>
-            } <br>    
+            <span style="color: rgb(11, 11, 255);">
+            for (let <span style="color: green;">i</span> = <span style="color: black;">10</span>; <span style="color: green;">i</span> > <span style="color: black;">0</span>; <span style="color: green;">i</span>--) { <br>
+                console.log(<span style="color: green;">i</span>); <span style="color: #7802ff;">// выведет 10, 9, 8...</span> <br>
+            } <br>
+            </span>    
             </div> <br>
             <div class="b-l4">
             Переберём массив циклом for. <br> <br>   
             </div>
             <div class="square-1">
-            let arr = [1, 2, 3, 4, 5]; <br>
+            <span style="color: rgb(11, 11, 255);">
+            let <span style="color: green;">arr</span> = [<span style="color: black;">1</span>, <span style="color: black;">2</span>, <span style="color: black;">3</span>, <span style="color: black;">4</span>, <span style="color: black;">5</span>]; <br>
             Выведем элементы массива в цикле: <br>
-            for (let i = 0; i <= arr.length - 1; i++) { <br>
-                console.log(arr[i]); <br>
-            } <br>    
+            for (let <span style="color: green;">i</span> = <span style="color: black;">0</span>; <span style="color: green;"><span style="color: green;">i</span></span> <= <span style="color: green;">arr</span>.length - <span style="color: black;">1</span>; <span style="color: green;">i</span>++) { <br>
+                console.log(<span style="color: green;">arr</span>[<span style="color: green;">i</span>]); <br>
+            } <br>
+            </span>    
             </div><br>
             <div class="b-l4">
             Выведем элементы в обратном порядке: <br>    
             </div><br>
             <div class="square-1">
-            for (let i = arr.length - 1; i >= 0; i--) { <br>
-                console.log(arr[i]); <br>
-            } <br>    
+            <span style="color: rgb(11, 11, 255);">
+            for (let <span style="color: green;">i</span> = <span style="color: green;">arr</span>.length - <span style="color: black;">1</span>; <span style="color: green;">i</span> >= <span style="color: black;">0</span>; <span style="color: green;">i</span>--) { <br>
+                console.log(<span style="color: green;">arr</span>[<span style="color: green;">i</span>]); <br>
+            } <br>
+            </span>    
             </div><br>
             <div class="b-l4">
             <b>Инструкция break и continue</b> <br>    
@@ -219,27 +249,32 @@
             Инструкция break позволяет досрочно завершать цикл. <br>    
             </div><br>
             <div class="square-1">
-            for(let i=1; i <= 6; i++){ <br>
+            <span style="color: rgb(11, 11, 255);">
+            for(let <span style="color: green;">i</span> = <span style="color: black;">1</span>; <span style="color: green;">i</span> <= <span style="color: black;">6</span>; <span style="color: green;">i</span>++){ <br>
                   
-                 if(i===4) break; <br>
-                 console.log(i); <br>
+                 if(<span style="color: green;">i</span> === <span style="color: black;">4</span>) break; <br>
+                 console.log(<span style="color: green;">i</span>); <br>
             } <br>
-            console.log("Конец работы"); <br>     
+            console.log("<span style="color: black;">Конец работы</span>"); <br>
+            </span>    
             </div><br>
             <div class="b-l4">
-            Согласно условию цикла блок цикла должен выполняться 6 раз, произвести 6 итераций. Однако поскольку в блоке цикла происходит поверка if (i===4) break;, то, когда значение переменной i достигнет 4, то данное условие прервет выполнение цикла с помощью оператора break. И цикл заершит работу. <br>
+            Согласно условию цикла блок цикла должен выполняться 6 раз, произвести 6 итераций. Однако поскольку в блоке цикла происходит <br><br> поверка if (i===4) break;, то, когда значение переменной i достигнет 4, то данное условие прервет выполнение цикла с помощью оператора <br><br> break. И цикл заершит работу. <br><br>
             Существует также инструкция continue, запускающая новую итерацию цикла. <br>
             </div><br>
             
                 <div class="square-1">
-                for(let i=1; i <= 6; i++){  <br>
+                <span style="color: rgb(11, 11, 255);">
+                for(let <span style="color: green;">i</span> = 1; <span style="color: green;">i</span> <= 6; <span style="color: green;">i</span>++){  <br>
                   
-                if(i===4) continue; <br>
-                console.log(i); <br>     
+                if(<span style="color: green;">i</span> === 4) continue; <br>
+                console.log(<span style="color: green;">i</span>); <br>
+                </span>    
                 </div> <br>
                 
             <div class="b-l4">
-            В этом случае, когда значение переменная i станет равной 4 , то выражение i===4 возвратит true, поэтому будет выполняться конструкция if(i===4) continue;. С помощью оператора continue она завершит текущую итерацию, далее идущие инструкции цикла не будут выполняться.      
+            В этом случае, когда значение переменная i станет равной 4 , то выражение i===4 возвратит true, поэтому будет выполняться конструкция <br><br>
+             if(i===4) continue;. С помощью оператора continue она завершит текущую итерацию, далее идущие инструкции цикла не будут выполняться.      
             </div>
             
         </p>
