@@ -72,12 +72,14 @@
 <b id="Push">Метод рush</b> <br>
 С помощью специального метода push можно добавлять элементы в конец массива. <br>
 <div class="square-1">
-let arr = [];<br>
-Добавим ему в конец три элемента:<br>
-arr.push('a');<br>
-arr.push('b');<br>
-arr.push('c');<br>
-console.log(arr); // выведет ['a', 'b', 'c']<br>
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = <span style="color: black;">[]</span>;<br>
+<span style="color: black;">Добавим ему в конец три элемента:</span><br>
+<span style="color: green;">arr</span>.push('<span style="color: black;">a</span>');<br>
+<span style="color: green;">arr</span>.push('<span style="color: black;">b</span>');<br>
+<span style="color: green;">arr</span>.push('<span style="color: black;">c</span>');<br>
+console.log(<span style="color: green;">arr</span>); <span style="color: #7802ff">// выведет ['a', 'b', 'c']</span><br>
+</span>
 </div>
 <br>
 <b id="Slice">Метод slice</b><br><br>
@@ -87,28 +89,34 @@ console.log(arr); // выведет ['a', 'b', 'c']<br>
 
 <b>Синтаксис</b><br><br>
 <div class="square-1">
+    <span style="color: rgb(11, 11, 255);">
 массив.slice(откуда отрезать, [докуда 
-	отрезать]);     
+	отрезать]);
+</span>     
 </div> <br>
 <div class="b-l4">
 Вырежем с первого элемента до конца массива. Для этого второй параметр не задаем:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-let sub = arr.slice(1);<br>
-console.log(sub);<br>
-Результат выполнения кода:br
-['b', 'c', 'd', 'e']   <br> 
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = ['<span style="color: black;"></span>a', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+let <span style="color: green;">sub</span> = <span style="color: green;">arr</span>.slice(1);<br>
+console.log(<span style="color: green;">sub</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>']   <br>
+</span> 
 </div><br>
 <div class="b-l4">
 Вырежем элементы со второго по предпоследний (-1 указывает на последний элемент и он не включится в извлеченную часть):    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-let sub = arr.slice(1, -1);<br>
-console.log(sub);<br>
-Результат выполнения кода:<br>
-['b', 'c', 'd'] <br>   
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+let <span style="color: green;">sub</span> = <span style="color: green;">arr</span>.slice(<span style="color: black;">1</span>, <span style="color: black;">-1</span>);<br>
+console.log(<span style="color: green;">sub</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>'] <br>
+</span>   
 </div><br>
 
 <b id="Splice">Метод splice</b><br><br>
@@ -118,38 +126,46 @@ console.log(sub);<br>
 
 <b>Синтаксис</b><br><br>
 <div class="square-1">
-массив.splice(откуда удаляем, сколько удаляем, [вставить], 
-	[вставить]...);     
+    <span style="color: rgb(11, 11, 255);">
+    массив.splice(откуда удаляем, сколько удаляем, [вставить], 
+	[вставить]...);      
+    </span>   
 </div><br>
 <div class="b-l4">
 Выведем массив удаленных элементов:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-let del = arr.splice(1, 3);<br>
-console.log(del);<br>
-Результат выполнения кода:<br>
-['b', 'c', 'd']<br>
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+let <span style="color: green;">del</span> = <span style="color: green;">arr</span>.splice(<span style="color: black;">1</span>, <span style="color: black;">3</span>);<br>
+console.log(<span style="color: green;">del</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>']<br>
+</span>
 </div><br>
 <div class="b-l4">
 Сначала удалим элемент с номером 2, а потом вместо него вставим еще три новых элемента:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-arr.splice(2, 1, '1', '2', '3');<br>
-console.log(arr);<br>
-Результат выполнения кода:<br>
-['a', 'b', '1', '2', '3', 'd', 'e']<br>    
+    <span style="color: rgb(11, 11, 255);">
+    let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+    <span style="color: green;">arr</span>.splice(<span style="color: black;">2</span>, <span style="color: black;">1</span>, '<span style="color: black;">1</span>', '<span style="color: black;">2</span>', '<span style="color: black;">3</span>');<br>
+console.log(<span style="color: green;">arr</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">1</span>', '<span style="color: black;">2</span>', '<span style="color: black;">3</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>']<br>     
+    </span>  
 </div><br>
 <div class="b-l4">
 Давайте удалим предпоследний элемент:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-arr.splice(-2, 1);<br>
-console.log(arr);<br>
-Результат выполнения кода:<br>
-['a', 'b', 'c', 'e']<br>    
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+<span style="color: green;">arr</span>.splice(<span style="color: black;">-2</span>, <span style="color: black;">1</span>);<br>
+console.log(<span style="color: green;">arr</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">e</span>']<br>
+</span>   
 </div><br>
 
 <b id="Shift">Метод shift</b><br><br>
@@ -159,28 +175,35 @@ console.log(arr);<br>
 
 <b>Синтаксис</b><br><br>
 <div class="square-1">
-массив.shift();    
+    <span style="color: rgb(11, 11, 255);">
+массив.shift();
+</span>   
 </div><br>
 <div class="b-l4">
 Удалим первый элемент из массива:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-arr.shift();<br>
-console.log(arr);<br>
-Результат выполнения кода:<br>
-['b', 'c', 'd', 'e']<br> 
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+<span style="color: green;">arr</span>.shift();<br>
+console.log(<span style="color: green;">arr</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>']<br>     
+    </span>
 </div><br>
 
 <div class="b-l4">
 Удалим первый элемент из массива и выведем его на экран:    
 </div><br>
 <div class="square-1">
-let arr  = ['a', 'b', 'c', 'd', 'e'];<br>
-let elem = arr.shift();<br>
-console.log(elem);<br>
-Результат выполнения кода:<br>
-'a'<br>
+    <span style="color: rgb(11, 11, 255);">
+    let <span style="color: green;">arr</span>  = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+let <span style="color: green;">elem</span> = <span style="color: green;">arr</span>.shift();<br>
+console.log(<span style="color: green;">elem</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+'<span style="color: black;">a</span>'<br>    
+    </span>
+
 </div><br>
 
 <b id="Pop">Метод pop</b><br><br>
@@ -190,28 +213,35 @@ console.log(elem);<br>
 
 <b>Синтаксис</b><br><br>
 <div class="square-1">
-массив.pop();    
+    <span style="color: rgb(11, 11, 255);">
+массив.pop();
+</span>
 </div><br>
 <div class="b-l4">
  Удалим из массива последний элемент:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-arr.pop();<br>
-console.log(arr);<br>
-Результат выполнения кода:<br>
-['a', 'b', 'c', 'd'] <br>   
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>];<br>
+<span style="color: green;">arr</span>.pop();<br>
+console.log(<span style="color: green;">arr</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>'] <br>
+</span>  
 </div><br>
 
 <div class="b-l4">
 Выведем последний элемент, который был удален из исходного массива:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-let del = arr.pop();<br>
-console.log(del);<br>
-Результат выполнения кода:<br>
-'e'<br>
+    <span style="color: rgb(11, 11, 255);">
+    let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>];<br>
+let <span style="color: green;">del</span> = <span style="color: green;">arr</span>.pop();<br>
+console.log(<span style="color: green;">del</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+'<span style="color: black;">e</span>'<br>    
+    </span>
+
 </div><br>
 
 <b id="Unshift">Метод unshift </b><br><br>
@@ -221,29 +251,33 @@ console.log(del);<br>
 
 <b>Синтаксис</b><br><br>
 <div class="square-1">
-массив.unshift(элемент, элемент, элемент...);    
+    <span style="color: rgb(11, 11, 255);">
+    массив.unshift(элемент, элемент, элемент...);      
+    </span> 
 </div><br>
 <div class="b-l4">
 В начало массива добавим еще два новых элемента и выведем измененный массив:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-arr.unshift('1', '2');<br>
-console.log(arr);<br>
-Результат выполнения кода:<br>
-['1', '2', 'a', 'b', 'c', 'd', 'e']<br>
+    <span style="color: rgb(11, 11, 255);">        
+let <span style="color: green;">arr</span> = ['<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>'];<br>
+<span style="color: green;">arr</span>.unshift('<span style="color: black;">1</span>', '<span style="color: black;">2</span>');<br>
+console.log(<span style="color: green;">arr</span>);<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+['<span style="color: black;">1</span>', '<span style="color: black;">2</span>', '<span style="color: black;">a</span>', '<span style="color: black;">b</span>', '<span style="color: black;">c</span>', '<span style="color: black;">d</span>', '<span style="color: black;">e</span>']<br>
 </div><br>
 <div class="b-l4">
 Добавим два новых элемента и выведем новую длину массива:    
 </div><br>
 <div class="square-1">
-let arr = ['a', 'b', 'c', 'd', 'e'];<br>
-let length = arr.unshift('1', '2');<br>
+    <span style="color: rgb(11, 11, 255);">
+let <span style="color: green;">arr</span> = [<span class="black">'a', 'b', 'c', 'd', 'e'</span>];<br>
+let <span style="color: green;">length</span> = <span style="color: green;">arr</span>.unshift('1', '2');<br>
 console.log(length);<br>
-Результат выполнения кода:<br>
-7<br>
+<span style="color: black;">Результат выполнения кода:</span><br>
+<span style="color: black;">7</span><br>
+</span>
 </div><br>
-
 <b id="IndexOf">Метод indexOf </b><br><br>
 <div class="b-l4">
 Метод indexOf осуществляет поиск элемента в массиве. В первом параметре указываем элемент для поиска. Метод возвращает номер <br><br> первого найденного элемента, либо -1, если такого элемента нет. Второй необязательный параметр метода задает позицию, с которой <br><br> следует начинать поиск.    
@@ -251,17 +285,21 @@ console.log(length);<br>
 
 <b>Синтаксис</b><br><br>
 <div class="square-1">
-массив.indexOf(элемент, [откуда начинать]);    
+    <span class="blue">
+    массив.indexOf(элемент, [откуда начинать]);      
+    </span>
 </div><br>
 <div class="b-l4">
 Давайте найдем позицию первой тройки в массиве:    
 </div><br>
 <div class="square-1">
-let arr = [1, 2, 3, 3, 3, 4, 5];<br>
-let res = arr.indexOf(3);<br>
+    <span class="blue">
+let <span class="green">arr</span> = [<span class="black">1, 2, 3, 3, 3, 4, 5</span>];<br>
+let <span class="green">res</span> = <span class="green">arr</span>.indexOf(<span class="black">3</span>);<br>
 console.log(res);<br>
 Результат выполнения кода:<br>
-2     
+2
+</span>    
 </div><br>
 <div class="b-l4">
 Пусть теперь проверяемого элемента нет в массиве:    
