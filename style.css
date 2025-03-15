@@ -67,6 +67,11 @@
     text-shadow: 5px 5px 30px #095a94;
 }
 
+.header-link:hover{
+    color: #413f3f;
+    transition: 0.5s;
+}
+
 .block-info{
     padding: 20px;
     padding-top: 100px;
