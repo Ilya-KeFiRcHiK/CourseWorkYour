@@ -139,6 +139,14 @@ margin-bottom: 30px;
     color: #053cb4;
 }
 
+.red{
+    color: red;
+}
+
+.purple{
+    color: #7802ff;
+}
+
 .square-1{
     border: 2px solid rgb(219, 219, 219);
 }
