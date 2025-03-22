@@ -31,7 +31,13 @@
     height: 650px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.form-count{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 25px;
 }
 
 .container-2{
@@ -140,9 +146,7 @@ body{
     transition: 0.5s;
 }
 
-.block{
-    background-color: #104f7c;
-}
+
 
 .Gender{
     margin-top: 10px;
@@ -167,12 +171,14 @@ body{
 .block-info-4{
     margin-top: 15px;
     width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
     height: 175px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.telefon{
+.telefon-number{
     color: white;
 }
 

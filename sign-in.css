@@ -74,6 +74,12 @@ body{
     padding-bottom: 40px;
 }
 
+.form-count{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 25px;
+}
 
 .text-form{
     display: flex;
