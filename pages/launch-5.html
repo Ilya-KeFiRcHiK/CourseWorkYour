@@ -24,6 +24,7 @@
             
     </header>
     <main class="main">
+        
     <div class="block-left">
         <ul>
             <a href="start.html" class="menu-left">Введение</a>
@@ -48,8 +49,18 @@
         
     </div>
     <div class="block-right">
-        <h2 class="menu-title">Строки</h2>
-        <br>
+            <h2 class="menu-title">Строки</h2><br>
+                <div class="menu-count">
+                <div class="menu-nav">
+                    <a class="x" href="#Получениесимволавстроке">Получение символа в строке</a>
+                    <a class="x" href="#Получениепоследнегосимволавстроке">Получение последнего символа в строке</a>
+                    <a class="x" href="#Длинастроки">Длина строки</a>
+                    <a class="x" href="#Шаблонныестроки">Шаблонные строки</a>
+                    <a class="x" href="#Сложениестрок">Сложение строк</a>
+                    <a class="x" href="#Многострочность">Многострочность</a>
+                </div>
+                </div>
+            <br><br> 
         <p>
         Для применения строк применяют кавычки: одинарные  ('), двойные (") или  обратные  (`). <br>
         <div class="square-1">
@@ -61,9 +72,10 @@
         </span>
         </div>
         <br>
-        <b>Получение символа в строке.</b> <br> <br>
-        <div class="b-l4">Каждый символ в строке имеет свой порядковый номер: первый символ  номер 0, второй символ - номер 1, третий символ номер 2 и так далее. <br> <br>
-            Нумерация символов начинается с нуля. Можно получить доступ к  определенному символу строки по его номеру. Для этого пишется имя <br><br>  переменной, после этого имени ставятся квадратные скобки и в этих скобках  указывается номер символа.</div> <br> <br>
+        <br>
+        <b id="Получениесимволавстроке">Получение символа в строке</b> <br> <br>
+        <div class="b-l4">Каждый символ в строке имеет свой порядковый номер: первый символ  номер 0, второй символ - номер 1, третий символ <br><br> номер 2 и так далее. <br> <br>
+            Нумерация символов начинается с нуля. Можно получить доступ к  определенному символу строки по его номеру. Для <br><br> этого пишется имя переменной, после этого имени ставятся квадратные скобки и в этих скобках  указывается номер <br><br> символа.</div> <br> <br>
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">
             let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
@@ -83,7 +95,7 @@
             
             
             <br>
-            <b>Получение последнего символа в строке</b> <br> <br>
+            <b id="Получениепоследнегосимволавстроке">Получение последнего символа в строке</b> <br> <br>
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">
             let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
@@ -93,7 +105,7 @@
             </div>
             
             <br>
-            <b>Длина строки</b> <br> <br>
+            <b id="Длинастроки">Длина строки</b> <br> <br>
             <div class="b-l4">
             <span style="color: black;">Количество символов в строке содержится в свойстве length:</span> <br>    
             </div><br>
@@ -112,7 +124,7 @@
             
             
             <br>
-            <b>Шаблонные строки</b> <br> <br>
+            <b id="Шаблонныестроки">Шаблонные строки</b> <br> <br>
             
             <div class="b-l4">Существует специальный тип кавычек – обратные (косые):</div> <br>
             <div class="square-1">
@@ -139,7 +151,7 @@
             
             
             <br>
-            <div class="b-l4"><b>Сложение строк в JavaScript</b> <br> <br>
+            <div class="b-l4"><b id="Сложениестрок">Сложение строк</b> <br> <br>
             <span style="color: black;">Для сложения строк используется оператор +: </span><br> <br>    
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">    
@@ -155,71 +167,14 @@
             
             
             <br>
-            <div class="b-l4"><b>Многострочность</b><br> <br>
+            <div class="b-l4"><b id="Многострочность">Многострочность</b><br> <br>
             
             В JavaScript строках, созданных через одинарные или двойные кавычки, не  допустим перенос строки.  <br> <br>
             Косые кавычки специально предназначены для создания многострочных  строк: <br> <br>
             </div>
             <div class="square-1">
             let <span style="color: green;">str</span> = `<span style="color: green;">abc def`</span>; <span style="color: #7802ff;">// так будет работать</span> <br>    
-            </div>
-            
-            <br>
-            <div class="b-l4">
-            <b>Преобразование строки в верхний регистр </b> <br> <br>
-            <b>Метод toUpperCase</b> <br> <br>
-            </div>
-            <div class="square-1">
-            <span style="color: rgb(11, 11, 255);">
-            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
-            console.log(<span style="color: green;">str</span>.toUpperCase()); <br>
-            <span style="color: black;">Результат выполнения кода:</span> <br>
-            '<span style="color: black;">ABCDE</span>' <br>
-            </span> 
-            </div>
-            
-            <br>
-            <b>Метод slice</b> <br> <br>
-            <div class="square-1">
-            <span style="color: rgb(11, 11, 255);">
-            let <span style="color: green;">str</span> = '<span style="color: black;">abcde</span>'; <br>
-            let <span style="color: green;">res </span> = <span style="color: green;">str</span>.slice(<span style="color: black;">0</span>, <span style="color: black;">1</span>).toUpperCase() + <span style="color: green;">str</span>.slice(<span style="color: black;">1</span>); <br>
-            console.log(<span style="color: green;">res</span>); <br>
-            <span style="color: black;">Результат выполнения кода:</span> <br>
-            '<span style="color: black;">Abcde</span>' <br>
-            </span>   
-            </div>
-            
-            <br>
-            <b>Преобразование строки в нижний регистр</b><br> <br>
-            <b>Метод toLowerCase</b><br> <br>
-            <div class="square-1">
-            <span style="color: rgb(11, 11, 255);">
-            let <span style="color: green;">str</span> = '<span style="color: black;">ABCDE</span>'; <br>
-            console.log(<span style="color: green;">str</span>.toLowerCase()); <br>
-            <span style="color: black;">Результат выполнения кода:</span> <br>
-            '<span style="color: black;">abcde</span>'<br>    
-            </span>
-                
-            </div>
-            
-            <br>
-            <b>Возвращение символа в строке</b> <br> <br>
-            <b>Метод charAt </b> <br> <br>
-            <div class="square-1">
-            <span style="color: rgb(11, 11, 255);">
-            let <span style="color: green;">str</span>  = '<span style="color: black;">abcde</span>';<br>
-            let <span style="color: green;">char</span> = <span style="color: green;">str</span>.charAt(<span style="color: black;">0</span>);
-            <br>
-            console.log(<span style="color: green;">char</span>); <br>
-            <span style="color: black;">
-            Результат выполнения кода: <br>    
-            </span>
-            '<span style="color: black;">a</span>'
-            </span>    
-            </div>
-            
-            
+            </div> 
         </p>
     </div>
     </main>
