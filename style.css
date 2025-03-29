@@ -652,5 +652,17 @@ h1{
     .autorization{
         text-align: center;
     }
+
+    .header-link{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .block-info-4{
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 40px;
+    }
      
 }
