@@ -76,7 +76,7 @@
             
             </p>
         <br>
-        <p><b id="Number">Number</b>- представляет числовое значение.<br>
+        <p><b id="Number" class="blue-2">Number</b>- представляет числовое значение.<br>
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">integerNumber</span></span> = <span style="color: black;">10</span>;<br>
             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">anotherInteger</span></span> = <span style="color: black;">-5</span>;<br>
@@ -86,7 +86,7 @@
             <span style="color: rgb(11, 11, 255);">console.log(<span style="color: green;">zero</span>);</span>   <span style="color: #7802ff;">// Выведет: 0</span> <br> <br>
             </div>
             <br>
-            <b id="NaN">NaN</b> <b class="b-bold">- обозначает не число. Такое значение получается тогда, когда вы  пытаетесь делать математические операции не с <br><br> числами, а с чем-то другим.</b><br>
+            <b id="NaN" class="blue-2">NaN</b> <b class="b-bold">- обозначает не число. Такое значение получается тогда, когда вы  пытаетесь делать математические операции не с <br><br> числами, а с чем-то другим.</b><br>
              <br>
              <b class="b-bold">К примеру, такое значение даст попытку умножить строку на число.</b> <br> <br><br>
              <div class="square-1">
@@ -95,11 +95,11 @@
             <br>
             <b class="b-bold">Любые операции с NaN приводят к тому, что результатом все равно  остается NaN.</b> <br>
             <br><br>
-            <b>Infinity и -Infinity</b>
+            <b class="blue-2">Infinity и -Infinity</b>
             <b class="b-bold" id="Infinityи-Infinity"> - значения Infinity и -Infinity  обозначают соответственно бесконечность и  минус бесконечность. <br><br> Такие значения получаются, если какое-то число  поделить на ноль - в этом случает JavaScript не выдает ошибку, как в <br><br> других
             языках программирования, а возвращает эти значения.</b> <br>
             <br><br>
-            <b id="BigInt">BigInt</b><b class="b-bold">- это встроенный тип данных в JavaScript, который позволяет работать с целыми числами произвольной длины без <br><br> потери точности.<div> <br>
+            <b id="BigInt" class="blue-2">BigInt</b><b class="b-bold">- это встроенный тип данных в JavaScript, который позволяет работать с целыми числами произвольной длины без <br><br> потери точности.<div> <br>
             
             <div class="square-1">
             <span style="color: rgb(11, 11, 255)"> const <span style="color: green;">bigNum1</span> = <span style="color: green;">10000000000000000000</span>n;</span> <br>
@@ -110,7 +110,7 @@
             <span style="color: rgb(11, 11, 255);">const <span style="color: green;">quotient</span> = <span style="color: green;">bigNum2</span> / <span style="color: green;">bigNum1</span>;</span> <span style="color: #7802ff">// Результат – BigInt</span> <br> 
              </div>
              <br><br>
-             <b id="Boolean">Boolean</b> - <b class="b-bold">логический тип, который может принимать только два значения:</b>
+             <b id="Boolean" class="blue-2">Boolean</b> - <b class="b-bold">логический тип, который может принимать только два значения:</b>
             
             <b class="b-bold"><b>true</b> или <b>false</b>, правда или ложь. Если мы <br><br> присвоим переменной значением  <b>true</b>, JS автоматически определит ее тип как boolean.</b> <br> <br>
             <div class="square-1">
@@ -128,20 +128,20 @@
              </span>
              </div>
             <br><br>
-            <b id="Null">Null</b> <b class="b-bold">- этот тип данных имеет всего одно значение: null.  Которое выражает  нулевое или «пустое» значение.</b> <br> <br>
+            <b id="Null" class="blue-2">Null</b> <b class="b-bold">- этот тип данных имеет всего одно значение: null.  Которое выражает  нулевое или «пустое» значение.</b> <br> <br>
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">a</span> = null;</span><br> 
             <span style="color: rgb(11, 11, 255);">alert(<span style="color: green;">a</span>);</span> <span style="color: #7802ff;">// выведет null</span>
             </div>
             <br><br>
             
-            <b id="Undefined">Undefined</b><b class="b-bold">- тип данных, который обозначает неопределённость.</b>  <br> <br>
+            <b id="Undefined" class="blue-2">Undefined</b><b class="b-bold">- тип данных, который обозначает неопределённость.</b>  <br> <br>
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">let <span style="color: green;">a</span>;</span> <br> 
             <span style="color: rgb(11, 11, 255);">alert(<span style="color: green;">a</span>);</span> <span style="color: #7802ff;">// выведет undefined</span> <br>
             </div>
             <br><br>
-            <b id="Object">Object</b><b class="b-bold">- это ссылочный тип данных, то есть это значение в памяти, на  которое возможно сослаться с помощью <br><br> идентификатора.</b>  <br> <br>
+            <b id="Object" class="blue-2">Object</b><b class="b-bold">- это ссылочный тип данных, то есть это значение в памяти, на  которое возможно сослаться с помощью <br><br> идентификатора.</b>  <br> <br>
             <div class="square-1">
             <span style="color: rgb(11, 11, 255);">
              let <span style="color: green;">object</span> = new Object({'<span style="color: green;">a</span>': <span style="color: black;">1</span>, '<span style="color: green;">b</span>': <span3 style="color: black;">2</span>, '<span style="color: green;">c</span>': <span  style="color: black;">3</span>}); <br>
@@ -152,7 +152,7 @@
             </div>
             <br><br>
             
-             <b id="Symbol">Symbol</b><b class="b-bold">- это уникальный и неизменяемый тип данных, который может  быть использован как идентификатор для свойств <br><br> объектов.</b>  <br> <br>
+             <b id="Symbol" class="blue-2">Symbol</b><b class="b-bold">- это уникальный и неизменяемый тип данных, который может  быть использован как идентификатор для свойств <br><br> объектов.</b>  <br> <br>
              <div class="square-1">
              <span style="color: rgb(11, 11, 255);">let <span style="color: green;">sym1 </span>= Symbol()</span>;<br>
              <span style="color: rgb(11, 11, 255);">let <span style="color: green;">sym2</span> = Symbol()</span>;<br>
