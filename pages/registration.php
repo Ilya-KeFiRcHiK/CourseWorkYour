@@ -1,3 +1,20 @@
+<?php
+require_once('config/link.php');
+
+session_start();
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+  $login = $_POST['email'];
+  $password = $_POST['password'];
+  $name = $_POST['name'];
+  $gender = $_POST['gender'];
+  $telefon = $_POST['number'];
+  $sql = "INSERT INTO users (login, password, name, gender, telefon) VALUES ('$login', '$password', '$name', '$gender', '$telefon')";
+  $conn->query($sql);
+  $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

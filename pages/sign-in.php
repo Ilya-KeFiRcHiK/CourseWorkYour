@@ -1,3 +1,23 @@
+<?php
+error_reporting(E_ALL);
+session_start();
+
+if (!empty($_POST['password']) && !empty($_POST['login'])){
+  $login = $_POST['login'];
+  $password = $_POST['password'];
+
+  $query = "SELECT * FROM users WHERE login='$login' AND password='$password'";
+  $res = mysqli_query($link, $query);
+  $user = mysqli_fetch_assoc($res);
+
+  if (!empty($user)){
+    $_SESSION['auth'] = true;
+  }else{
+    echo "Неверный логин или пароль!";
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
