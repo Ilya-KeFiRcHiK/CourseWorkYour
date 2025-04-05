@@ -141,8 +141,8 @@
 }
 
 .oblast{
-    display: flex;
     font-size: 22px;
+    text-align: center;
 }
 
 .block-info-p-1{
@@ -508,38 +508,56 @@ h1{
 
     .block-info-p-1{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-2{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-3{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-4{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-5{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-6{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-7{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-8{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .block-info-p-9{
         width: 48%;
+        padding: 24px;
+        font-size: 24px;
     }
 
     .hand-1{
@@ -581,38 +599,56 @@ h1{
 @media (max-width: 640px){
     .block-info-p-1{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-2{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-3{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-4{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-5{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-6{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-7{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-8{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-p-9{
         width: 100%;
+        padding: 20px;
+        font-size: 20px;
     }
 
     .block-info-text{
@@ -639,6 +675,7 @@ h1{
 
     .osvoenie{
         margin-left: 20px;
+        font-size: 25px;
     }
 
     .block-info-3{
