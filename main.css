@@ -326,3 +326,30 @@ p{
     color: black;
 }
 
+@media (max-width: 1280px){
+    .main{
+        flex-direction: column;
+    }
+
+    .block-left{
+        width: 100%;
+    }
+
+    .block-right{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .ul-launch{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-left{
+        width: fit-content;
+        line-height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
